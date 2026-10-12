@@ -1,0 +1,6 @@
+{
+  "source": "tools/templates/solana-runtime/wire.generated.js",
+  "dependencyOverlaySha256": "31a2afbeb8757d11aaed6606956f8b18a3ef7d29154800ccdf82e29383328b4b",
+  "sha256": "7f2fcb8e3e8df2b89ac6f311daf7cbd37ed019ac4bf94a94be70c60c70c58404",
+  "purpose": "Offline transaction and RPC fixture construction; never loaded by the app."
+}

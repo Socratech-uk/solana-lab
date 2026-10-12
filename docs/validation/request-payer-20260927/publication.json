@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "version": "1.4.4",
+  "revision": 13,
+  "articles": 75,
+  "workflows": 26,
+  "targets": 16,
+  "sourceMatchesPublished": true,
+  "manifestSha256": "c7e4726d420f6012ef6c9670a265d8c3c1307edf00791a59a7b5ffd22161e32f"
+}

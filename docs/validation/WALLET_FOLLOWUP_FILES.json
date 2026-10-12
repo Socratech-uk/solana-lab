@@ -1,0 +1,181 @@
+{
+  "protocol": "capp.root-relative-overlay.v1",
+  "project": "solana-lab",
+  "version": "0.5.1",
+  "sourceArchive": "solana-lab(2).zip",
+  "sourceArchiveSha256": "ca803c3efcdfc89e19d59d24e5005b5404ed812212302f801c988eaba0113e70",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "e84251bdfe6d0076a81b7de82392a8250aaafa1648c54aeab7962e18140fe0b5",
+      "bytes": 5714
+    },
+    {
+      "path": "assets/QR_CODE_LICENSE.txt",
+      "sha256": "88fd9788c757d3c0de3438d31eba379441a3843b4342c90da3569cfb1a7a46d7",
+      "bytes": 1132
+    },
+    {
+      "path": "assets/qr-code.json",
+      "sha256": "7b5cc37f7b0c4ba7f171b4646930cd7e619c71a1aaf6d6cb30d7bf7110a8f754",
+      "bytes": 364
+    },
+    {
+      "path": "dist/assets/QR_CODE_LICENSE.txt",
+      "sha256": "88fd9788c757d3c0de3438d31eba379441a3843b4342c90da3569cfb1a7a46d7",
+      "bytes": 1132
+    },
+    {
+      "path": "dist/assets/qr-code.json",
+      "sha256": "7b5cc37f7b0c4ba7f171b4646930cd7e619c71a1aaf6d6cb30d7bf7110a8f754",
+      "bytes": 364
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "2ec71fb303e5899bcbf80fe7aab37425ddc91c4662c38f7044d6a818269713b8",
+      "bytes": 2381
+    },
+    {
+      "path": "dist/src/app.mjs",
+      "sha256": "8589a5b90a08628ac81da24578ff0fdb1a07ca5b5522953c6ca43794176303ac",
+      "bytes": 48248
+    },
+    {
+      "path": "dist/src/qr-code.mjs",
+      "sha256": "ea91d7118a5395289170da848b7c6758b996163bfbccf312591ab65a4911b7c0",
+      "bytes": 51907
+    },
+    {
+      "path": "dist/src/wallet-tools.mjs",
+      "sha256": "775af60482661ee33985e335a8af79076d2669f8d4b8497213a32f57da0e97e6",
+      "bytes": 2830
+    },
+    {
+      "path": "dist/src/wallets.css",
+      "sha256": "c099b159ff4441b378499b5e0e722118b2cda2383d98d586cf766f5d04251fd6",
+      "bytes": 3486
+    },
+    {
+      "path": "dist/src/wallets.mjs",
+      "sha256": "d5e4affbcc2c7b476e37c3be8d0a4e644f5d1261219c7dc9667fb839d56c14ef",
+      "bytes": 21326
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "0835c80c2ea8b5420a486db2a40c3c24331c4f12dcd61e9a89a82479006155b8",
+      "bytes": 8414
+    },
+    {
+      "path": "docs/TESTING.md",
+      "sha256": "0a7f5215122b36b50dbf80532092331ede913554bb106b3d374889943abb24cd",
+      "bytes": 5277
+    },
+    {
+      "path": "docs/WALLETS.md",
+      "sha256": "d3c5bf4dacd128fce146a93966b1e1844cf6154917f9b3ee2031332f7a75258a",
+      "bytes": 7889
+    },
+    {
+      "path": "docs/validation/WALLET_CONTRACT_GAPS.json",
+      "sha256": "db7e823e29d61040ac6ee1b6fd2774563b80eeccd16529becde2cac609ada40c",
+      "bytes": 1143
+    },
+    {
+      "path": "docs/validation/WALLET_FOLLOWUP.md",
+      "sha256": "96c0904d6c29dbef991e431589c546b9215fe6dc2424c3b0d07d1519b1fb9268",
+      "bytes": 4136
+    },
+    {
+      "path": "docs/validation/wallets/devnet-desktop.png",
+      "sha256": "0daa1a9cf51fdc1f460e8ca257576ea4a3f9d45a69755f72ea40c024e5da8b89",
+      "bytes": 291797
+    },
+    {
+      "path": "docs/validation/wallets/mainnet-desktop.png",
+      "sha256": "72b59cb7258de00a844f09bbca1911182321e2bc0085a66c28057986e475c76b",
+      "bytes": 365934
+    },
+    {
+      "path": "docs/validation/wallets/mainnet-mobile.png",
+      "sha256": "6e10bf0fe91e3e4a392d742b4164635ab01ca0aa17b06f1baa9de11e243806e8",
+      "bytes": 304371
+    },
+    {
+      "path": "index.html",
+      "sha256": "2ec71fb303e5899bcbf80fe7aab37425ddc91c4662c38f7044d6a818269713b8",
+      "bytes": 2381
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "6d797e25d638e902942388d969a9a994ec79cad125e3da08eb2efbd35df71cd6",
+      "bytes": 19327
+    },
+    {
+      "path": "package.json",
+      "sha256": "f738ef74a8e4a306dedeb3c3e8b35bf1cbcf0307a99a3e75a3cb775a900a14f6",
+      "bytes": 1759
+    },
+    {
+      "path": "src/app.mjs",
+      "sha256": "8589a5b90a08628ac81da24578ff0fdb1a07ca5b5522953c6ca43794176303ac",
+      "bytes": 48248
+    },
+    {
+      "path": "src/qr-code.mjs",
+      "sha256": "ea91d7118a5395289170da848b7c6758b996163bfbccf312591ab65a4911b7c0",
+      "bytes": 51907
+    },
+    {
+      "path": "src/wallet-tools.mjs",
+      "sha256": "775af60482661ee33985e335a8af79076d2669f8d4b8497213a32f57da0e97e6",
+      "bytes": 2830
+    },
+    {
+      "path": "src/wallets.css",
+      "sha256": "c099b159ff4441b378499b5e0e722118b2cda2383d98d586cf766f5d04251fd6",
+      "bytes": 3486
+    },
+    {
+      "path": "src/wallets.mjs",
+      "sha256": "d5e4affbcc2c7b476e37c3be8d0a4e644f5d1261219c7dc9667fb839d56c14ef",
+      "bytes": 21326
+    },
+    {
+      "path": "tests/devnet-fixture.mjs",
+      "sha256": "5417a1b371d512cec47412097c8343007887f64d7068947d518003d6b2e3870e",
+      "bytes": 4791
+    },
+    {
+      "path": "tests/wallet-browser.test.mjs",
+      "sha256": "acbbdb2f8a814fc3775ed1cfe2276cfd9979ca2d81a3a1811d8957144a612cb0",
+      "bytes": 11788
+    },
+    {
+      "path": "tests/wallet-contracts.test.mjs",
+      "sha256": "e068ec1fe6b640ab2642ea6d154e0f2f84bd53c92f00e07de059360e3e6954d0",
+      "bytes": 3392
+    },
+    {
+      "path": "tests/wallet-tools.test.mjs",
+      "sha256": "ed6951ea35cb7c5c205104b73d36dcdfcd2834faf767d075eb4cdc7642cf7809",
+      "bytes": 5942
+    },
+    {
+      "path": "tools/build-preview.mjs",
+      "sha256": "758dbf355f8897736f2c901efb274a5583adf4ff00733de1e64346c058bb30bf",
+      "bytes": 6397
+    },
+    {
+      "path": "tools/build.mjs",
+      "sha256": "f5285d52b5d91d8e8e796d9389833160c0df09a4bea76d6c3d8db776def472b0",
+      "bytes": 4835
+    },
+    {
+      "path": "tools/vendor-qr.mjs",
+      "sha256": "4d6ceaafa5fb753bee51ceab10b20cc9afa3675d3d46515e56aadee33ae2421c",
+      "bytes": 2185
+    }
+  ],
+  "manifestExcludedFromOwnHash": true,
+  "canonicalSidecarsModified": false
+}

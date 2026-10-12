@@ -1,0 +1,1 @@
+export const MARKET_COMPONENT={id:'market',name:'Market Pulse',role:'Market data',description:'Share price observations, OHLCV history and configurable charts across your app.',limit:'Jupiter candles are sampled prices with no volume. Provider candles retain their own volume and timestamps. This component cannot trade or sign.'};

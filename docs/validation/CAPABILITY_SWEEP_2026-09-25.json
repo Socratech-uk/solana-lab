@@ -1,0 +1,178 @@
+{
+  "protocol": "capp.solana-lab.capability-validation.v1",
+  "date": "2026-09-25",
+  "version": "0.7.0",
+  "guideVersion": "1.3.0",
+  "demos": 12,
+  "sourceArticles": 66,
+  "projectArticles": 129,
+  "workflows": 24,
+  "assistantReadTools": 11,
+  "results": [
+    {
+      "command": "npm run test:all",
+      "passed": true,
+      "loggedPassLines": 157,
+      "summaries": [
+        {
+          "passed": 17,
+          "native": false,
+          "network": "offline-signed-fixtures"
+        },
+        {
+          "passed": 14,
+          "network": "fixture-only",
+          "native": false
+        },
+        {
+          "passed": 6,
+          "rpc": "fixture",
+          "nativeAcceptance": false
+        },
+        {
+          "protocol": "capp.solana-lab.wallet-contracts.v1",
+          "source": "current shipped runtimes",
+          "results": [
+            {
+              "name": "finalized transaction closes its original local ledger entry",
+              "passed": true
+            },
+            {
+              "name": "failed transaction closes its original local ledger entry",
+              "passed": true
+            },
+            {
+              "name": "damaged wallet storage has a supported recovery API that preserves the original bytes",
+              "passed": true
+            }
+          ],
+          "passed": 3,
+          "unmet": 0,
+          "networkUsed": false,
+          "nativeAcceptance": false
+        },
+        {
+          "passed": 15,
+          "network": "mocked"
+        },
+        {
+          "passed": 5,
+          "network": "none",
+          "realArena": true
+        },
+        {
+          "passed": 6,
+          "canvas": "mocked",
+          "nativeExecutionVerified": false,
+          "layoutVerified": false
+        },
+        {
+          "passed": 22,
+          "networkCalls": 0,
+          "paymentRecords": 3,
+          "receipts": 6
+        },
+        {
+          "passed": 5,
+          "standalone": true,
+          "externalNetworkUsed": false
+        },
+        {
+          "passed": 7,
+          "networkUsed": false
+        },
+        {
+          "passed": 9,
+          "network": "fixture-only",
+          "sends": 5
+        },
+        {
+          "passed": 25,
+          "layoutVerified": false
+        },
+        {
+          "passed": 5,
+          "realNetworkUsed": false
+        },
+        {
+          "passed": 11,
+          "exportedWindowsAssets": false,
+          "mockRpcCalls": 21,
+          "realNetworkUsed": false,
+          "modelFixtureCalls": 1,
+          "layoutVerified": false,
+          "nativeExecutionVerified": false
+        },
+        {
+          "passed": 5,
+          "networkEffects": 0,
+          "persistentStorageEffects": 0,
+          "previewOnly": true
+        }
+      ]
+    },
+    {
+      "command": "node tests/capability-browser.test.mjs",
+      "passed": true,
+      "loggedPassLines": 4,
+      "summaries": [
+        {
+          "passed": 4,
+          "native": false,
+          "network": "intercepted-fixtures",
+          "browser": "Chromium"
+        }
+      ]
+    },
+    {
+      "command": "node tests/guided-browser.test.mjs",
+      "passed": true,
+      "loggedPassLines": 8,
+      "summaries": [
+        {
+          "passed": 8,
+          "realNative": false,
+          "realNetwork": false
+        }
+      ]
+    },
+    {
+      "command": "node tests/assistant-browser.test.mjs",
+      "passed": true,
+      "loggedPassLines": 7,
+      "summaries": [
+        {
+          "passed": 7,
+          "realNative": false,
+          "realNetwork": false,
+          "fixtureSends": 1
+        }
+      ]
+    }
+  ],
+  "builds": {
+    "dist": true,
+    "distPreview": true,
+    "previewRoutes": 26,
+    "previewNetworkAndPersistenceLocked": true
+  },
+  "renderedBrowser": {
+    "engine": "Chromium 138",
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "externalRequests": "intercepted fixtures",
+    "pageErrors": 0,
+    "horizontalOverflow": false
+  },
+  "nativeExecutionVerified": false,
+  "liveDevnetVerified": false,
+  "gpuInferenceVerified": false
+}

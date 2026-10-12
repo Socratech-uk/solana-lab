@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "originalFiles": 2081,
+  "removedFiles": 0,
+  "sharedSidecarsUnchanged": true,
+  "runtimeCopiesUnchanged": true,
+  "oldGuideReleasesUnchanged": true,
+  "compiledHistoryUnchanged": true,
+  "projectStateOnlyGuideFieldsChanged": [
+    "manifestJson",
+    "projectCurrentVersion",
+    "releaseVersion"
+  ],
+  "otherSidecarSelectionsUnchanged": true,
+  "profilesOnlyVersionChanged": true,
+  "originalSha256": "fa4fd86dc12ecd6fe0b71dbdb9d7a02e1da8c2e769fb05d1c518b1e4327b057e"
+}

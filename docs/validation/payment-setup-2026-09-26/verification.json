@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-26",
+  "labVersion": "0.7.1",
+  "latchVersion": "0.5.0-alpha.2",
+  "inputs": [
+    {
+      "file": "solana-lab(9).zip",
+      "sha256": "12721c64bffe90fbdbfb03276eb2c9bf0d3de88532c3516bad20d259f0e51e1a"
+    },
+    {
+      "file": "capp-v1(20260926-160820).zip",
+      "sha256": "a17c1a4feba8a7789cb14ff5c7088ee4d57a69058e1f1e81cf71c7de9915afea"
+    }
+  ],
+  "validation": {
+    "labSuite": {
+      "command": "npm run test:all",
+      "passed": true,
+      "passMessages": 167
+    },
+    "requestReplay": {
+      "staleApprove": true,
+      "staleSubmit": true,
+      "queuedApprove": true,
+      "queuedSubmit": true,
+      "reconciliationRetained": true
+    },
+    "browser": {
+      "capabilityGroups": 5,
+      "assistantGroups": 8,
+      "allTwelvePageDefaults": true,
+      "native": false,
+      "realNetwork": false
+    },
+    "capp": [
+      "asset payment and signing-policy behavior",
+      "wallet manager",
+      "terminal recovery",
+      "asset/payment schemas",
+      "component schemas",
+      "strict client typecheck with TypeScript 5.8.3",
+      "runtime and registry generation",
+      "public Guide projection",
+      "587 standard checks",
+      "preview staging and public-asset boundary"
+    ],
+    "builds": [
+      "Lab static distribution",
+      "Lab inert preview: 26 routes",
+      "verified cApp staged Lab preview"
+    ]
+  },
+  "limits": [
+    "No native Windows/Android, live devnet, external wallet or GPU acceptance was performed.",
+    "Paid-request protection uses shared local Lab state and cooperating Web Locks; it is not a distributed merchant claim.",
+    "Balances and setup diagnostics do not reserve funds or grant wallet authority.",
+    "Existing FTUE workflow IDs are retained; revised walkthrough wording can be published as a new project Guide release. No project FTUE folders were supplied or changed."
+  ]
+}

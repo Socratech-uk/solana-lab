@@ -1,0 +1,262 @@
+/* cApp Guide: canonical shell and app-frame presentation. */
+#cappFtueShellHost{all:initial;position:fixed;inset:0;z-index:2147483645;pointer-events:none;contain:layout style paint;isolation:isolate;color-scheme:dark;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+#cappFtueShellHost *,#cappFtueShellHost *:before,#cappFtueShellHost *:after{box-sizing:border-box;min-width:0}
+#cappFtueShellHost button,#cappFtueShellHost input,#cappFtueShellHost textarea,#cappFtueShellHost select{font:inherit;-webkit-tap-highlight-color:transparent}
+#cappFtueShellHost .capp-ftue-hud{position:fixed;right:14px;bottom:calc(132px + max(env(safe-area-inset-bottom,0px),var(--capp-safe-area-bottom,0px)));display:flex;align-items:center;justify-content:center;gap:7px;min-width:54px;min-height:48px;padding:0 13px;border:1px solid rgba(145,112,255,.72);border-radius:999px;background:#130d26;color:#f3ecff;box-shadow:0 12px 36px rgba(0,0,0,.56),0 0 28px rgba(132,92,255,.18);font:850 11px/1 ui-monospace,SFMono-Regular,Consolas,monospace;pointer-events:auto;cursor:pointer;touch-action:manipulation}
+#cappFtueShellHost .capp-ftue-hud span{color:#b7a8dd;font-size:9px}
+#cappFtueShellHost[data-open] .capp-ftue-hud{display:none}
+#cappFtueShellHost .capp-ftue-shell{position:fixed;right:0;top:0;bottom:0;display:none;flex-direction:column;width:min(760px,50vw);border-left:1px solid #342858;background:linear-gradient(180deg,#0d0920,#080712);color:#eeeaff;box-shadow:-24px 0 80px rgba(0,0,0,.62);pointer-events:auto;overflow:hidden}
+#cappFtueShellHost[data-open] .capp-ftue-shell{display:flex}
+#cappFtueShellHost header{flex:none;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:10px 14px;border-bottom:1px solid #30264e;background:#120d25}
+#cappFtueShellHost header>div{display:grid;gap:3px}
+#cappFtueShellHost header strong{font-size:17px;color:#fff}
+#cappFtueShellHost header small{color:#9f92bf;font:10px/1.3 ui-monospace,SFMono-Regular,Consolas,monospace;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#cappFtueShellHost button{min-height:40px;border:1px solid #423567;border-radius:10px;background:#171128;color:#ece7ff;padding:8px 11px;cursor:pointer;touch-action:manipulation}
+#cappFtueShellHost button:hover{border-color:#7f66c3;background:#21173a}
+#cappFtueShellHost button:disabled{opacity:.42;cursor:not-allowed}
+#cappFtueShellHost button.primary{border-color:#9f7cff;background:#805ce0;color:#fff;font-weight:850}
+#cappFtueShellHost button.danger{border-color:#713b52;color:#ffafc2}
+#cappFtueShellHost .close{flex:none;min-width:44px;min-height:44px;padding:0;font-size:25px}
+#cappFtueShellHost main{flex:1;min-height:0;overflow:auto;padding:12px;overscroll-behavior:contain}
+#cappFtueShellHost .ftue-error{flex:0 1 auto;max-height:22%;overflow:auto;overflow-wrap:anywhere;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 12px;border-bottom:1px solid #713b52;background:#2a101b;color:#ffc1cf;font-size:11px}
+#cappFtueShellHost .ftue-error button{min-width:34px;min-height:34px;padding:0}
+#cappFtueShellHost .ftue-admin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:10px}
+#cappFtueShellHost .ftue-wide{grid-column:1/-1}
+#cappFtueShellHost .ftue-card{display:grid;gap:10px;min-width:0;border:1px solid #30264e;border-radius:14px;background:#100c1d;padding:12px}
+#cappFtueShellHost .ftue-card h2,#cappFtueShellHost .ftue-card h3{margin:0;color:#fff}
+#cappFtueShellHost .ftue-card h2{font-size:16px}
+#cappFtueShellHost .ftue-card h3{font-size:13px}
+#cappFtueShellHost .ftue-card p{margin:0;color:#a99cc2;font-size:10px;line-height:1.45}
+#cappFtueShellHost .ftue-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+#cappFtueShellHost .ftue-card-head>div{display:grid;gap:4px}
+#cappFtueShellHost .ftue-badge{display:inline-flex;align-items:center;min-height:26px;padding:0 8px;border:1px solid #6d55a7;border-radius:999px;background:#231943;color:#cebfff;font:850 9px/1 ui-monospace,SFMono-Regular,Consolas,monospace;text-transform:uppercase}
+#cappFtueShellHost .ftue-project-link{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid #3b3158;border-radius:11px;background:#0b0816;padding:9px 10px}
+#cappFtueShellHost .ftue-project-link>div{display:grid;gap:2px;min-width:0}
+#cappFtueShellHost .ftue-project-link span{color:#9184aa;font:800 8px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;text-transform:uppercase;letter-spacing:.08em}
+#cappFtueShellHost .ftue-project-link b{color:#f5f0ff;font-size:11px}
+#cappFtueShellHost .ftue-project-link code{color:#a99cc2;font:8px/1.35 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere}
+#cappFtueShellHost .ftue-project-link em{border-radius:999px;padding:5px 8px;background:#231943;color:#cdbfff;font:850 8px/1 ui-monospace,SFMono-Regular,Consolas,monospace;font-style:normal;text-transform:uppercase}
+#cappFtueShellHost .ftue-project-link.saved,#cappFtueShellHost .ftue-project-link.linked{border-color:#3a6b60}
+#cappFtueShellHost .ftue-project-link.saved em,#cappFtueShellHost .ftue-project-link.linked em{background:#15372f;color:#9ff1d4}
+#cappFtueShellHost .ftue-project-link.error,#cappFtueShellHost .ftue-project-link.offline{border-color:#713b52}
+#cappFtueShellHost .ftue-project-link.error em,#cappFtueShellHost .ftue-project-link.offline em{background:#341622;color:#ffb8c8}
+#cappFtueShellHost .ftue-actions{display:flex;flex-wrap:wrap;gap:7px}
+#cappFtueShellHost label{display:grid;gap:5px;color:#c9c0df;font-size:10px;font-weight:700}
+#cappFtueShellHost input,#cappFtueShellHost textarea,#cappFtueShellHost select{display:block;width:100%;border:1px solid #403361;border-radius:9px;background:#080612;color:#fff;padding:9px 10px;outline:none}
+#cappFtueShellHost input,#cappFtueShellHost select{min-height:42px}
+#cappFtueShellHost textarea{min-height:88px;resize:vertical;line-height:1.45}
+#cappFtueShellHost input:focus,#cappFtueShellHost textarea:focus,#cappFtueShellHost select:focus{border-color:#9f7cff;box-shadow:0 0 0 2px rgba(159,124,255,.12)}
+#cappFtueShellHost .ftue-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#cappFtueShellHost .ftue-checks{display:grid;gap:7px}
+#cappFtueShellHost .ftue-checks label{display:flex;align-items:center;gap:8px;min-height:36px;border:1px solid #352a51;border-radius:9px;background:#0b0816;padding:7px 9px}
+#cappFtueShellHost .ftue-checks input{width:18px;min-width:18px;height:18px;min-height:18px;margin:0;accent-color:#9f7cff}
+#cappFtueShellHost .ftue-target-summary{padding:8px;border:1px dashed #5f4a8e;border-radius:9px;background:#0a0714;color:#cfc3e8!important;font:9px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere}
+#cappFtueShellHost .ftue-list{display:grid;gap:7px}
+#cappFtueShellHost .ftue-list-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;border:1px solid #33294f;border-radius:10px;background:#0a0714;padding:7px}
+#cappFtueShellHost .ftue-list-item.selected{border-color:#9f7cff;background:#17102b}
+#cappFtueShellHost .ftue-list-main{display:grid;justify-items:start;gap:3px;width:100%;border:0;background:transparent;text-align:left;padding:3px}
+#cappFtueShellHost .ftue-list-main b{color:#f5f0ff;font-size:11px}
+#cappFtueShellHost .ftue-list-main span{color:#b3a6ca;font-size:9px;line-height:1.4}
+#cappFtueShellHost .ftue-list-main small{color:#796d93;font:8px/1.3 ui-monospace,SFMono-Regular,Consolas,monospace}
+#cappFtueShellHost .ftue-list-actions{display:flex;gap:4px;align-items:start}
+#cappFtueShellHost .ftue-list-actions button{min-width:34px;min-height:34px;padding:0}
+#cappFtueShellHost .ftue-docs{display:grid;gap:6px}
+#cappFtueShellHost .ftue-doc{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px 8px;border:1px solid #31274b;border-radius:9px;background:#0a0714;padding:8px}
+#cappFtueShellHost .ftue-doc b{font-size:10px;color:#f3eeff}
+#cappFtueShellHost .ftue-doc span{grid-column:1;color:#a89bbf;font-size:9px;line-height:1.4}
+#cappFtueShellHost .ftue-doc button{grid-column:2;grid-row:1/3;min-height:34px;padding:5px 8px;font-size:9px}
+#cappFtueShellHost .ftue-code{min-height:280px;font:9px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace}
+#cappFtueShellHost .empty{display:grid;place-items:center;min-height:92px;margin:0;border:0;border-radius:0;background:transparent;color:#7f7497;text-align:center;font-size:10px;line-height:1.4}
+#cappFtueShellHost .empty.compact{min-height:48px}
+#cappFtueShellHost .ftue-help-layout{display:flex;flex-direction:column;gap:8px;min-height:0;height:100%}
+#cappFtueShellHost .ftue-help-preview-banner{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;grid-template-columns:minmax(0,1fr) auto}
+#cappFtueShellHost .ftue-help-preview-banner>div{display:grid;gap:4px}
+#cappFtueShellHost .ftue-help-preview-banner b{color:#fff;font-size:12px}
+#cappFtueShellHost .ftue-help-intro{grid-column:1/-1;display:flex;align-items:center;grid-template-columns:auto 1fr;padding:10px}
+#cappFtueShellHost .ftue-avatar{display:grid;place-items:center;width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,#805ce0,#4d8fe8);color:#fff;font-size:20px;font-weight:900}
+#cappFtueShellHost .ftue-help-actions{grid-column:1/-1;display:flex;flex-direction:row;flex-wrap:wrap}
+#cappFtueShellHost .ftue-help-chat{display:flex;flex-direction:column;flex:1;min-height:0;height:auto;overflow:hidden}
+#cappFtueShellHost .ftue-messages{flex:1;display:grid;align-content:start;gap:8px;min-height:0;max-height:none;overflow:auto;padding-right:3px}
+#cappFtueShellHost .ftue-messages article{max-width:92%;overflow-wrap:anywhere;border:1px solid #352a51;border-radius:12px;background:#0a0714;padding:9px}
+#cappFtueShellHost .ftue-messages article.user{justify-self:end;background:#261a45}
+#cappFtueShellHost .ftue-messages article.error{border-color:#713b52}
+#cappFtueShellHost .ftue-message-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:4px}#cappFtueShellHost .ftue-messages b{display:block;color:#d9ccff;font-size:9px}#cappFtueShellHost .ftue-message-mode{border-radius:999px;background:#20163a;color:#bfaeff;padding:3px 6px;font:800 8px/1 ui-monospace,SFMono-Regular,Consolas,monospace;text-transform:uppercase}
+#cappFtueShellHost .ftue-messages p{white-space:pre-wrap;color:#ece8f6;font-size:11px;line-height:1.5}
+#cappFtueShellHost .ftue-workflow-offer{display:grid;justify-items:start;gap:3px;width:100%;margin-top:9px;border-color:#7b64c8;background:linear-gradient(135deg,#2b1b52,#17345f);text-align:left}#cappFtueShellHost .ftue-workflow-offer span{font-weight:900;color:#fff}#cappFtueShellHost .ftue-workflow-offer small{color:#c4b9de;font-size:9px;line-height:1.35}#cappFtueShellHost .ftue-ai-status{display:block;margin-top:4px;color:#9f92bf;font:800 8px/1.3 ui-monospace,SFMono-Regular,Consolas,monospace;text-transform:uppercase}#cappFtueShellHost .ftue-ai-status.ready{color:#91e7c9}#cappFtueShellHost form[data-help-form]{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px;flex:none}
+#cappFtueShellHost .ftue-help-browse{padding:0;overflow:hidden}#cappFtueShellHost .ftue-help-browse>summary{display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer;list-style:none;padding:11px 12px}#cappFtueShellHost .ftue-help-browse>summary::-webkit-details-marker{display:none}#cappFtueShellHost .ftue-help-browse>summary span{display:grid;gap:2px}#cappFtueShellHost .ftue-help-browse>summary b{font-size:11px;color:#fff}#cappFtueShellHost .ftue-help-browse>summary small{font-size:9px;color:#9f92bf}#cappFtueShellHost .ftue-help-browse>summary i{font-style:normal;color:#9f92bf;transition:transform .15s ease}#cappFtueShellHost .ftue-help-browse[open]>summary i{transform:rotate(180deg)}#cappFtueShellHost .ftue-browse{display:grid;gap:7px;padding:0 12px 12px}
+#cappFtueShellHost .ftue-browse button{display:grid;justify-items:start;gap:3px;text-align:left}
+#cappFtueShellHost .ftue-browse b{font-size:10px}
+#cappFtueShellHost .ftue-browse span{color:#a99cc2;font-size:9px;line-height:1.4}
+
+/* Canonical app-frame surfaces. Loaded by the bounded Guide agent as well as
+   the shell; never duplicate these rules in dynamically injected JS styles. */
+html.capp-ftue-selection-active,html.capp-ftue-selection-active *{cursor:crosshair!important}
+#cappFtueSelectionOverlay{position:fixed;left:var(--capp-ftue-select-left,0px);top:var(--capp-ftue-select-top,0px);width:var(--capp-ftue-select-width,0px);height:var(--capp-ftue-select-height,0px);z-index:2147483646;pointer-events:none;border:3px solid #a98cff;border-radius:6px;background:rgba(132,92,224,.13);box-shadow:0 0 0 1px rgba(0,0,0,.8),0 0 32px rgba(159,124,255,.42);box-sizing:border-box}
+#cappFtueSelectionOverlay[hidden],#cappFtueSelectionTray[hidden],#cappFtueSpotlight[hidden]{display:none!important}
+#cappFtueSelectionTray{position:fixed;left:50%;bottom:calc(16px + max(env(safe-area-inset-bottom,0px),var(--capp-safe-area-bottom,0px)));z-index:2147483647;display:flex;align-items:center;gap:10px;max-width:calc(100vw - 24px);transform:translateX(-50%);border:1px solid #8d71db;border-radius:999px;background:#130d26;color:#f2edff;padding:8px 9px 8px 14px;box-shadow:0 18px 50px rgba(0,0,0,.68);font:800 11px/1.3 system-ui,-apple-system,Segoe UI,sans-serif;box-sizing:border-box}
+#cappFtueSelectionTray button{min-width:72px;min-height:44px;border:1px solid #5f4a8e;border-radius:999px;background:#241943;color:#fff;padding:7px 10px;font:inherit}
+#cappFtueSpotlight{position:fixed;inset:0;z-index:2147483644;pointer-events:none;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+#cappFtueSpotlight *{box-sizing:border-box;min-width:0;overflow-wrap:anywhere}
+#cappFtueSpotlight [hidden]{display:none!important}
+#cappFtueSpotlight .capp-ftue-focus-ring{position:fixed;left:var(--capp-ftue-focus-left,0px);top:var(--capp-ftue-focus-top,0px);width:var(--capp-ftue-focus-width,0px);height:var(--capp-ftue-focus-height,0px);border:3px solid #b39aff;border-radius:10px;box-shadow:0 0 0 9999px rgba(3,2,9,.72),0 0 34px rgba(159,124,255,.5);pointer-events:none;transition:left .18s ease,top .18s ease,width .18s ease,height .18s ease}
+#cappFtueSpotlight .capp-ftue-tooltip{position:fixed;left:var(--capp-ftue-tooltip-left,12px);top:var(--capp-ftue-tooltip-top,12px);display:grid;gap:8px;width:min(340px,calc(100vw - 20px));max-height:min(420px,calc(100vh - 20px));overflow:auto;border:1px solid #765bb9;border-radius:15px;background:#100b21;color:#f7f2ff;padding:13px;box-shadow:0 24px 76px rgba(0,0,0,.72);pointer-events:auto}
+#cappFtueSpotlight .capp-ftue-progress{color:#9e8bc6;font:850 9px/1 ui-monospace,SFMono-Regular,Consolas,monospace;text-transform:uppercase;letter-spacing:.08em}
+#cappFtueSpotlight h2{margin:0;color:#fff;font-size:17px;line-height:1.25}
+#cappFtueSpotlight p{margin:0;color:#d5cce8;font-size:12px;line-height:1.5}
+#cappFtueSpotlight .capp-ftue-tip{border-left:3px solid #9f7cff;background:#1a1230;padding:8px 9px;color:#cfc2ef}
+#cappFtueSpotlight .capp-ftue-action-status{border-radius:9px;background:#18122b;padding:7px 9px;color:#cfc2ef;font-size:10px}
+#cappFtueSpotlight .capp-ftue-action-status.error{background:#32131f;color:#ffc1cf}
+#cappFtueSpotlight .capp-ftue-tour-actions{position:sticky;bottom:0;background:#100b21;padding-top:6px;display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;align-items:center;gap:7px;margin-top:2px}
+#cappFtueSpotlight [data-ftue-action="perform"]{grid-column:1/-1}
+#cappFtueSpotlight button{min-height:44px;border:1px solid #51406f;border-radius:9px;background:#1a1330;color:#f0eaff;padding:8px 11px;font:800 11px/1 system-ui,-apple-system,Segoe UI,sans-serif}
+#cappFtueSpotlight button.primary{border-color:#a98cff;background:#805ce0;color:#fff}
+#cappFtueSpotlight button:disabled{opacity:.4}
+
+#cappFtueShellHost[data-platform="android"]{left:var(--capp-ftue-left,0px);top:var(--capp-ftue-top,0px);width:min(var(--capp-ftue-width,100vw),100vw);height:min(var(--capp-ftue-height,100dvh),100dvh);right:auto;bottom:auto;overflow:hidden;contain:strict}
+#cappFtueShellHost[data-platform="android"] .capp-ftue-hud{position:absolute;right:12px;bottom:calc(132px + max(env(safe-area-inset-bottom,0px),var(--capp-safe-area-bottom,0px)));min-width:60px;min-height:48px}
+#cappFtueShellHost[data-platform="android"] .capp-ftue-shell{position:absolute;inset:0;width:100%;height:100%;max-width:none;border:0;background:#080712;box-shadow:none}#cappFtueShellHost[data-platform="android"][data-mode="user"] .capp-ftue-shell{inset:0;height:100%}
+#cappFtueShellHost[data-platform="android"] header{min-height:60px;padding:8px 11px}
+#cappFtueShellHost[data-platform="android"] header strong{font-size:16px}
+#cappFtueShellHost[data-platform="android"] main{padding:9px}
+#cappFtueShellHost[data-platform="android"] button{min-height:44px}
+#cappFtueShellHost[data-platform="android"] input,#cappFtueShellHost[data-platform="android"] select{min-height:44px;font-size:16px}
+#cappFtueShellHost[data-platform="android"] textarea{font-size:14px}
+#cappFtueShellHost[data-platform="android"] .ftue-admin-grid,#cappFtueShellHost[data-platform="android"] .ftue-help-layout{grid-template-columns:1fr}
+#cappFtueShellHost[data-platform="android"] .ftue-wide,#cappFtueShellHost[data-platform="android"] .ftue-help-intro,#cappFtueShellHost[data-platform="android"] .ftue-help-actions{grid-column:1}
+#cappFtueShellHost[data-platform="android"] .ftue-help-chat{height:auto;min-height:0}
+#cappFtueShellHost[data-platform="android"] .ftue-messages{max-height:none}
+
+@media(max-width:760px){#cappFtueShellHost .capp-ftue-shell{width:100vw}#cappFtueShellHost .ftue-admin-grid,#cappFtueShellHost .ftue-help-layout{grid-template-columns:1fr}#cappFtueShellHost .ftue-wide,#cappFtueShellHost .ftue-help-intro,#cappFtueShellHost .ftue-help-actions{grid-column:1}#cappFtueShellHost .ftue-two{grid-template-columns:1fr}}
+
+
+#cappFtueShellHost form[data-help-form].ftue-with-mic{grid-template-columns:auto minmax(0,1fr) auto}
+#cappFtueShellHost .ftue-mic{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:72px;border-color:#665188;background:#171027}
+#cappFtueShellHost .ftue-mic span{display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:#d9ccff;color:#2a174c;font-size:8px}
+#cappFtueShellHost .ftue-mic.listening{border-color:#ff718f;background:#35101c;box-shadow:0 0 0 2px rgba(255,113,143,.14)}
+#cappFtueShellHost .ftue-mic.listening span{background:#ff718f;color:#35101c;animation:cappGuideSpeechPulse 1.15s ease-in-out infinite}
+#cappFtueShellHost .ftue-speech-status{border:1px solid #3b3153;border-radius:9px;background:#0c0915;color:#a99fc1;padding:7px 9px;font:750 9px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace}
+#cappFtueShellHost .ftue-speech-status.listening{border-color:#785074;color:#ffd1dc}
+#cappFtueShellHost .ftue-controller-running{display:grid;gap:3px;margin-top:9px;border:1px solid #4d7d70;border-radius:10px;background:#102b25;padding:8px 9px}
+#cappFtueShellHost .ftue-controller-running b{color:#a8f0d7}
+#cappFtueShellHost .ftue-controller-running span{color:#b9d8cf;font-size:9px;line-height:1.4}
+@keyframes cappGuideSpeechPulse{0%,100%{transform:scale(.86);opacity:.75}50%{transform:scale(1.08);opacity:1}}
+@media(max-width:520px){#cappFtueShellHost .ftue-mic{min-width:44px;padding-inline:9px}#cappFtueShellHost .ftue-mic b{display:none}}
+
+
+/* Guide v0.6 compact chat shell */
+#cappFtueShellHost .ftue-guide-utility{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:30px;padding:0 2px}
+#cappFtueShellHost .ftue-guide-status{display:flex;align-items:center;flex-wrap:wrap;gap:5px;min-width:0}
+#cappFtueShellHost .ftue-guide-status span{display:inline-flex;align-items:center;min-height:22px;padding:0 7px;border:1px solid #362b50;border-radius:999px;background:#0c0915;color:#a99fc1;font:800 8px/1 ui-monospace,SFMono-Regular,Consolas,monospace;text-transform:uppercase;white-space:nowrap}
+#cappFtueShellHost .ftue-guide-status span.ready{border-color:#34675b;background:#102b25;color:#9ce9d0}
+#cappFtueShellHost .ftue-guide-tools{display:flex;align-items:center;gap:5px;flex:0 0 auto}
+#cappFtueShellHost .ftue-guide-tools button{min-height:28px;border-radius:8px;padding:4px 8px;color:#c9bedf;font-size:9px}
+#cappFtueShellHost .ftue-help-chat{padding:9px;gap:7px}
+#cappFtueShellHost .ftue-messages{padding:2px;gap:7px}
+#cappFtueShellHost .ftue-messages .empty{align-content:center;gap:8px;min-height:0;padding:18px;color:#8f83a7}
+#cappFtueShellHost .ftue-messages .empty b{color:#efe9ff;font-size:12px}
+#cappFtueShellHost .ftue-messages .empty span{max-width:420px;color:#9085a5;font-size:10px;line-height:1.45}
+#cappFtueShellHost form[data-help-form]{gap:6px}
+#cappFtueShellHost form[data-help-form] input{min-height:44px}
+#cappFtueShellHost form[data-help-form]>.primary{min-width:58px;padding-inline:10px}
+#cappFtueShellHost .ftue-mic{min-width:58px;min-height:40px;padding:6px 8px}
+#cappFtueShellHost .ftue-mic.wake.armed{border-color:#3c7568;background:#102b25}
+#cappFtueShellHost .ftue-mic.wake.armed span{background:#9ce9d0;color:#102b25;animation:cappGuideSpeechPulse 1.8s ease-in-out infinite}
+#cappFtueShellHost .ftue-speech-status{padding:5px 8px}
+#cappFtueShellHost[data-platform="android"] .ftue-guide-utility{min-height:34px}
+#cappFtueShellHost[data-platform="android"] .ftue-guide-tools button{min-height:34px}
+#cappFtueShellHost[data-platform="android"] .ftue-guide-status{overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px;scrollbar-width:none}
+#cappFtueShellHost[data-platform="android"] .ftue-guide-status::-webkit-scrollbar{display:none}
+#cappFtueShellHost[data-platform="android"] .ftue-help-chat{min-height:0}
+#cappFtueShellHost .ftue-voice-only{display:flex;align-items:center;gap:9px;padding-top:7px;border-top:1px solid var(--ftue-line)}
+#cappFtueShellHost .ftue-voice-only>span{color:var(--ftue-muted);font-size:10px;line-height:1.4}
+
+/* Guide v0.9 operating modes: Tour, page help, and assistant/tasks */
+#cappFtueShellHost .ftue-mode-tabs{flex:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;padding:4px;border:1px solid var(--ftue-line);border-radius:12px;background:#0a0712}
+#cappFtueShellHost .ftue-mode-tabs button{min-height:38px;border:0;border-radius:9px;background:transparent;color:#9e93b4;padding:7px 8px;font-size:10px}
+#cappFtueShellHost .ftue-mode-tabs button.active{background:#2a1d49;color:#f2ebff;box-shadow:inset 0 0 0 1px #6f54ac}
+#cappFtueShellHost .ftue-mode-panel{flex:1;display:grid;align-content:start;overscroll-behavior:contain;gap:9px;min-height:0;overflow:auto;padding:1px}
+#cappFtueShellHost .ftue-mode-hero{display:grid;gap:4px;border:1px solid #342753;border-radius:13px;background:linear-gradient(145deg,#171027,#0c0915);padding:12px}
+#cappFtueShellHost .ftue-mode-hero>span{color:#9f7cff;font:850 8px/1 ui-monospace,SFMono-Regular,Consolas,monospace;text-transform:uppercase;letter-spacing:.08em}
+#cappFtueShellHost .ftue-mode-hero h2{margin:0;color:#f5efff;font-size:17px;line-height:1.25}
+#cappFtueShellHost .ftue-mode-hero p{margin:0;color:#a99fc1;font-size:10px;line-height:1.5;overflow-wrap:anywhere}
+#cappFtueShellHost .ftue-tour-actions-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+#cappFtueShellHost .ftue-tour-actions-grid button{display:grid;gap:4px;min-height:70px;text-align:left;padding:10px}
+#cappFtueShellHost .ftue-tour-actions-grid button b{font-size:11px}
+#cappFtueShellHost .ftue-tour-actions-grid button small{color:#a99fc1;font-size:9px;line-height:1.35}
+#cappFtueShellHost .ftue-page-meta{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:8px;border:1px solid var(--ftue-line);border-radius:10px;background:#0c0915;padding:8px 9px;color:#9e93b4;font-size:9px}
+#cappFtueShellHost .ftue-page-meta strong{color:#e8e0f8}
+#cappFtueShellHost .ftue-page-meta button{min-height:30px;padding:5px 8px;font-size:9px}
+#cappFtueShellHost .ftue-tour-outline{display:grid;gap:6px}
+#cappFtueShellHost .ftue-tour-outline article{display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;border:1px solid var(--ftue-line);border-radius:10px;background:#0c0915;padding:8px}
+#cappFtueShellHost .ftue-tour-outline article i{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#2d1f4f;color:#d8c9ff;font:800 9px/1 ui-monospace,SFMono-Regular,Consolas,monospace}
+#cappFtueShellHost .ftue-tour-outline article div{display:grid;gap:3px;min-width:0}
+#cappFtueShellHost .ftue-tour-outline b{color:#ece5fb;font-size:10px}
+#cappFtueShellHost .ftue-tour-outline span{color:#a99fc1;font-size:9px;line-height:1.4}
+#cappFtueShellHost .ftue-tour-outline small{color:#796c91;font-size:8px;text-transform:uppercase}
+#cappFtueShellHost .ftue-page-docs{display:grid;gap:7px}
+#cappFtueShellHost .ftue-page-docs article{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:start;border:1px solid var(--ftue-line);border-radius:11px;background:#0c0915;padding:10px}
+#cappFtueShellHost .ftue-page-docs article div{display:grid;gap:4px;min-width:0}
+#cappFtueShellHost .ftue-page-docs small{color:#9f7cff;font:800 8px/1 ui-monospace,SFMono-Regular,Consolas,monospace;text-transform:uppercase}
+#cappFtueShellHost .ftue-page-docs h3{margin:0;color:#eee7fc;font-size:11px}
+#cappFtueShellHost .ftue-page-docs p{margin:0;color:#b6abc9;font-size:9px;line-height:1.5;white-space:pre-wrap}
+#cappFtueShellHost .ftue-page-docs button{min-height:32px;padding:6px 8px;font-size:8px;white-space:nowrap}
+#cappFtueShellHost .ftue-page-tasks{display:grid;gap:6px;border-top:1px solid var(--ftue-line);padding-top:9px}
+#cappFtueShellHost .ftue-page-tasks h3{margin:0;color:#cfc5df;font-size:10px}
+#cappFtueShellHost .ftue-page-tasks button{display:grid;gap:3px;text-align:left;padding:9px}
+#cappFtueShellHost .ftue-page-tasks button b{color:#eee7fc;font-size:10px}
+#cappFtueShellHost .ftue-page-tasks button span{color:#a99fc1;font-size:9px;line-height:1.4}
+#cappFtueShellHost .ftue-assistant-panel{display:flex;flex-direction:column;overflow:hidden}
+#cappFtueShellHost .ftue-assistant-panel .ftue-help-chat{min-height:0}
+@media(max-width:520px){#cappFtueShellHost .ftue-tour-actions-grid{grid-template-columns:1fr}#cappFtueShellHost .ftue-page-docs article{grid-template-columns:1fr}#cappFtueShellHost .ftue-page-meta{grid-template-columns:auto 1fr}#cappFtueShellHost .ftue-page-meta button{grid-column:1/-1}}
+#cappFtueShellHost .ftue-page-section{border:1px solid var(--ftue-line);border-radius:11px;background:#0c0915;overflow:hidden}
+#cappFtueShellHost .ftue-page-section>summary,#cappFtueShellHost .ftue-page-doc>summary{display:flex;align-items:center;justify-content:space-between;gap:9px;cursor:pointer;list-style:none;padding:10px}
+#cappFtueShellHost .ftue-page-section>summary::-webkit-details-marker,#cappFtueShellHost .ftue-page-doc>summary::-webkit-details-marker{display:none}
+#cappFtueShellHost .ftue-page-section>summary span,#cappFtueShellHost .ftue-page-doc>summary span{display:grid;gap:3px;min-width:0}
+#cappFtueShellHost .ftue-page-section>summary b{color:#eee7fc;font-size:11px}
+#cappFtueShellHost .ftue-page-section>summary small{color:#8d819f;font-size:8px}
+#cappFtueShellHost .ftue-page-section>summary i,#cappFtueShellHost .ftue-page-doc>summary i{color:#8f7db1;font-style:normal;transition:transform .16s ease}
+#cappFtueShellHost .ftue-page-section[open]>summary i,#cappFtueShellHost .ftue-page-doc[open]>summary i{transform:rotate(180deg)}
+#cappFtueShellHost .ftue-page-section>div{display:grid;gap:5px;padding:0 7px 7px}
+#cappFtueShellHost .ftue-page-doc{border:1px solid #292035;border-radius:9px;background:#09070f;overflow:hidden}
+#cappFtueShellHost .ftue-page-doc>summary{padding:8px 9px}
+#cappFtueShellHost .ftue-page-doc>summary b{color:#ddd4ed;font-size:10px}
+#cappFtueShellHost .ftue-page-doc>summary small{color:#90849f;font-size:8px;line-height:1.35}
+#cappFtueShellHost .ftue-page-doc-body{display:grid;gap:8px;border-top:1px solid #292035;padding:9px}
+#cappFtueShellHost .ftue-page-doc-body p{margin:0;color:#b6abc9;font-size:9px;line-height:1.55;white-space:pre-wrap}
+#cappFtueShellHost .ftue-page-doc-body button{justify-self:start;min-height:30px;padding:5px 8px;font-size:8px}
+
+/* Android launchers share a bottom row within their guarded surface. */
+#cappFtueShellHost[data-platform="android"] .capp-ftue-hud{bottom:calc(12px + var(--capp-local-ai-status-height,0px));right:calc(12px + var(--capp-android-debug-launcher-space,0px) + var(--capp-android-ai-launcher-space,0px));min-height:44px}
+html:has(#cappAndroidDebugSidecarHost[data-open],#cappMobileLocalAiHost[data-open],lab-assistant:not([hidden]),#cappFtueSpotlight:not([hidden])) #cappFtueShellHost[data-platform="android"]:not([data-open]) .capp-ftue-hud{display:none}
+
+/* Open help is a bounded workspace; only its content panes scroll. */
+#cappFtueShellHost [hidden]{display:none!important}
+#cappFtueShellHost details{margin:0;padding:0}
+#cappFtueShellHost summary span{float:none;color:inherit}
+#cappFtueShellHost .ftue-help-main{overflow:hidden}
+#cappFtueShellHost .ftue-help-preview-banner{flex:none}
+#cappFtueShellHost .ftue-assistant-settings,#cappFtueShellHost .ftue-help-browse{display:block;flex:0 1 auto;min-height:44px;max-height:32%;overflow:auto;overscroll-behavior:contain;border:1px solid #30264e;border-radius:12px;background:#100c1d}
+#cappFtueShellHost .ftue-assistant-settings>summary{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:44px;padding:8px 11px;cursor:pointer;list-style:none;color:#bdb0d2;font-size:12px}
+#cappFtueShellHost .ftue-assistant-settings>summary::-webkit-details-marker{display:none}
+#cappFtueShellHost .ftue-assistant-settings>summary i{font-style:normal}
+#cappFtueShellHost .ftue-settings-body{display:grid;gap:8px;padding:0 9px 9px}
+#cappFtueShellHost .ftue-settings-body>p{font-size:12px;color:#bdb0d2}
+#cappFtueShellHost .ftue-help-browse>summary{min-height:44px;padding:8px 11px}
+#cappFtueShellHost .ftue-speech-status{flex:none;max-height:24%;overflow:auto}
+#cappFtueShellHost form[data-help-form]>.primary{min-height:44px;grid-column:auto}
+#cappFtueShellHost[data-typing] .ftue-assistant-settings,#cappFtueShellHost[data-typing] .ftue-help-browse{display:none}
+#cappFtueShellHost[data-typing] header small{display:none}
+@media(max-width:760px){
+  #cappFtueShellHost{left:var(--capp-ftue-left,0px);top:var(--capp-ftue-top,0px);width:var(--capp-ftue-width,100vw);height:var(--capp-ftue-height,100dvh);right:auto;bottom:auto}
+  #cappFtueShellHost .capp-ftue-shell{position:absolute;inset:0;width:100%;height:100%;border:0;box-shadow:none}
+  #cappFtueShellHost .ftue-mode-tabs button{min-height:44px;font-size:12px}
+  #cappFtueShellHost .ftue-messages p{font-size:14px;line-height:1.5}
+  #cappFtueShellHost .ftue-messages b{font-size:11px}
+  #cappFtueShellHost .ftue-messages .empty b{font-size:16px;line-height:1.4}
+  #cappFtueShellHost .ftue-messages .empty span{font-size:13px}
+  #cappFtueShellHost input[data-help-question]{font-size:16px}
+  #cappFtueShellHost .ftue-help-browse>summary b{font-size:12px}
+  #cappFtueShellHost .ftue-help-browse>summary small{font-size:11px}
+  #cappFtueShellHost .ftue-browse b,#cappFtueShellHost .ftue-page-doc>summary b{font-size:13px}
+  #cappFtueShellHost .ftue-browse span,#cappFtueShellHost .ftue-page-doc-body p{font-size:12px}
+}

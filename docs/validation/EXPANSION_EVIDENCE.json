@@ -1,0 +1,69 @@
+{
+  "protocol": "capp.solana-lab.expansion-validation.v1",
+  "labVersion": "0.4.0",
+  "labNamedPassChecks": 99,
+  "workflowGroups": 9,
+  "installedFixtureGroups": 11,
+  "cappRegressionScripts": [
+    {
+      "test": "solana_devnet_flow_smoke.mjs",
+      "passed": true
+    },
+    {
+      "test": "solana_operation_commitment_smoke.mjs",
+      "passed": true
+    },
+    {
+      "test": "solana_developer_experience_smoke.mjs",
+      "passed": true
+    },
+    {
+      "test": "solana_component_sidecars_runtime_smoke.mjs",
+      "passed": true
+    },
+    {
+      "test": "solana_edge_runtime_smoke.mjs",
+      "passed": true
+    },
+    {
+      "test": "solana_sidecar_safety_smoke.mjs",
+      "passed": true
+    },
+    {
+      "test": "solana_conduit_settings_smoke.mjs",
+      "passed": true
+    },
+    {
+      "test": "solana_devnet_contracts_smoke.py",
+      "passed": true
+    },
+    {
+      "test": "solana_component_sidecars_smoke.py",
+      "passed": true
+    },
+    {
+      "test": "solana_sidecar_contract_smoke.py",
+      "passed": true
+    },
+    {
+      "test": "solana_edge_sidecar_smoke.py",
+      "passed": true
+    },
+    {
+      "test": "sidecar_library_layouts_smoke.mjs",
+      "passed": true
+    },
+    {
+      "test": "sidecar_catalogue_navigation_smoke.mjs",
+      "passed": true
+    }
+  ],
+  "frameworkChecks": 542,
+  "frameworkPassed": true,
+  "nativeWindowsVerified": false,
+  "nativeAndroidVerified": false,
+  "renderedLayoutVerified": false,
+  "liveDevnetVerified": false,
+  "realModelVerified": false,
+  "deployed": false
+}

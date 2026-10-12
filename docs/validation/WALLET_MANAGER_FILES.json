@@ -1,0 +1,244 @@
+{
+  "protocol": "capp.root-relative-overlay.v1",
+  "project": "solana-lab",
+  "sourceArchive": "solana-lab.zip",
+  "sourceArchiveSha256": "19aed2b47d6f60e2974d63b91c3959df35a8d1c2ad8638787c36e2f912a7f22b",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "13b0b97b5d341bb2aeb0f60e8839393d2da8ba95ace817ad9e419db1c01ee3d8",
+      "bytes": 5404
+    },
+    {
+      "path": "assets/SOLANA_DEVELOPER_GUIDE.md",
+      "sha256": "927bd31d25027599c6ee11551837ba95adb8086eaa4c08c404810a3c6a604b8c",
+      "bytes": 17061
+    },
+    {
+      "path": "dist/assets/SOLANA_DEVELOPER_GUIDE.md",
+      "sha256": "927bd31d25027599c6ee11551837ba95adb8086eaa4c08c404810a3c6a604b8c",
+      "bytes": 17061
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "1867e220204d5d23a11808ee816fa44c463d6ea9bd62ca828260b420a7ab7c4e",
+      "bytes": 2381
+    },
+    {
+      "path": "dist/runtime/THIRD_PARTY_NOTICES.md",
+      "sha256": "79c40e22f9b25b309237c93ad026a8e8e65a55463ca91206ce06549183fd44de",
+      "bytes": 70048
+    },
+    {
+      "path": "dist/runtime/conduit.js",
+      "sha256": "c513903360e8e8b8fa8d871f4dd88e4b7ee838604d185214d54a3681d8dcc98c",
+      "bytes": 42931
+    },
+    {
+      "path": "dist/runtime/developer-assets.json",
+      "sha256": "1ce06891fcd85989d92618e1c52a8aed8275ef1d40e5eb55aeaa992b78b63616",
+      "bytes": 1053
+    },
+    {
+      "path": "dist/runtime/edge.js",
+      "sha256": "af84acd2a2af9cb33577d208516f6768f2a0b2331bd63fdea2886b4ff10ab67e",
+      "bytes": 133082
+    },
+    {
+      "path": "dist/runtime/latch.js",
+      "sha256": "988f9f3f56ec5a7c9b4ec1e2a0894702d7424805d5a89fcd11de2d064baaa723",
+      "bytes": 128330
+    },
+    {
+      "path": "dist/runtime/sentinel.js",
+      "sha256": "4973ff0e2ca446d48ce7a37d8405e136da49a65513389e0719ee509d86fadd73",
+      "bytes": 105177
+    },
+    {
+      "path": "dist/runtime/sources.json",
+      "sha256": "6dd89bf00f1857bb89de81ef3eea51fd3327cdd2f031a9d41701a3f792fa536a",
+      "bytes": 2976
+    },
+    {
+      "path": "dist/src/app.mjs",
+      "sha256": "beb21908fb8785fc97fc5db6cb73bc7c724af7d04e73481c7e2ea8c2cff06a62",
+      "bytes": 48156
+    },
+    {
+      "path": "dist/src/architecture.js",
+      "sha256": "7f598af4be3983999101f53589a716e4f1fabd8609de3e47d0f9d338d35f55c0",
+      "bytes": 24964
+    },
+    {
+      "path": "dist/src/catalog.mjs",
+      "sha256": "17c1fbb85866583e009fa08e05f150de87a51b069ae120f62c92420bed7d38fb",
+      "bytes": 14677
+    },
+    {
+      "path": "dist/src/experience-content.mjs",
+      "sha256": "354ca849ebe1d74c1567dcd9170dc3f142e09158fed1cd726fe497565f41fc6a",
+      "bytes": 4254
+    },
+    {
+      "path": "dist/src/guide-docset.js",
+      "sha256": "b1d45333f75cbe49fbec2e4f517ece1e2e05babc00154746848be325a25bf2af",
+      "bytes": 36723
+    },
+    {
+      "path": "dist/src/lab.mjs",
+      "sha256": "c78f35f4b7842fbc1d68bebe7230ff73f040bbca21484f47ad066ae0cea38422",
+      "bytes": 23379
+    },
+    {
+      "path": "dist/src/solana-client.d.mts",
+      "sha256": "4f9952dce7c6a14b853e9f4aed81c45f431add875c15cb807e0c186af0e9a8d0",
+      "bytes": 1937
+    },
+    {
+      "path": "dist/src/solana-client.mjs",
+      "sha256": "be257fd19f8b353fab21acd7bb1b461c0668fad6b6ad529cfd4bd85a6cef8bfe",
+      "bytes": 3644
+    },
+    {
+      "path": "dist/src/wallets.css",
+      "sha256": "f83efec5d17d7c1a4bbb3bbe16cbb852b0d55b9a3d9fbaab2897c04fe6e4dcfb",
+      "bytes": 2529
+    },
+    {
+      "path": "dist/src/wallets.mjs",
+      "sha256": "b5c13a5dc6b497f0447141b32896ea3a4a00c3242ce35442d331f2d0364ce8a4",
+      "bytes": 15794
+    },
+    {
+      "path": "docs/INSTALLED_SETUP.md",
+      "sha256": "7a01ce06da30f672935bc07624b07eae438c1c93705c7904e29c5ea12cc05b10",
+      "bytes": 8907
+    },
+    {
+      "path": "docs/WALLETS.md",
+      "sha256": "dcf7ed4d1ef54226d16f46af8f1c8c6b357401f1348c1e37a8e422a3cbeadf1c",
+      "bytes": 5876
+    },
+    {
+      "path": "index.html",
+      "sha256": "1867e220204d5d23a11808ee816fa44c463d6ea9bd62ca828260b420a7ab7c4e",
+      "bytes": 2381
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "c986cbdd3746936daf69d884df0e7fae3c102994735a1caee127ec7194998f85",
+      "bytes": 18642
+    },
+    {
+      "path": "package.json",
+      "sha256": "b4c3728570852138e21a0fb7eeb1a0dac3e62a0dd8e1409c49475c5d549b287a",
+      "bytes": 1448
+    },
+    {
+      "path": "runtime/THIRD_PARTY_NOTICES.md",
+      "sha256": "79c40e22f9b25b309237c93ad026a8e8e65a55463ca91206ce06549183fd44de",
+      "bytes": 70048
+    },
+    {
+      "path": "runtime/conduit.js",
+      "sha256": "c513903360e8e8b8fa8d871f4dd88e4b7ee838604d185214d54a3681d8dcc98c",
+      "bytes": 42931
+    },
+    {
+      "path": "runtime/developer-assets.json",
+      "sha256": "1ce06891fcd85989d92618e1c52a8aed8275ef1d40e5eb55aeaa992b78b63616",
+      "bytes": 1053
+    },
+    {
+      "path": "runtime/edge.js",
+      "sha256": "af84acd2a2af9cb33577d208516f6768f2a0b2331bd63fdea2886b4ff10ab67e",
+      "bytes": 133082
+    },
+    {
+      "path": "runtime/latch.js",
+      "sha256": "988f9f3f56ec5a7c9b4ec1e2a0894702d7424805d5a89fcd11de2d064baaa723",
+      "bytes": 128330
+    },
+    {
+      "path": "runtime/sentinel.js",
+      "sha256": "4973ff0e2ca446d48ce7a37d8405e136da49a65513389e0719ee509d86fadd73",
+      "bytes": 105177
+    },
+    {
+      "path": "runtime/sources.json",
+      "sha256": "6dd89bf00f1857bb89de81ef3eea51fd3327cdd2f031a9d41701a3f792fa536a",
+      "bytes": 2976
+    },
+    {
+      "path": "src/app.mjs",
+      "sha256": "beb21908fb8785fc97fc5db6cb73bc7c724af7d04e73481c7e2ea8c2cff06a62",
+      "bytes": 48156
+    },
+    {
+      "path": "src/architecture.js",
+      "sha256": "7f598af4be3983999101f53589a716e4f1fabd8609de3e47d0f9d338d35f55c0",
+      "bytes": 24964
+    },
+    {
+      "path": "src/catalog.mjs",
+      "sha256": "17c1fbb85866583e009fa08e05f150de87a51b069ae120f62c92420bed7d38fb",
+      "bytes": 14677
+    },
+    {
+      "path": "src/experience-content.mjs",
+      "sha256": "354ca849ebe1d74c1567dcd9170dc3f142e09158fed1cd726fe497565f41fc6a",
+      "bytes": 4254
+    },
+    {
+      "path": "src/guide-docset.js",
+      "sha256": "b1d45333f75cbe49fbec2e4f517ece1e2e05babc00154746848be325a25bf2af",
+      "bytes": 36723
+    },
+    {
+      "path": "src/lab.mjs",
+      "sha256": "c78f35f4b7842fbc1d68bebe7230ff73f040bbca21484f47ad066ae0cea38422",
+      "bytes": 23379
+    },
+    {
+      "path": "src/solana-client.d.mts",
+      "sha256": "4f9952dce7c6a14b853e9f4aed81c45f431add875c15cb807e0c186af0e9a8d0",
+      "bytes": 1937
+    },
+    {
+      "path": "src/solana-client.mjs",
+      "sha256": "be257fd19f8b353fab21acd7bb1b461c0668fad6b6ad529cfd4bd85a6cef8bfe",
+      "bytes": 3644
+    },
+    {
+      "path": "src/wallets.css",
+      "sha256": "f83efec5d17d7c1a4bbb3bbe16cbb852b0d55b9a3d9fbaab2897c04fe6e4dcfb",
+      "bytes": 2529
+    },
+    {
+      "path": "src/wallets.mjs",
+      "sha256": "b5c13a5dc6b497f0447141b32896ea3a4a00c3242ce35442d331f2d0364ce8a4",
+      "bytes": 15794
+    },
+    {
+      "path": "tests/preview.test.mjs",
+      "sha256": "89cca701b137e26ffdc042ea862f882f5653853c9f548a82f566ff1cc51d3e33",
+      "bytes": 9166
+    },
+    {
+      "path": "tests/ui.test.mjs",
+      "sha256": "9eef97f0924840e65395310e36f1bb269c5a5cd68fc7ade883a07eb58bc8c422",
+      "bytes": 21418
+    },
+    {
+      "path": "tests/wallet-browser.test.mjs",
+      "sha256": "3fcb7a1b014f2d2afbed76d43df8e28b20b991a855b1fb17b9687a6578b5678d",
+      "bytes": 6147
+    },
+    {
+      "path": "tools/build-preview.mjs",
+      "sha256": "db86a48ef5fe309fed2ae4ca509023938c09af241503dcaea773a2c6f5b6fba0",
+      "bytes": 6279
+    }
+  ],
+  "manifestExcludedFromOwnHash": true
+}

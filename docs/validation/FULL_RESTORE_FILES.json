@@ -1,0 +1,1035 @@
+{
+  "protocol": "capp.solana-lab.full-source-inventory.v1",
+  "version": "0.5.2",
+  "rootRelative": true,
+  "completeProject": true,
+  "files": [
+    {
+      "file": ".gitignore",
+      "bytes": 36,
+      "sha256": "d15f232be465c9c8646f8af762131180e79f266aaac444919a5493efcaa4cb38"
+    },
+    {
+      "file": "README.md",
+      "bytes": 5858,
+      "sha256": "09afc12547bd74c9a99e1b3d7a34a7b8dfc08dc510867509ff598ff8f4834d60"
+    },
+    {
+      "file": "assets/QR_CODE_LICENSE.txt",
+      "bytes": 1132,
+      "sha256": "88fd9788c757d3c0de3438d31eba379441a3843b4342c90da3569cfb1a7a46d7"
+    },
+    {
+      "file": "assets/SOLANA_DEVELOPER_GUIDE.md",
+      "bytes": 17454,
+      "sha256": "d5cc1aa5f23ef72f42ab215212a845b4a2fdf36f12c65d18df05263c72465d0c"
+    },
+    {
+      "file": "assets/mark.svg",
+      "bytes": 237,
+      "sha256": "18282727635ee86e4ebd030408ae00c55cf3938aff70dfc5b467255b46617207"
+    },
+    {
+      "file": "assets/qr-code.json",
+      "bytes": 364,
+      "sha256": "7b5cc37f7b0c4ba7f171b4646930cd7e619c71a1aaf6d6cb30d7bf7110a8f754"
+    },
+    {
+      "file": "dist-preview/assets/QR_CODE_LICENSE.txt",
+      "bytes": 1132,
+      "sha256": "88fd9788c757d3c0de3438d31eba379441a3843b4342c90da3569cfb1a7a46d7"
+    },
+    {
+      "file": "dist-preview/assets/SOLANA_DEVELOPER_GUIDE.md",
+      "bytes": 17454,
+      "sha256": "d5cc1aa5f23ef72f42ab215212a845b4a2fdf36f12c65d18df05263c72465d0c"
+    },
+    {
+      "file": "dist-preview/assets/mark.svg",
+      "bytes": 237,
+      "sha256": "18282727635ee86e4ebd030408ae00c55cf3938aff70dfc5b467255b46617207"
+    },
+    {
+      "file": "dist-preview/assets/qr-code.json",
+      "bytes": 364,
+      "sha256": "7b5cc37f7b0c4ba7f171b4646930cd7e619c71a1aaf6d6cb30d7bf7110a8f754"
+    },
+    {
+      "file": "dist-preview/index.html",
+      "bytes": 2823,
+      "sha256": "58f422cfbb930c80372c796b864a25eed6332cab05088a20d23c861f33a28309"
+    },
+    {
+      "file": "dist-preview/preview-manifest.json",
+      "bytes": 4510,
+      "sha256": "a41c94ab52aa8ce7a0925a57a83b6f5fdfc2b610ced62e0a8ebbd6a723d9539d"
+    },
+    {
+      "file": "dist-preview/src/app.mjs",
+      "bytes": 48248,
+      "sha256": "8589a5b90a08628ac81da24578ff0fdb1a07ca5b5522953c6ca43794176303ac"
+    },
+    {
+      "file": "dist-preview/src/architecture.css",
+      "bytes": 4517,
+      "sha256": "6ff6a8b92129db1ae8803a08de832157bcc3000627cfb5713f28ed8b42012bdf"
+    },
+    {
+      "file": "dist-preview/src/architecture.js",
+      "bytes": 25355,
+      "sha256": "0a3fd540c44f526f8c17bc5181fc63e5f2b2801e901d6b23f28f269c33422dc0"
+    },
+    {
+      "file": "dist-preview/src/assistant.mjs",
+      "bytes": 8363,
+      "sha256": "ad3bac1d4b2ea0dd2a07eec5631c7a1d824bacee08606577323429daaadca463"
+    },
+    {
+      "file": "dist-preview/src/catalog.mjs",
+      "bytes": 29321,
+      "sha256": "e23bc8866f05fc229fc837f9ac944eee19be7f70c5ee20b2d1844a2a6bc81d01"
+    },
+    {
+      "file": "dist-preview/src/experience-content.mjs",
+      "bytes": 4254,
+      "sha256": "354ca849ebe1d74c1567dcd9170dc3f142e09158fed1cd726fe497565f41fc6a"
+    },
+    {
+      "file": "dist-preview/src/experience.css",
+      "bytes": 14745,
+      "sha256": "04192186f439b0d8f6fae8d7fc53d8ed8d1a7a73f1dec492bee3400c23a23f28"
+    },
+    {
+      "file": "dist-preview/src/experience.mjs",
+      "bytes": 11136,
+      "sha256": "222e33d75a32266447268b79aedaf5e1986c30bee7a580a092aa6c2a38a510d6"
+    },
+    {
+      "file": "dist-preview/src/guide-docset.js",
+      "bytes": 36723,
+      "sha256": "b1d45333f75cbe49fbec2e4f517ece1e2e05babc00154746848be325a25bf2af"
+    },
+    {
+      "file": "dist-preview/src/lab.mjs",
+      "bytes": 23379,
+      "sha256": "c78f35f4b7842fbc1d68bebe7230ff73f040bbca21484f47ad066ae0cea38422"
+    },
+    {
+      "file": "dist-preview/src/market-metadata.mjs",
+      "bytes": 332,
+      "sha256": "946a6bdab847350c0ee9c4c2a67329eff9be7c599da5cc9e51aee1bb15012cfd"
+    },
+    {
+      "file": "dist-preview/src/market.mjs",
+      "bytes": 249,
+      "sha256": "317abf2498f5bceac0998cbe5ef9cac614d23a359e3a51711f54edb35305b3ff"
+    },
+    {
+      "file": "dist-preview/src/preview.mjs",
+      "bytes": 3070,
+      "sha256": "80014331006a0c083567deffc2a4c986560a26c5fb244864de9ff0d1b265124b"
+    },
+    {
+      "file": "dist-preview/src/qr-code.mjs",
+      "bytes": 51907,
+      "sha256": "ea91d7118a5395289170da848b7c6758b996163bfbccf312591ab65a4911b7c0"
+    },
+    {
+      "file": "dist-preview/src/runtime.mjs",
+      "bytes": 6156,
+      "sha256": "55bf4efe34415e0a59fc907ab8a24bc77377b41eaea1a574f18025042cea186a"
+    },
+    {
+      "file": "dist-preview/src/showcase-ui.mjs",
+      "bytes": 17842,
+      "sha256": "9b95a28a8331d512e9547de54d3467425bed78c46fa2598bcb4500736a726ad3"
+    },
+    {
+      "file": "dist-preview/src/solana-client.d.mts",
+      "bytes": 1976,
+      "sha256": "7e7ff0fe4e21d282c6ac7940d51db5ed56dbb8ade1f9ae2ed1ea85bc9b7b14ac"
+    },
+    {
+      "file": "dist-preview/src/solana-client.mjs",
+      "bytes": 3685,
+      "sha256": "939b359caaae00a5e86e3b133edb50c1457b5635e843b596574f19d1ffb5f011"
+    },
+    {
+      "file": "dist-preview/src/visuals.mjs",
+      "bytes": 5406,
+      "sha256": "f6e65786cc15b07ed8f33b42a2c122e386442effce4100c2089c5062a3f649ae"
+    },
+    {
+      "file": "dist-preview/src/wallet-tools.mjs",
+      "bytes": 2830,
+      "sha256": "775af60482661ee33985e335a8af79076d2669f8d4b8497213a32f57da0e97e6"
+    },
+    {
+      "file": "dist-preview/src/wallets.css",
+      "bytes": 3486,
+      "sha256": "c099b159ff4441b378499b5e0e722118b2cda2383d98d586cf766f5d04251fd6"
+    },
+    {
+      "file": "dist-preview/src/wallets.mjs",
+      "bytes": 23619,
+      "sha256": "b7ed1bfa4993472ab88efc00583bb65e0e009d2f45daac12982260ac89252062"
+    },
+    {
+      "file": "dist-preview/src/workflows.mjs",
+      "bytes": 8712,
+      "sha256": "2ae5c078998f7cc885ca1fbb96906e4102c45d5784540b1cc03dcc6caccc1d27"
+    },
+    {
+      "file": "dist-preview/style.css",
+      "bytes": 29050,
+      "sha256": "9d25e06a1809de61447792fcd5dde8871f64d2dfa1bf7bad9b0237d9e73902bb"
+    },
+    {
+      "file": "dist/assets/QR_CODE_LICENSE.txt",
+      "bytes": 1132,
+      "sha256": "88fd9788c757d3c0de3438d31eba379441a3843b4342c90da3569cfb1a7a46d7"
+    },
+    {
+      "file": "dist/assets/SOLANA_DEVELOPER_GUIDE.md",
+      "bytes": 17454,
+      "sha256": "d5cc1aa5f23ef72f42ab215212a845b4a2fdf36f12c65d18df05263c72465d0c"
+    },
+    {
+      "file": "dist/assets/mark.svg",
+      "bytes": 237,
+      "sha256": "18282727635ee86e4ebd030408ae00c55cf3938aff70dfc5b467255b46617207"
+    },
+    {
+      "file": "dist/assets/qr-code.json",
+      "bytes": 364,
+      "sha256": "7b5cc37f7b0c4ba7f171b4646930cd7e619c71a1aaf6d6cb30d7bf7110a8f754"
+    },
+    {
+      "file": "dist/index.html",
+      "bytes": 2381,
+      "sha256": "22c8de8b54b4dff68acbac04fbcc85ecbed3e7d6f3bcf76f73ab4d57d6537ad1"
+    },
+    {
+      "file": "dist/runtime/THIRD_PARTY_NOTICES.md",
+      "bytes": 70048,
+      "sha256": "79c40e22f9b25b309237c93ad026a8e8e65a55463ca91206ce06549183fd44de"
+    },
+    {
+      "file": "dist/runtime/accord.js",
+      "bytes": 29786,
+      "sha256": "ee29138cf9e7e6f923076e397cf2c352970283ad9e757e68ee64bbf1dadc5857"
+    },
+    {
+      "file": "dist/runtime/arena.js",
+      "bytes": 28170,
+      "sha256": "5ed57201a861f131510822fe97c68f3c9eae231b273bb37f602a89425b76e0fd"
+    },
+    {
+      "file": "dist/runtime/circuit.js",
+      "bytes": 31714,
+      "sha256": "b6402011eff1b2a104850366d4b51457fac459ccce6e386cddbc75480d94293d"
+    },
+    {
+      "file": "dist/runtime/compass.js",
+      "bytes": 26702,
+      "sha256": "ada21a67ab2505267cbab7acc4c7711fd107f41795d6cfdbf74939f8a710ae20"
+    },
+    {
+      "file": "dist/runtime/conduit.js",
+      "bytes": 42931,
+      "sha256": "c513903360e8e8b8fa8d871f4dd88e4b7ee838604d185214d54a3681d8dcc98c"
+    },
+    {
+      "file": "dist/runtime/developer-assets.json",
+      "bytes": 1053,
+      "sha256": "7a4a8ea67a8f4eb45233ec1b76b3abfe53a62cf4bb1e6f0776db238f63049b6a"
+    },
+    {
+      "file": "dist/runtime/dispatch.js",
+      "bytes": 33725,
+      "sha256": "8c047ba3c3122432f2637043143aea30b2ce95f693c97145d8c5dfa9aa0ab6a1"
+    },
+    {
+      "file": "dist/runtime/edge.js",
+      "bytes": 136111,
+      "sha256": "acd33ea2e3db0a2258072735245ed01b6291a28e84b3ee2b5a5dc1749fd4e1de"
+    },
+    {
+      "file": "dist/runtime/host.html",
+      "bytes": 176,
+      "sha256": "711bb88b6371628e948f5cf883e992bac9c49b481deb21eb27f2867b0562989a"
+    },
+    {
+      "file": "dist/runtime/host.mjs",
+      "bytes": 2131,
+      "sha256": "ac73f8b2434e0bfadb7b2ab644fba230c13185fe6d4a5c31c2f420bdd2cf49aa"
+    },
+    {
+      "file": "dist/runtime/latch.js",
+      "bytes": 131900,
+      "sha256": "da410c7f6438897fad6dfaec1b57ed8d3483caf5505000a8be905a1de94e9428"
+    },
+    {
+      "file": "dist/runtime/sentinel.js",
+      "bytes": 105177,
+      "sha256": "4973ff0e2ca446d48ce7a37d8405e136da49a65513389e0719ee509d86fadd73"
+    },
+    {
+      "file": "dist/runtime/sources.json",
+      "bytes": 2976,
+      "sha256": "1a3152412827a08be8d2bc9530e156dc4e537d2359624be48f76d555f156dded"
+    },
+    {
+      "file": "dist/runtime/switchyard.js",
+      "bytes": 28311,
+      "sha256": "a0ec244ef0af54f23ce83b49a82f5d3706c0256cad2a096790d0a97b93409582"
+    },
+    {
+      "file": "dist/runtime/witness.js",
+      "bytes": 34743,
+      "sha256": "ef6bc8cccc3cfb7f9230c33e525ceed501f24ed9ffa1c5dea6c87fbdc134351e"
+    },
+    {
+      "file": "dist/sidecars/market-pulse/assets.json",
+      "bytes": 677,
+      "sha256": "ebe9384ce108cb3b3ce217b0275cdc7c0bb00eec50d22ddb473ec8ba4cc58d16"
+    },
+    {
+      "file": "dist/sidecars/market-pulse/chart.mjs",
+      "bytes": 10236,
+      "sha256": "2163163144503d57141b46150d05f2e46d51040091915d09141ceb27fbc042eb"
+    },
+    {
+      "file": "dist/sidecars/market-pulse/core.mjs",
+      "bytes": 19916,
+      "sha256": "4e48ef314cd29033a2a75bd4074e9f72001e260f5b4bee84005ce67fa2c28079"
+    },
+    {
+      "file": "dist/sidecars/market-pulse/panel.mjs",
+      "bytes": 14914,
+      "sha256": "81ebea10c5ad9b2fbf937aa5265eab9395a593d6303a939ac64310edb1996a45"
+    },
+    {
+      "file": "dist/sidecars/market-pulse/runtime.js",
+      "bytes": 46083,
+      "sha256": "048d3fe6c7fcf9dddafb5e8711bb6f77d54904bd0cc3bb8ed7a7e46aa5877987"
+    },
+    {
+      "file": "dist/sidecars/market-pulse/sidecar.json",
+      "bytes": 8600,
+      "sha256": "c18e0f7ae8c30cfe082434f4958c7ec35b8f2424c200d67f806b70f3d5dd59ad"
+    },
+    {
+      "file": "dist/src/app.mjs",
+      "bytes": 48248,
+      "sha256": "8589a5b90a08628ac81da24578ff0fdb1a07ca5b5522953c6ca43794176303ac"
+    },
+    {
+      "file": "dist/src/architecture.css",
+      "bytes": 4517,
+      "sha256": "6ff6a8b92129db1ae8803a08de832157bcc3000627cfb5713f28ed8b42012bdf"
+    },
+    {
+      "file": "dist/src/architecture.js",
+      "bytes": 25355,
+      "sha256": "0a3fd540c44f526f8c17bc5181fc63e5f2b2801e901d6b23f28f269c33422dc0"
+    },
+    {
+      "file": "dist/src/assistant.mjs",
+      "bytes": 8363,
+      "sha256": "ad3bac1d4b2ea0dd2a07eec5631c7a1d824bacee08606577323429daaadca463"
+    },
+    {
+      "file": "dist/src/catalog.mjs",
+      "bytes": 14677,
+      "sha256": "17c1fbb85866583e009fa08e05f150de87a51b069ae120f62c92420bed7d38fb"
+    },
+    {
+      "file": "dist/src/experience-content.mjs",
+      "bytes": 4254,
+      "sha256": "354ca849ebe1d74c1567dcd9170dc3f142e09158fed1cd726fe497565f41fc6a"
+    },
+    {
+      "file": "dist/src/experience.css",
+      "bytes": 14745,
+      "sha256": "04192186f439b0d8f6fae8d7fc53d8ed8d1a7a73f1dec492bee3400c23a23f28"
+    },
+    {
+      "file": "dist/src/experience.mjs",
+      "bytes": 11136,
+      "sha256": "222e33d75a32266447268b79aedaf5e1986c30bee7a580a092aa6c2a38a510d6"
+    },
+    {
+      "file": "dist/src/guide-docset.js",
+      "bytes": 36723,
+      "sha256": "b1d45333f75cbe49fbec2e4f517ece1e2e05babc00154746848be325a25bf2af"
+    },
+    {
+      "file": "dist/src/lab.mjs",
+      "bytes": 23379,
+      "sha256": "c78f35f4b7842fbc1d68bebe7230ff73f040bbca21484f47ad066ae0cea38422"
+    },
+    {
+      "file": "dist/src/market-config.mjs",
+      "bytes": 460,
+      "sha256": "6d5d208840c99aa9ac60297092cc2049b3c0335276e37d997c3970cda985d7f9"
+    },
+    {
+      "file": "dist/src/market-metadata.mjs",
+      "bytes": 332,
+      "sha256": "946a6bdab847350c0ee9c4c2a67329eff9be7c599da5cc9e51aee1bb15012cfd"
+    },
+    {
+      "file": "dist/src/market.mjs",
+      "bytes": 1539,
+      "sha256": "a8c45039d7a62b5177036dd1aa8a0f6d990226f018f8ab1f8705bb4874f069b9"
+    },
+    {
+      "file": "dist/src/preview.mjs",
+      "bytes": 3070,
+      "sha256": "80014331006a0c083567deffc2a4c986560a26c5fb244864de9ff0d1b265124b"
+    },
+    {
+      "file": "dist/src/qr-code.mjs",
+      "bytes": 51907,
+      "sha256": "ea91d7118a5395289170da848b7c6758b996163bfbccf312591ab65a4911b7c0"
+    },
+    {
+      "file": "dist/src/runtime.mjs",
+      "bytes": 6156,
+      "sha256": "55bf4efe34415e0a59fc907ab8a24bc77377b41eaea1a574f18025042cea186a"
+    },
+    {
+      "file": "dist/src/showcase-ui.mjs",
+      "bytes": 17842,
+      "sha256": "9b95a28a8331d512e9547de54d3467425bed78c46fa2598bcb4500736a726ad3"
+    },
+    {
+      "file": "dist/src/solana-client.d.mts",
+      "bytes": 1976,
+      "sha256": "7e7ff0fe4e21d282c6ac7940d51db5ed56dbb8ade1f9ae2ed1ea85bc9b7b14ac"
+    },
+    {
+      "file": "dist/src/solana-client.mjs",
+      "bytes": 3685,
+      "sha256": "939b359caaae00a5e86e3b133edb50c1457b5635e843b596574f19d1ffb5f011"
+    },
+    {
+      "file": "dist/src/visuals.mjs",
+      "bytes": 5406,
+      "sha256": "f6e65786cc15b07ed8f33b42a2c122e386442effce4100c2089c5062a3f649ae"
+    },
+    {
+      "file": "dist/src/wallet-tools.mjs",
+      "bytes": 2830,
+      "sha256": "775af60482661ee33985e335a8af79076d2669f8d4b8497213a32f57da0e97e6"
+    },
+    {
+      "file": "dist/src/wallets.css",
+      "bytes": 3486,
+      "sha256": "c099b159ff4441b378499b5e0e722118b2cda2383d98d586cf766f5d04251fd6"
+    },
+    {
+      "file": "dist/src/wallets.mjs",
+      "bytes": 23619,
+      "sha256": "b7ed1bfa4993472ab88efc00583bb65e0e009d2f45daac12982260ac89252062"
+    },
+    {
+      "file": "dist/src/workflows.mjs",
+      "bytes": 8712,
+      "sha256": "2ae5c078998f7cc885ca1fbb96906e4102c45d5784540b1cc03dcc6caccc1d27"
+    },
+    {
+      "file": "dist/style.css",
+      "bytes": 29050,
+      "sha256": "9d25e06a1809de61447792fcd5dde8871f64d2dfa1bf7bad9b0237d9e73902bb"
+    },
+    {
+      "file": "docs/ARCHITECTURE.md",
+      "bytes": 8414,
+      "sha256": "0835c80c2ea8b5420a486db2a40c3c24331c4f12dcd61e9a89a82479006155b8"
+    },
+    {
+      "file": "docs/DEVNET_OVERLAY_FILES.json",
+      "bytes": 11408,
+      "sha256": "bdbf7b5f6d5d7cdbf51c58bafb793b141a37b905d56abe286feb57ba87989648"
+    },
+    {
+      "file": "docs/INSTALLED_SETUP.md",
+      "bytes": 8907,
+      "sha256": "ffb3faa4df515d29ca8fea10597bd07e554d40a60d3eeddd98d91834ff1b05a8"
+    },
+    {
+      "file": "docs/INVESTOR_WORKFLOWS.md",
+      "bytes": 7078,
+      "sha256": "b67530ac9219888a4ad191163c1ce8473864b86c7328dc99b036eecc079c0730"
+    },
+    {
+      "file": "docs/LOCAL_AI.md",
+      "bytes": 3434,
+      "sha256": "4033b14f1f152cc1a49ec5dc07adeffc6aa7301dd08a1b0eacd3b2b35258cac8"
+    },
+    {
+      "file": "docs/MARKET_PULSE.md",
+      "bytes": 7273,
+      "sha256": "427f6a5369d8b7085f8c81449fd066373f712f1c162f46764937bd16cb990af9"
+    },
+    {
+      "file": "docs/RPC_OVERLAY_FILES.json",
+      "bytes": 11913,
+      "sha256": "a324cc593f63e5ccfa46235328397844c7a49741e062472136a7680372ee7a9d"
+    },
+    {
+      "file": "docs/TESTING.md",
+      "bytes": 5656,
+      "sha256": "a8317c7955ef39bebdd3afba4aed6c3408217446585682b9129cb1a0539fa154"
+    },
+    {
+      "file": "docs/WALLETS.md",
+      "bytes": 8509,
+      "sha256": "ee53733896c06c99e7771746378f7c07317ef5443eec1312f6820b1180b8218c"
+    },
+    {
+      "file": "docs/WEB_PREVIEW.md",
+      "bytes": 2746,
+      "sha256": "e85e67e0fbff694adde424e17fcf7d66375bf2f6a3924996421bafa6ac46808a"
+    },
+    {
+      "file": "docs/validation/EXPANSION_EVIDENCE.json",
+      "bytes": 1550,
+      "sha256": "212bf5eb97f9b6d69d63104fc5c35420bcc9d3222f3ff66eb166fc9fa3b0dfb1"
+    },
+    {
+      "file": "docs/validation/EXPANSION_OVERLAY_FILES.json",
+      "bytes": 10304,
+      "sha256": "57c8fa9f47430f598acd4f45895bb31b7ffdab8bec4da09e68fbfd21f2451c74"
+    },
+    {
+      "file": "docs/validation/FULL_RESTORE_2026-09-22.md",
+      "bytes": 3519,
+      "sha256": "237cbd043ea4b4f123ffce9a3919925627a4764fb753a24cbd75d460a7ee4ee8"
+    },
+    {
+      "file": "docs/validation/FULL_RESTORE_BROWSER.log",
+      "bytes": 1588,
+      "sha256": "0e1685c37ad1fe2a823d935176c5e8d0df9a439fb23b896dff4570a064917968"
+    },
+    {
+      "file": "docs/validation/FULL_RESTORE_PROVENANCE.json",
+      "bytes": 2120,
+      "sha256": "eec16d9681cc10b2a1b7ff8c852dbbb52417cec751a14729f51d7c61a2703246"
+    },
+    {
+      "file": "docs/validation/FULL_RESTORE_TESTS.log",
+      "bytes": 13076,
+      "sha256": "fac4c1712833f4d30284dec3cd821448d2d4bfa240b434786443d403020793cf"
+    },
+    {
+      "file": "docs/validation/MARKET_OVERLAY_FILES.json",
+      "bytes": 7643,
+      "sha256": "87d22a82f774aa52dac36b0eec8c9069cf74acf43941e4c771eef6a5cc223664"
+    },
+    {
+      "file": "docs/validation/MARKET_PULSE.json",
+      "bytes": 8735,
+      "sha256": "8f15e5ad8379a6f4331170ea55a8df904fd5691a409cbcc084a333f8ab6f9560"
+    },
+    {
+      "file": "docs/validation/SOLANA_LAB_EXPANSION_2026-09-22.md",
+      "bytes": 4599,
+      "sha256": "5858f389195462079b666f665063365f5e626710bdaa988114df9ef37eb8ad7b"
+    },
+    {
+      "file": "docs/validation/WALLET_CONTRACT_GAPS.json",
+      "bytes": 1143,
+      "sha256": "db7e823e29d61040ac6ee1b6fd2774563b80eeccd16529becde2cac609ada40c"
+    },
+    {
+      "file": "docs/validation/WALLET_FOLLOWUP.md",
+      "bytes": 4136,
+      "sha256": "96c0904d6c29dbef991e431589c546b9215fe6dc2424c3b0d07d1519b1fb9268"
+    },
+    {
+      "file": "docs/validation/WALLET_FOLLOWUP_FILES.json",
+      "bytes": 5688,
+      "sha256": "29879b4a606852b33ad6d1b3318ee0af1b3a8252ceaf65aef6fa141c48c6a97a"
+    },
+    {
+      "file": "docs/validation/WALLET_MANAGER_FILES.json",
+      "bytes": 7630,
+      "sha256": "c62f717611d93653c0342eefd2a35b4f5cbc1b2053c4d3b671a698e96f934e73"
+    },
+    {
+      "file": "docs/validation/WALLET_RECOVERY_PREVIEW.md",
+      "bytes": 2704,
+      "sha256": "7e1db8e0c7eff6feb8bdcec2fb659dbe6e7aa8029b2b69c558906ae1e8d085e9"
+    },
+    {
+      "file": "docs/validation/WALLET_RECOVERY_PREVIEW_FILES.json",
+      "bytes": 3254,
+      "sha256": "dc6871af585bb327b1f7322f97c5e6038fab9677cbef78577a87996584d49901"
+    },
+    {
+      "file": "docs/validation/WORKFLOW_UX_CHANGED_FILES.json",
+      "bytes": 7909,
+      "sha256": "3350fffee08cbb271268efb2bfed35b2a77803a8d3fd55e8d162658c6dca82cf"
+    },
+    {
+      "file": "docs/validation/WORKFLOW_UX_EVIDENCE.json",
+      "bytes": 2310,
+      "sha256": "f016830b9a95f472933ce0a76d643bb6eeddf5407b629cf6e865a633000c6e1d"
+    },
+    {
+      "file": "docs/validation/WORKFLOW_UX_TESTS.log",
+      "bytes": 11279,
+      "sha256": "c4ea0408698c13aecce2b2fe0c6c6380c22bb3c1973b377ba8200542c202798a"
+    },
+    {
+      "file": "docs/validation/wallet-full-restore/devnet-desktop.png",
+      "bytes": 291335,
+      "sha256": "52e1213b8901cfc1cc0f8b71a5aa6fa0c90c064fd954f9d2650a9dc2b9bfe35c"
+    },
+    {
+      "file": "docs/validation/wallet-full-restore/mainnet-damaged.png",
+      "bytes": 166478,
+      "sha256": "b938bdbfd8b23b28c6b437a0a0a0bf01e064410b4619ee52f3ccb7e6c14637dc"
+    },
+    {
+      "file": "docs/validation/wallet-full-restore/mainnet-desktop.png",
+      "bytes": 366283,
+      "sha256": "71086b9499602b3ca6f79a19a3d1c67a63009b8a0d58e4e32e7486b7c71ac3af"
+    },
+    {
+      "file": "docs/validation/wallet-full-restore/mainnet-mobile.png",
+      "bytes": 304693,
+      "sha256": "d6d43775fe2381868d0bf47ff12183be3f3949a4987c82714a823c472736cd93"
+    },
+    {
+      "file": "docs/validation/wallet-recovery/mainnet-damaged.png",
+      "bytes": 166478,
+      "sha256": "b938bdbfd8b23b28c6b437a0a0a0bf01e064410b4619ee52f3ccb7e6c14637dc"
+    },
+    {
+      "file": "docs/validation/wallets/devnet-desktop.png",
+      "bytes": 291797,
+      "sha256": "0daa1a9cf51fdc1f460e8ca257576ea4a3f9d45a69755f72ea40c024e5da8b89"
+    },
+    {
+      "file": "docs/validation/wallets/mainnet-desktop.png",
+      "bytes": 365934,
+      "sha256": "72b59cb7258de00a844f09bbca1911182321e2bc0085a66c28057986e475c76b"
+    },
+    {
+      "file": "docs/validation/wallets/mainnet-mobile.png",
+      "bytes": 304371,
+      "sha256": "6e10bf0fe91e3e4a392d742b4164635ab01ca0aa17b06f1baa9de11e243806e8"
+    },
+    {
+      "file": "index.html",
+      "bytes": 2381,
+      "sha256": "22c8de8b54b4dff68acbac04fbcc85ecbed3e7d6f3bcf76f73ab4d57d6537ad1"
+    },
+    {
+      "file": "package-lock.json",
+      "bytes": 19327,
+      "sha256": "bb4b7ea5be87e5bebd38837143e48f4e21e6cea881b365df458f282073cb4154"
+    },
+    {
+      "file": "package.json",
+      "bytes": 1846,
+      "sha256": "afd5f387b402cb03df0d3e94b67dc6bf03536613ed0174d76f4c5eb7d059b6a1"
+    },
+    {
+      "file": "runtime/THIRD_PARTY_NOTICES.md",
+      "bytes": 70048,
+      "sha256": "79c40e22f9b25b309237c93ad026a8e8e65a55463ca91206ce06549183fd44de"
+    },
+    {
+      "file": "runtime/accord.js",
+      "bytes": 29786,
+      "sha256": "ee29138cf9e7e6f923076e397cf2c352970283ad9e757e68ee64bbf1dadc5857"
+    },
+    {
+      "file": "runtime/arena.js",
+      "bytes": 28170,
+      "sha256": "5ed57201a861f131510822fe97c68f3c9eae231b273bb37f602a89425b76e0fd"
+    },
+    {
+      "file": "runtime/circuit.js",
+      "bytes": 31714,
+      "sha256": "b6402011eff1b2a104850366d4b51457fac459ccce6e386cddbc75480d94293d"
+    },
+    {
+      "file": "runtime/compass.js",
+      "bytes": 26702,
+      "sha256": "ada21a67ab2505267cbab7acc4c7711fd107f41795d6cfdbf74939f8a710ae20"
+    },
+    {
+      "file": "runtime/conduit.js",
+      "bytes": 42931,
+      "sha256": "c513903360e8e8b8fa8d871f4dd88e4b7ee838604d185214d54a3681d8dcc98c"
+    },
+    {
+      "file": "runtime/developer-assets.json",
+      "bytes": 1053,
+      "sha256": "7a4a8ea67a8f4eb45233ec1b76b3abfe53a62cf4bb1e6f0776db238f63049b6a"
+    },
+    {
+      "file": "runtime/dispatch.js",
+      "bytes": 33725,
+      "sha256": "8c047ba3c3122432f2637043143aea30b2ce95f693c97145d8c5dfa9aa0ab6a1"
+    },
+    {
+      "file": "runtime/edge.js",
+      "bytes": 136111,
+      "sha256": "acd33ea2e3db0a2258072735245ed01b6291a28e84b3ee2b5a5dc1749fd4e1de"
+    },
+    {
+      "file": "runtime/host.html",
+      "bytes": 176,
+      "sha256": "711bb88b6371628e948f5cf883e992bac9c49b481deb21eb27f2867b0562989a"
+    },
+    {
+      "file": "runtime/host.mjs",
+      "bytes": 2131,
+      "sha256": "ac73f8b2434e0bfadb7b2ab644fba230c13185fe6d4a5c31c2f420bdd2cf49aa"
+    },
+    {
+      "file": "runtime/latch.js",
+      "bytes": 131900,
+      "sha256": "da410c7f6438897fad6dfaec1b57ed8d3483caf5505000a8be905a1de94e9428"
+    },
+    {
+      "file": "runtime/sentinel.js",
+      "bytes": 105177,
+      "sha256": "4973ff0e2ca446d48ce7a37d8405e136da49a65513389e0719ee509d86fadd73"
+    },
+    {
+      "file": "runtime/sources.json",
+      "bytes": 2976,
+      "sha256": "1a3152412827a08be8d2bc9530e156dc4e537d2359624be48f76d555f156dded"
+    },
+    {
+      "file": "runtime/switchyard.js",
+      "bytes": 28311,
+      "sha256": "a0ec244ef0af54f23ce83b49a82f5d3706c0256cad2a096790d0a97b93409582"
+    },
+    {
+      "file": "runtime/witness.js",
+      "bytes": 34743,
+      "sha256": "ef6bc8cccc3cfb7f9230c33e525ceed501f24ed9ffa1c5dea6c87fbdc134351e"
+    },
+    {
+      "file": "sidecars/market-pulse/README.md",
+      "bytes": 6669,
+      "sha256": "0b5ac4c0f8f6562a99e786c90efe1224d4e52f4e1bf6ff065936c78b1d128c2c"
+    },
+    {
+      "file": "sidecars/market-pulse/assets.json",
+      "bytes": 677,
+      "sha256": "ebe9384ce108cb3b3ce217b0275cdc7c0bb00eec50d22ddb473ec8ba4cc58d16"
+    },
+    {
+      "file": "sidecars/market-pulse/build.mjs",
+      "bytes": 1951,
+      "sha256": "56d45c59cf08fa08ab8081aa93f7284f3fcc65c0021fc188339af517b420a547"
+    },
+    {
+      "file": "sidecars/market-pulse/chart.mjs",
+      "bytes": 10236,
+      "sha256": "2163163144503d57141b46150d05f2e46d51040091915d09141ceb27fbc042eb"
+    },
+    {
+      "file": "sidecars/market-pulse/core.mjs",
+      "bytes": 19916,
+      "sha256": "4e48ef314cd29033a2a75bd4074e9f72001e260f5b4bee84005ce67fa2c28079"
+    },
+    {
+      "file": "sidecars/market-pulse/panel.mjs",
+      "bytes": 14914,
+      "sha256": "81ebea10c5ad9b2fbf937aa5265eab9395a593d6303a939ac64310edb1996a45"
+    },
+    {
+      "file": "sidecars/market-pulse/runtime.js",
+      "bytes": 46083,
+      "sha256": "048d3fe6c7fcf9dddafb5e8711bb6f77d54904bd0cc3bb8ed7a7e46aa5877987"
+    },
+    {
+      "file": "sidecars/market-pulse/schemas/config.schema.json",
+      "bytes": 2781,
+      "sha256": "31964249f3457cd451a6c67f6f2093bbfe2fad6bd184dd15d240fe64b17a648c"
+    },
+    {
+      "file": "sidecars/market-pulse/schemas/feed.schema.json",
+      "bytes": 2677,
+      "sha256": "87cd6554e864559fcdcfc8ad2e375974f4031811c2ad2936d0066376d67d989e"
+    },
+    {
+      "file": "sidecars/market-pulse/sidecar.json",
+      "bytes": 8600,
+      "sha256": "c18e0f7ae8c30cfe082434f4958c7ec35b8f2424c200d67f806b70f3d5dd59ad"
+    },
+    {
+      "file": "solana-lab.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "src/app.mjs",
+      "bytes": 48248,
+      "sha256": "8589a5b90a08628ac81da24578ff0fdb1a07ca5b5522953c6ca43794176303ac"
+    },
+    {
+      "file": "src/architecture.css",
+      "bytes": 4517,
+      "sha256": "6ff6a8b92129db1ae8803a08de832157bcc3000627cfb5713f28ed8b42012bdf"
+    },
+    {
+      "file": "src/architecture.js",
+      "bytes": 25355,
+      "sha256": "0a3fd540c44f526f8c17bc5181fc63e5f2b2801e901d6b23f28f269c33422dc0"
+    },
+    {
+      "file": "src/assistant.mjs",
+      "bytes": 8363,
+      "sha256": "ad3bac1d4b2ea0dd2a07eec5631c7a1d824bacee08606577323429daaadca463"
+    },
+    {
+      "file": "src/catalog.mjs",
+      "bytes": 14677,
+      "sha256": "17c1fbb85866583e009fa08e05f150de87a51b069ae120f62c92420bed7d38fb"
+    },
+    {
+      "file": "src/experience-content.mjs",
+      "bytes": 4254,
+      "sha256": "354ca849ebe1d74c1567dcd9170dc3f142e09158fed1cd726fe497565f41fc6a"
+    },
+    {
+      "file": "src/experience.css",
+      "bytes": 14745,
+      "sha256": "04192186f439b0d8f6fae8d7fc53d8ed8d1a7a73f1dec492bee3400c23a23f28"
+    },
+    {
+      "file": "src/experience.mjs",
+      "bytes": 11136,
+      "sha256": "222e33d75a32266447268b79aedaf5e1986c30bee7a580a092aa6c2a38a510d6"
+    },
+    {
+      "file": "src/guide-docset.js",
+      "bytes": 36723,
+      "sha256": "b1d45333f75cbe49fbec2e4f517ece1e2e05babc00154746848be325a25bf2af"
+    },
+    {
+      "file": "src/lab.mjs",
+      "bytes": 23379,
+      "sha256": "c78f35f4b7842fbc1d68bebe7230ff73f040bbca21484f47ad066ae0cea38422"
+    },
+    {
+      "file": "src/market-config.mjs",
+      "bytes": 460,
+      "sha256": "6d5d208840c99aa9ac60297092cc2049b3c0335276e37d997c3970cda985d7f9"
+    },
+    {
+      "file": "src/market-metadata.mjs",
+      "bytes": 332,
+      "sha256": "946a6bdab847350c0ee9c4c2a67329eff9be7c599da5cc9e51aee1bb15012cfd"
+    },
+    {
+      "file": "src/market.mjs",
+      "bytes": 1539,
+      "sha256": "a8c45039d7a62b5177036dd1aa8a0f6d990226f018f8ab1f8705bb4874f069b9"
+    },
+    {
+      "file": "src/preview.mjs",
+      "bytes": 3070,
+      "sha256": "80014331006a0c083567deffc2a4c986560a26c5fb244864de9ff0d1b265124b"
+    },
+    {
+      "file": "src/qr-code.mjs",
+      "bytes": 51907,
+      "sha256": "ea91d7118a5395289170da848b7c6758b996163bfbccf312591ab65a4911b7c0"
+    },
+    {
+      "file": "src/runtime.mjs",
+      "bytes": 6156,
+      "sha256": "55bf4efe34415e0a59fc907ab8a24bc77377b41eaea1a574f18025042cea186a"
+    },
+    {
+      "file": "src/showcase-ui.mjs",
+      "bytes": 17842,
+      "sha256": "9b95a28a8331d512e9547de54d3467425bed78c46fa2598bcb4500736a726ad3"
+    },
+    {
+      "file": "src/solana-client.d.mts",
+      "bytes": 1976,
+      "sha256": "7e7ff0fe4e21d282c6ac7940d51db5ed56dbb8ade1f9ae2ed1ea85bc9b7b14ac"
+    },
+    {
+      "file": "src/solana-client.mjs",
+      "bytes": 3685,
+      "sha256": "939b359caaae00a5e86e3b133edb50c1457b5635e843b596574f19d1ffb5f011"
+    },
+    {
+      "file": "src/visuals.mjs",
+      "bytes": 5406,
+      "sha256": "f6e65786cc15b07ed8f33b42a2c122e386442effce4100c2089c5062a3f649ae"
+    },
+    {
+      "file": "src/wallet-tools.mjs",
+      "bytes": 2830,
+      "sha256": "775af60482661ee33985e335a8af79076d2669f8d4b8497213a32f57da0e97e6"
+    },
+    {
+      "file": "src/wallets.css",
+      "bytes": 3486,
+      "sha256": "c099b159ff4441b378499b5e0e722118b2cda2383d98d586cf766f5d04251fd6"
+    },
+    {
+      "file": "src/wallets.mjs",
+      "bytes": 23619,
+      "sha256": "b7ed1bfa4993472ab88efc00583bb65e0e009d2f45daac12982260ac89252062"
+    },
+    {
+      "file": "src/workflows.mjs",
+      "bytes": 8712,
+      "sha256": "2ae5c078998f7cc885ca1fbb96906e4102c45d5784540b1cc03dcc6caccc1d27"
+    },
+    {
+      "file": "style.css",
+      "bytes": 29050,
+      "sha256": "9d25e06a1809de61447792fcd5dde8871f64d2dfa1bf7bad9b0237d9e73902bb"
+    },
+    {
+      "file": "tests/configure.test.mjs",
+      "bytes": 6744,
+      "sha256": "7b5159f3b51425af0340f32c31176d37d40ae01c797daf7513bb9fb8af97bbd8"
+    },
+    {
+      "file": "tests/devnet-fixture.mjs",
+      "bytes": 4791,
+      "sha256": "5417a1b371d512cec47412097c8343007887f64d7068947d518003d6b2e3870e"
+    },
+    {
+      "file": "tests/devnet.test.mjs",
+      "bytes": 3905,
+      "sha256": "3815c5e612dc6581162ea9d668a67b4a8150d3ffb52799cff296a8c83ab8d6d0"
+    },
+    {
+      "file": "tests/distribution.test.mjs",
+      "bytes": 3131,
+      "sha256": "5e6500d9d0d4603dadc430ce8d297d263684dbc817de43c0e0e69d60191b279d"
+    },
+    {
+      "file": "tests/host.test.mjs",
+      "bytes": 5681,
+      "sha256": "135b164b8c80b74394965753f107ca07226e9035d6e43b01a8f802036ba25614"
+    },
+    {
+      "file": "tests/installed.test.mjs",
+      "bytes": 13576,
+      "sha256": "fad60d17cf6278446d4ce6cdddb7938bc3023a15c7bdd88b473dd18d076b2c7f"
+    },
+    {
+      "file": "tests/lab.test.mjs",
+      "bytes": 8412,
+      "sha256": "4467339b5381203d5132cc652659cda04e5edea5018a559ef9910d2b76b2cd6c"
+    },
+    {
+      "file": "tests/market-fixture.mjs",
+      "bytes": 264,
+      "sha256": "2c2709a8762e8ee64c4ddcec71b129bad4d244e970d8fdb55b251b0474594316"
+    },
+    {
+      "file": "tests/market-panel.test.mjs",
+      "bytes": 5556,
+      "sha256": "5864696157e08eb8c60b3f61a6b02a47c23f538ce1822c12f95891bef266009b"
+    },
+    {
+      "file": "tests/market-position.test.mjs",
+      "bytes": 4123,
+      "sha256": "4af71039ea34388d67806121b43ccdf43fefb3f0de9736c84bd5125e9ef4dc54"
+    },
+    {
+      "file": "tests/market.test.mjs",
+      "bytes": 9244,
+      "sha256": "4d1ecbb17ad139ff89fb43890b6c2ee1d9ea75eaaa545bd04e110000334b9ccd"
+    },
+    {
+      "file": "tests/preview.test.mjs",
+      "bytes": 9166,
+      "sha256": "89cca701b137e26ffdc042ea862f882f5653853c9f548a82f566ff1cc51d3e33"
+    },
+    {
+      "file": "tests/ui.test.mjs",
+      "bytes": 21418,
+      "sha256": "9eef97f0924840e65395310e36f1bb269c5a5cd68fc7ade883a07eb58bc8c422"
+    },
+    {
+      "file": "tests/wallet-browser.test.mjs",
+      "bytes": 11780,
+      "sha256": "40aff1e3b3b5af5ab825ae2dd6efd56ae1003c5182dc90124a1fab0e0b73dbc3"
+    },
+    {
+      "file": "tests/wallet-contracts.test.mjs",
+      "bytes": 3380,
+      "sha256": "e4fe5e21cc2c115a21c8cb3cb8ddce15a9fc9e60f627acb77ebda77c18e09c49"
+    },
+    {
+      "file": "tests/wallet-recovery-browser.test.mjs",
+      "bytes": 9382,
+      "sha256": "7a3efeecc2508b34dce9285235191c5c9518cb4a0d08dfd58dd154a69cb61f5d"
+    },
+    {
+      "file": "tests/wallet-tools.test.mjs",
+      "bytes": 5942,
+      "sha256": "ed6951ea35cb7c5c205104b73d36dcdfcd2834faf767d075eb4cdc7642cf7809"
+    },
+    {
+      "file": "tests/workflows.test.mjs",
+      "bytes": 7448,
+      "sha256": "70140eef3954e78904894baae05ef7779a9a4da9e76c58142f80a9fa3d68abf1"
+    },
+    {
+      "file": "tools/build-guide.mjs",
+      "bytes": 1364,
+      "sha256": "4d39ce56d1a09762a8bd7f66f7f8def8575e19b387525c46f70766bd954b1120"
+    },
+    {
+      "file": "tools/build-preview.mjs",
+      "bytes": 6397,
+      "sha256": "758dbf355f8897736f2c901efb274a5583adf4ff00733de1e64346c058bb30bf"
+    },
+    {
+      "file": "tools/build.mjs",
+      "bytes": 4835,
+      "sha256": "f5285d52b5d91d8e8e796d9389833160c0df09a4bea76d6c3d8db776def472b0"
+    },
+    {
+      "file": "tools/configure-capp.cmd",
+      "bytes": 314,
+      "sha256": "0ec08ca855c7263cb769d4b4604a38cebf1e5a334225c97146027cf322ce4a9c"
+    },
+    {
+      "file": "tools/configure-capp.mjs",
+      "bytes": 6575,
+      "sha256": "4400bf36e12eb814dc97339d0fe95fd33935096f3cabf0c49b71a69f29c4841a"
+    },
+    {
+      "file": "tools/serve.mjs",
+      "bytes": 3893,
+      "sha256": "378233f5bd8c3e4db1362d4b576c613764e16e554d282ab1ed754fc948704d7f"
+    },
+    {
+      "file": "tools/vendor-qr.mjs",
+      "bytes": 2185,
+      "sha256": "4d6ceaafa5fb753bee51ceab10b20cc9afa3675d3d46515e56aadee33ae2421c"
+    },
+    {
+      "file": "tools/vendor-sidecars.mjs",
+      "bytes": 2735,
+      "sha256": "c1eebfb6207264ff1bcc2d5a5324060ceb2d1d9107ba3bd254d8add4f9b5511b"
+    }
+  ],
+  "selfExcluded": "docs/validation/FULL_RESTORE_FILES.json",
+  "dependencyDirectoryExcluded": true
+}

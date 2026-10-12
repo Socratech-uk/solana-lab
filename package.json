@@ -1,0 +1,48 @@
+{
+  "name": "solana-lab",
+  "version": "0.7.13",
+  "private": true,
+  "type": "module",
+  "description": "Reusable Solana infrastructure: connected services, reliable operations and shared developer docs.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node tools/serve.mjs",
+    "start": "node tools/serve.mjs",
+    "build": "node tools/build.mjs",
+    "build:preview": "node tools/build-preview.mjs",
+    "preview:web": "node tools/serve.mjs --preview-only",
+    "preview": "node tools/serve.mjs --dist",
+    "test": "node tests/lab.test.mjs && node tests/devnet.test.mjs && node tests/distribution.test.mjs && node tests/configure.test.mjs && node tests/workflows.test.mjs && node tools/build-guide.mjs --check",
+    "test:ui": "node --experimental-vm-modules tests/ui.test.mjs && node --experimental-vm-modules tests/host.test.mjs",
+    "test:installed": "node --experimental-vm-modules tests/installed.test.mjs",
+    "test:preview": "node --experimental-vm-modules tests/preview.test.mjs",
+    "test:all": "npm run test:capabilities && npm run test:guided && npm run test:fresh-runs && npm run test:wallet && npm run test:demo-wallet-ui && npm run test:market && npm test && npm run test:ui && npm run test:installed && npm run test:preview && npm run test:public-docs",
+    "test:market": "node tests/market.test.mjs && node tests/market-position.test.mjs && node --experimental-vm-modules tests/market-panel.test.mjs && node tests/market-ownership.test.mjs",
+    "build:market": "node sidecars/market-pulse/build.mjs",
+    "build:guide": "node tools/build-guide.mjs",
+    "test:wallet": "node tests/wallet-tools.test.mjs && node tests/wallet-contracts.test.mjs",
+    "test:wallet:contracts": "node tests/wallet-contracts.test.mjs",
+    "test:wallet:browser": "node tests/wallet-browser.test.mjs && node tests/wallet-recovery-browser.test.mjs",
+    "vendor:qr": "node tools/vendor-qr.mjs",
+    "test:guided": "node tests/guide-catalog.test.mjs && node tests/guided-actions.test.mjs && node tests/demo-defaults.test.mjs && node tests/guide-transactions.test.mjs && node tests/request-payer.test.mjs && node tests/guided-wallet.test.mjs && node tests/demo-wallet-roles.test.mjs && node tests/fresh-demo-runs.test.mjs",
+    "test:guided:browser": "node tests/guided-browser.test.mjs",
+    "test:assistant:browser": "node tests/assistant-browser.test.mjs",
+    "test:capabilities": "node tests/capabilities.test.mjs && node tests/request-replay.test.mjs && node tests/payment-setup.test.mjs && node tests/token-setup.test.mjs",
+    "test:capabilities:browser": "node tests/capability-browser.test.mjs",
+    "test:defaults:browser": "node tests/demo-defaults-browser.test.mjs",
+    "test:guided:transactions:browser": "node tests/guide-transactions-browser.test.mjs",
+    "test:funding:browser": "node tests/token-funding-browser.test.mjs",
+    "test:request-payer:browser": "node tests/request-payer-browser.test.mjs",
+    "test:guided:wallet:browser": "node tests/guided-wallet-browser.test.mjs",
+    "test:public-docs": "node tests/public-docs.test.mjs",
+    "test:demo-wallet-ui": "node --experimental-vm-modules tests/demo-wallet-ui.test.mjs",
+    "test:fresh-runs": "node --experimental-vm-modules tests/fresh-demo-launch.test.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0",
+    "jsqr": "1.4.0",
+    "qrcode-generator": "2.0.4"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "baseArchive": "sikab0kab.zip",
+  "baseSha256": "13ad67f4d0f82d0ed1e9498ba071d4483552cce9a435a6d7a4571085346f57c1",
+  "restored": [
+    {
+      "file": "index.html",
+      "recoveredFrom": "solana-lab-wallet-followup-0.5.1.zip",
+      "originalSha256": "2ec71fb303e5899bcbf80fe7aab37425ddc91c4662c38f7044d6a818269713b8"
+    },
+    {
+      "file": "package.json",
+      "recoveredFrom": "solana-lab-wallet-followup-0.5.1.zip",
+      "originalSha256": "f738ef74a8e4a306dedeb3c3e8b35bf1cbcf0307a99a3e75a3cb775a900a14f6"
+    },
+    {
+      "file": "package-lock.json",
+      "recoveredFrom": "solana-lab-wallet-followup-0.5.1.zip",
+      "originalSha256": "6d797e25d638e902942388d969a9a994ec79cad125e3da08eb2efbd35df71cd6"
+    },
+    {
+      "file": "README.md",
+      "recoveredFrom": "solana-lab-wallet-followup-0.5.1.zip",
+      "originalSha256": "e84251bdfe6d0076a81b7de82392a8250aaafa1648c54aeab7962e18140fe0b5"
+    }
+  ],
+  "version": "0.5.2",
+  "recoveryArchiveSha256": "0ed44b075f9269b5bd06309454f8e60f21e433615841d1acfb0f416e0d6e2d72",
+  "zipIntegrity": "passed",
+  "missingSourceFiles": [
+    "index.html",
+    "package.json",
+    "package-lock.json",
+    "README.md"
+  ],
+  "staleBuiltFiles": [
+    "dist/assets/SOLANA_DEVELOPER_GUIDE.md",
+    "dist/runtime/developer-assets.json",
+    "dist/runtime/edge.js",
+    "dist/runtime/latch.js",
+    "dist/runtime/sources.json",
+    "dist/src/architecture.js",
+    "dist/src/solana-client.d.mts",
+    "dist/src/solana-client.mjs",
+    "dist/src/wallets.mjs"
+  ],
+  "authorization": "User requested a complete restoration from earlier work; missing root files were restored from actual prior artifact bytes.",
+  "preserved": "All current source/runtime content retained except documented version, test-command, screenshot-output and current-documentation updates.",
+  "validation": {
+    "testAllPassed": 122,
+    "chromiumWalletScenariosPassed": 13,
+    "cappPreviewHostingChecksPassed": 6,
+    "appBuild": true,
+    "webPreviewBuild": true,
+    "webPreviewRoutes": 21,
+    "externalNetworkUsed": false,
+    "nativeAcceptance": false,
+    "livePublish": false
+  }
+}

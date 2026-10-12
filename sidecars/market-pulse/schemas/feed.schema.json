@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Market Pulse USD feed packet",
+  "type": "object",
+  "required": [
+    "protocol",
+    "instruments"
+  ],
+  "properties": {
+    "protocol": {
+      "const": "capp.market-feed.v1"
+    },
+    "instruments": {
+      "type": "array",
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "quote": {
+            "type": "object",
+            "required": [
+              "price",
+              "time"
+            ],
+            "properties": {
+              "price": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 1000000000000000
+              },
+              "time": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "blockId": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          },
+          "candles": {
+            "type": "array",
+            "maxItems": 1000,
+            "items": {
+              "type": "object",
+              "required": [
+                "time",
+                "intervalMs",
+                "open",
+                "high",
+                "low",
+                "close"
+              ],
+              "properties": {
+                "time": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "intervalMs": {
+                  "type": "integer",
+                  "minimum": 1000,
+                  "maximum": 3600000
+                },
+                "open": {
+                  "type": "number",
+                  "exclusiveMinimum": 0,
+                  "maximum": 1000000000000000
+                },
+                "high": {
+                  "type": "number",
+                  "exclusiveMinimum": 0,
+                  "maximum": 1000000000000000
+                },
+                "low": {
+                  "type": "number",
+                  "exclusiveMinimum": 0,
+                  "maximum": 1000000000000000
+                },
+                "close": {
+                  "type": "number",
+                  "exclusiveMinimum": 0,
+                  "maximum": 1000000000000000
+                },
+                "volume": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": 0,
+                  "maximum": 100000000000000000000
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

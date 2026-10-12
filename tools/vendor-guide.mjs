@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+const source=process.argv[2];if(!source)throw Error('Usage: node tools/vendor-guide.mjs /path/to/capp-source');
+const root=new URL('../runtime/guide/',import.meta.url);await fs.mkdir(root,{recursive:true});
+const files=['ftue-agent.js','ftue-shell.js','ftue-shell.css'];
+const rows=await Promise.all(files.map(async file=>{const bytes=await fs.readFile(path.join(source,'sidecars/ftue/runtime',file));return {file,bytes};}));
+for(const row of rows)await fs.writeFile(new URL(row.file,root),row.bytes);
+await fs.writeFile(new URL('sources.json',root),JSON.stringify({source:'cApp sidecars/ftue/runtime',files:rows.map(({file,bytes})=>({file,sha256:createHash('sha256').update(bytes).digest('hex')}))},null,2)+'\n');
+console.log('Vendored the canonical Guide agent, shell and stylesheet.');

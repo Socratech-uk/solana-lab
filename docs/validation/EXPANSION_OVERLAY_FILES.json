@@ -1,0 +1,263 @@
+{
+  "protocol": "capp.source-overlay.v1",
+  "baseArchive": "solana-lab(9).zip",
+  "baseSha256": "1b8d544bbe967c2c26823103eb1e3e4dc06fce4f074fee212403125df4a557a6",
+  "removed": [],
+  "files": [
+    {
+      "path": "README.md",
+      "beforeSha256": "9d0256057b13ea93793f90a6af591839dde1327732174008ce318a325bb0c6d3",
+      "sha256": "ad6ea78fb037800c7d977e847fd9a63ed9665030b2a902a991ef9b6dfdf60316"
+    },
+    {
+      "path": "assets/SOLANA_DEVELOPER_GUIDE.md",
+      "beforeSha256": null,
+      "sha256": "46a3734c2754c3d8f9a346bfea708fb5a79a998c0c9570282d9f2477c23b2210"
+    },
+    {
+      "path": "dist/assets/SOLANA_DEVELOPER_GUIDE.md",
+      "beforeSha256": null,
+      "sha256": "46a3734c2754c3d8f9a346bfea708fb5a79a998c0c9570282d9f2477c23b2210"
+    },
+    {
+      "path": "dist/index.html",
+      "beforeSha256": "1b6b0075334acb80f57cb71d0124629c1e7de8829a52f347edf7e410f78b955a",
+      "sha256": "c9049918345120331892910e63328518d594afa9d22eda811aa11cf49b5943ec"
+    },
+    {
+      "path": "dist/runtime/developer-assets.json",
+      "beforeSha256": null,
+      "sha256": "bd765325a82d5a148106d8ff2778975300eb47c9fb7bc5acb8d7fb860f594ac4"
+    },
+    {
+      "path": "dist/runtime/edge.js",
+      "beforeSha256": "d2eb38fc954eaaba9359a5b50cbd36f336f37dd0824a36a64a6ceb2d934a8f5d",
+      "sha256": "66e1146c5f2f2f97348078b5ee901cbf91a55cc5406d9eb570b4583c0ace5112"
+    },
+    {
+      "path": "dist/runtime/sources.json",
+      "beforeSha256": "8c7256e5f7956901a9de268042a7b926815fbd36d7690b2da49d050e12722db7",
+      "sha256": "eb1b0c9256faa1578eb7a3517ed366ad1080b53566f6a653d03e4b405031c486"
+    },
+    {
+      "path": "dist/src/app.mjs",
+      "beforeSha256": "c857dde740db0cc22d01226bcae4718e8f7934b3ab96ad7ccf8b5f5417d84bad",
+      "sha256": "c924e198233ad1f4fbb3b087545127edea520d58b7f9365282f67512dc070e4b"
+    },
+    {
+      "path": "dist/src/architecture.css",
+      "beforeSha256": null,
+      "sha256": "6ff6a8b92129db1ae8803a08de832157bcc3000627cfb5713f28ed8b42012bdf"
+    },
+    {
+      "path": "dist/src/architecture.js",
+      "beforeSha256": null,
+      "sha256": "2538d7f84384741360248e89b3d0e1d1f1ccdbeac9bdc1a26c62e8773cf7d71d"
+    },
+    {
+      "path": "dist/src/catalog.mjs",
+      "beforeSha256": "8eb22aa36ff72e7f87e0682d50968f80a22c038a7211663ef48595e898406b4d",
+      "sha256": "1c8200aeb59a7a375c310974d0932400375bde811f8340b64ce01314f978028b"
+    },
+    {
+      "path": "dist/src/guide-docset.js",
+      "beforeSha256": null,
+      "sha256": "50f59f57d4c1644f40f641795f3caec19dc430a2009a1d48a8c31982a0b43aba"
+    },
+    {
+      "path": "dist/src/lab.mjs",
+      "beforeSha256": "f3b6c3a7dd21822203f268349a85f6c0502ab8af2dbf0daf64287a87a4fa2940",
+      "sha256": "6161c537dc75f81eb359b9068924c970e1dbc5dd66f09ebad7572a3c51d2c377"
+    },
+    {
+      "path": "dist/src/runtime.mjs",
+      "beforeSha256": "3462f433d5c58b547fab07d194904323535ec290d41f5b5b5f1cd9a0e371dd91",
+      "sha256": "d4d8d622503e70f7e90d7416d2dc4d93d98e6d4d3eabd31593b6dad007711c43"
+    },
+    {
+      "path": "dist/src/showcase-ui.mjs",
+      "beforeSha256": null,
+      "sha256": "7143db639982a1daec1000e2e0edb45664af5ece98ac6c7a7137735b3e288048"
+    },
+    {
+      "path": "dist/src/solana-client.d.mts",
+      "beforeSha256": null,
+      "sha256": "e6b896e4dd3137c4fbcf5b2cc9a8d8fd077927f6915ddf98cfa2fcedc2ba03c5"
+    },
+    {
+      "path": "dist/src/solana-client.mjs",
+      "beforeSha256": null,
+      "sha256": "6f50fc5ed7814d5c026df442d34b1ab3696824d9fa26e2b90526f5f179448ec4"
+    },
+    {
+      "path": "dist/src/workflows.mjs",
+      "beforeSha256": null,
+      "sha256": "2ae5c078998f7cc885ca1fbb96906e4102c45d5784540b1cc03dcc6caccc1d27"
+    },
+    {
+      "path": "dist/style.css",
+      "beforeSha256": "7c868455a50d251a6b40ac5074d9619b24eb39d09659ae483bd561ac00eae62d",
+      "sha256": "d7eb1f8ea8ab0b7d26d521bf36cb1d2ef60fe0da2f92af6fa519e740bd19c152"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "beforeSha256": "2d77d217cc9b20a2a79445d91c22050dc8215f2dc91d359b31eb2e57b6ab86a4",
+      "sha256": "34a0ba8ddcad2957e893a940d2e3fe86d3e884f7ba65c1dd537e9f3bbbab5823"
+    },
+    {
+      "path": "docs/INSTALLED_SETUP.md",
+      "beforeSha256": "70b09739279ccb6a866aff8f6291c38bf66609fe54bf398235521cb8f49c0299",
+      "sha256": "49068f129aebb144334c3a84ec4ee305b518fe4892f30338f58adcef41e860f0"
+    },
+    {
+      "path": "docs/LOCAL_AI.md",
+      "beforeSha256": "7cd8d275ce12d29013f8e6e7dd0419490405e2acefff5b59c1e2c9b6aaa2e816",
+      "sha256": "4033b14f1f152cc1a49ec5dc07adeffc6aa7301dd08a1b0eacd3b2b35258cac8"
+    },
+    {
+      "path": "docs/TESTING.md",
+      "beforeSha256": "34e1f24d6520d7f695ad1fec40781b0281efe2e2f9f8cb3c05ae9031b37359fd",
+      "sha256": "c349633072559bc2517c6a0b1af3f7393e11d0fe26ce7a31aeaf6117a69f3658"
+    },
+    {
+      "path": "docs/validation/EXPANSION_EVIDENCE.json",
+      "beforeSha256": null,
+      "sha256": "212bf5eb97f9b6d69d63104fc5c35420bcc9d3222f3ff66eb166fc9fa3b0dfb1"
+    },
+    {
+      "path": "docs/validation/SOLANA_LAB_EXPANSION_2026-09-22.md",
+      "beforeSha256": null,
+      "sha256": "5858f389195462079b666f665063365f5e626710bdaa988114df9ef37eb8ad7b"
+    },
+    {
+      "path": "index.html",
+      "beforeSha256": "1b6b0075334acb80f57cb71d0124629c1e7de8829a52f347edf7e410f78b955a",
+      "sha256": "c9049918345120331892910e63328518d594afa9d22eda811aa11cf49b5943ec"
+    },
+    {
+      "path": "package-lock.json",
+      "beforeSha256": "5ad18e1e4e8f0ab0eccdf93b6614e6e7fc3d958312f7bf32fd13179d56b68cde",
+      "sha256": "e77f0051afe46fd1815385c0190e155dcc852e33603a4aa7d47a41f8b230276f"
+    },
+    {
+      "path": "package.json",
+      "beforeSha256": "bbe650c055d3a94bf8d5e0da67f40cc5550497fc432a17d943ea83a2f6247cea",
+      "sha256": "78cae02755207b93d6180b158df8a561527680fb73bcc665ca1823960dca2e31"
+    },
+    {
+      "path": "runtime/developer-assets.json",
+      "beforeSha256": null,
+      "sha256": "bd765325a82d5a148106d8ff2778975300eb47c9fb7bc5acb8d7fb860f594ac4"
+    },
+    {
+      "path": "runtime/edge.js",
+      "beforeSha256": "d2eb38fc954eaaba9359a5b50cbd36f336f37dd0824a36a64a6ceb2d934a8f5d",
+      "sha256": "66e1146c5f2f2f97348078b5ee901cbf91a55cc5406d9eb570b4583c0ace5112"
+    },
+    {
+      "path": "runtime/sources.json",
+      "beforeSha256": "8c7256e5f7956901a9de268042a7b926815fbd36d7690b2da49d050e12722db7",
+      "sha256": "eb1b0c9256faa1578eb7a3517ed366ad1080b53566f6a653d03e4b405031c486"
+    },
+    {
+      "path": "src/app.mjs",
+      "beforeSha256": "c857dde740db0cc22d01226bcae4718e8f7934b3ab96ad7ccf8b5f5417d84bad",
+      "sha256": "c924e198233ad1f4fbb3b087545127edea520d58b7f9365282f67512dc070e4b"
+    },
+    {
+      "path": "src/architecture.css",
+      "beforeSha256": null,
+      "sha256": "6ff6a8b92129db1ae8803a08de832157bcc3000627cfb5713f28ed8b42012bdf"
+    },
+    {
+      "path": "src/architecture.js",
+      "beforeSha256": null,
+      "sha256": "2538d7f84384741360248e89b3d0e1d1f1ccdbeac9bdc1a26c62e8773cf7d71d"
+    },
+    {
+      "path": "src/catalog.mjs",
+      "beforeSha256": "8eb22aa36ff72e7f87e0682d50968f80a22c038a7211663ef48595e898406b4d",
+      "sha256": "1c8200aeb59a7a375c310974d0932400375bde811f8340b64ce01314f978028b"
+    },
+    {
+      "path": "src/guide-docset.js",
+      "beforeSha256": null,
+      "sha256": "50f59f57d4c1644f40f641795f3caec19dc430a2009a1d48a8c31982a0b43aba"
+    },
+    {
+      "path": "src/lab.mjs",
+      "beforeSha256": "f3b6c3a7dd21822203f268349a85f6c0502ab8af2dbf0daf64287a87a4fa2940",
+      "sha256": "6161c537dc75f81eb359b9068924c970e1dbc5dd66f09ebad7572a3c51d2c377"
+    },
+    {
+      "path": "src/runtime.mjs",
+      "beforeSha256": "3462f433d5c58b547fab07d194904323535ec290d41f5b5b5f1cd9a0e371dd91",
+      "sha256": "d4d8d622503e70f7e90d7416d2dc4d93d98e6d4d3eabd31593b6dad007711c43"
+    },
+    {
+      "path": "src/showcase-ui.mjs",
+      "beforeSha256": null,
+      "sha256": "7143db639982a1daec1000e2e0edb45664af5ece98ac6c7a7137735b3e288048"
+    },
+    {
+      "path": "src/solana-client.d.mts",
+      "beforeSha256": null,
+      "sha256": "e6b896e4dd3137c4fbcf5b2cc9a8d8fd077927f6915ddf98cfa2fcedc2ba03c5"
+    },
+    {
+      "path": "src/solana-client.mjs",
+      "beforeSha256": null,
+      "sha256": "6f50fc5ed7814d5c026df442d34b1ab3696824d9fa26e2b90526f5f179448ec4"
+    },
+    {
+      "path": "src/workflows.mjs",
+      "beforeSha256": null,
+      "sha256": "2ae5c078998f7cc885ca1fbb96906e4102c45d5784540b1cc03dcc6caccc1d27"
+    },
+    {
+      "path": "style.css",
+      "beforeSha256": "7c868455a50d251a6b40ac5074d9619b24eb39d09659ae483bd561ac00eae62d",
+      "sha256": "d7eb1f8ea8ab0b7d26d521bf36cb1d2ef60fe0da2f92af6fa519e740bd19c152"
+    },
+    {
+      "path": "tests/devnet-fixture.mjs",
+      "beforeSha256": "9d5e96b25b69d880ad3567a7875de11860955093c8c5aa81a32d16a4aeed8890",
+      "sha256": "4906ca88869033d86d2bcc7af31413e2b57b5bf476852a44c6d9f501cf1aa1d6"
+    },
+    {
+      "path": "tests/host.test.mjs",
+      "beforeSha256": "46c1741eb45f6faeb91788885dece5262424576f7387f4a64ef323fb582556f2",
+      "sha256": "135b164b8c80b74394965753f107ca07226e9035d6e43b01a8f802036ba25614"
+    },
+    {
+      "path": "tests/installed.test.mjs",
+      "beforeSha256": "6dc0d2611c943f53fab1d377ece2e87203229a66b9ef34b2e2fe46f726221d55",
+      "sha256": "db0f3a3a791435d269e0571340591d39c14c8ceca491ea106e1b304282138687"
+    },
+    {
+      "path": "tests/ui.test.mjs",
+      "beforeSha256": "19922d60c6e20314e14bc8acd3030af162c03df498e4e8d1973689836ac03d85",
+      "sha256": "41e1554fb8e43c483d47f63888041d29e3b410919dde7f8137f1d1e1e7779385"
+    },
+    {
+      "path": "tests/workflows.test.mjs",
+      "beforeSha256": null,
+      "sha256": "70140eef3954e78904894baae05ef7779a9a4da9e76c58142f80a9fa3d68abf1"
+    },
+    {
+      "path": "tools/build-guide.mjs",
+      "beforeSha256": null,
+      "sha256": "4d39ce56d1a09762a8bd7f66f7f8def8575e19b387525c46f70766bd954b1120"
+    },
+    {
+      "path": "tools/build.mjs",
+      "beforeSha256": "ce5b5a9cd4f9e8f170e4ca7545f64e23da8b9f505248fa21a7375df67c07f646",
+      "sha256": "f4090d03a0a8637f6cf2273b7130a05613ca43c08889ef1da3eac83ca013de5f"
+    },
+    {
+      "path": "tools/vendor-sidecars.mjs",
+      "beforeSha256": "40267e8d42c9f3fd8d6353b83efe94b6c5ea314ad05457af61521d44a67fa2ef",
+      "sha256": "c1eebfb6207264ff1bcc2d5a5324060ceb2d1d9107ba3bd254d8add4f9b5511b"
+    }
+  ]
+}

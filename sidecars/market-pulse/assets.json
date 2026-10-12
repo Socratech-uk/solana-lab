@@ -1,0 +1,25 @@
+{
+  "protocol": "capp.market-assets.v1",
+  "files": [
+    {
+      "file": "core.mjs",
+      "sha256": "20ad9ddf6fa59f96edde32e1730cce6df3a74b4410adb2bdf6253ff9559eb397"
+    },
+    {
+      "file": "chart.mjs",
+      "sha256": "2163163144503d57141b46150d05f2e46d51040091915d09141ceb27fbc042eb"
+    },
+    {
+      "file": "panel.mjs",
+      "sha256": "498822ffe7edacbcd469a192a45eaeaef285a8f0189c26e65bd3d4aea23215ed"
+    },
+    {
+      "file": "runtime.js",
+      "sha256": "594ee01eab898be30eb98912108290ccd71a1e2cfc37d10523cda5cae133031d"
+    },
+    {
+      "file": "sidecar.json",
+      "sha256": "c5984236edeb14f7acf7d4b999a901ffee2a34f2d0ca7a2236ba0031d772eb54"
+    }
+  ]
+}

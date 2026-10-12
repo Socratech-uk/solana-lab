@@ -1,0 +1,82 @@
+{
+  "protocol": "capp.solana-lab.runtime-sources.v1",
+  "components": [
+    {
+      "component": "compass",
+      "version": "0.2.0-alpha.2",
+      "source": "sidecars/solana-compass/runtime/compass-shell.js",
+      "file": "runtime/compass.js",
+      "sha256": "42ea830f06d398bbfa0ec535f878d29212ae852946e5d89af6ba26af8c957376"
+    },
+    {
+      "component": "circuit",
+      "version": "0.1.0-alpha.3",
+      "source": "sidecars/solana-circuit/runtime/circuit-shell.js",
+      "file": "runtime/circuit.js",
+      "sha256": "b6402011eff1b2a104850366d4b51457fac459ccce6e386cddbc75480d94293d"
+    },
+    {
+      "component": "switchyard",
+      "version": "0.1.0-alpha.3",
+      "source": "sidecars/solana-switchyard/runtime/switchyard-shell.js",
+      "file": "runtime/switchyard.js",
+      "sha256": "a0ec244ef0af54f23ce83b49a82f5d3706c0256cad2a096790d0a97b93409582"
+    },
+    {
+      "component": "accord",
+      "version": "0.1.0-alpha.3",
+      "source": "sidecars/solana-accord/runtime/accord-shell.js",
+      "file": "runtime/accord.js",
+      "sha256": "ee29138cf9e7e6f923076e397cf2c352970283ad9e757e68ee64bbf1dadc5857"
+    },
+    {
+      "component": "conduit",
+      "version": "0.5.0-alpha.2",
+      "source": "sidecars/solana-conduit/runtime/conduit-shell.js",
+      "file": "runtime/conduit.js",
+      "sha256": "5ae2a021dea068c18d310af993db45934dbf180c26bffab2fbc5a45c6274a111"
+    },
+    {
+      "component": "sentinel",
+      "version": "0.4.0-alpha.2",
+      "source": "sidecars/solana-sentinel/runtime/sentinel-shell.js",
+      "file": "runtime/sentinel.js",
+      "sha256": "cf2454fc00aa70212b3b36ef4065bca7b950738968c32eb097528051cfe5044f"
+    },
+    {
+      "component": "latch",
+      "version": "0.5.0-alpha.4",
+      "source": "sidecars/solana-latch/runtime/latch-shell.js",
+      "file": "runtime/latch.js",
+      "sha256": "935eb643544fe70200ffa2e5e9fda2379ca283869766be7c66c6586e799de121"
+    },
+    {
+      "component": "arena",
+      "version": "0.3.0-alpha.1",
+      "source": "sidecars/solana-arena/runtime/arena-shell.js",
+      "file": "runtime/arena.js",
+      "sha256": "5ed57201a861f131510822fe97c68f3c9eae231b273bb37f602a89425b76e0fd"
+    },
+    {
+      "component": "dispatch",
+      "version": "0.2.0-alpha.3",
+      "source": "sidecars/solana-dispatch/runtime/dispatch-shell.js",
+      "file": "runtime/dispatch.js",
+      "sha256": "8c047ba3c3122432f2637043143aea30b2ce95f693c97145d8c5dfa9aa0ab6a1"
+    },
+    {
+      "component": "witness",
+      "version": "0.4.0-alpha.2",
+      "source": "sidecars/solana-witness/runtime/witness-shell.js",
+      "file": "runtime/witness.js",
+      "sha256": "40f931d483ab3740b5aa449562df278d2f2ae2defa8be3cc4a4e9c2b4b1deb03"
+    },
+    {
+      "component": "edge",
+      "version": "0.5.0-alpha.3",
+      "source": "sidecars/solana-edge/runtime/solana-edge-shell.js",
+      "file": "runtime/edge.js",
+      "sha256": "13f5d046e5de9cbae237aa271e10eb832eb11d537a5f25ad102114286e39d978"
+    }
+  ]
+}

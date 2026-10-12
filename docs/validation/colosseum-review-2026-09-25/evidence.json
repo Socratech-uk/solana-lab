@@ -1,0 +1,248 @@
+{
+  "baseline": "solana-lab(20260925-132945).zip",
+  "baselineSha256": "ba943572da656364956da7b42ab31d90e88bbb28254dd50aa4fd042d655b1b8d",
+  "overlay": "solana-lab-direct-guide-overlay.zip",
+  "overlaySha256": "2b0e65d96aa5658864842f86fa875eea9fe2a61d3efb589b205cfee4085b92d1",
+  "verifiedReplacements": [
+    "dist-preview/preview-manifest.json",
+    "dist-preview/src/app.mjs",
+    "dist-preview/src/guided.mjs",
+    "dist/src/app.mjs",
+    "dist/src/guided.mjs",
+    "src/app.mjs",
+    "src/guided.mjs"
+  ],
+  "preservedBaseFiles": 283,
+  "sourcePath": "/workspace/scratch/847b39d8c744/solana-lab-colosseum-review-20260925/source",
+  "reviewDate": "2026-09-25",
+  "scope": "Latest supplied Solana Lab snapshot and direct Guide overlay; canonical cApp project and native binaries not supplied for this review",
+  "tests": {
+    "automatedPassLines": 157,
+    "capabilityBrowser": 4,
+    "guidedBrowser": 8,
+    "assistantBrowser": 7
+  },
+  "builds": {
+    "dist": {
+      "files": 69,
+      "byteIdentical": true
+    },
+    "dist-preview": {
+      "files": 42,
+      "byteIdentical": true
+    }
+  },
+  "browserReview": {
+    "directLaunches": [
+      {
+        "route": "service",
+        "workflow": "demo-service",
+        "index": 0,
+        "mode": "guided"
+      },
+      {
+        "route": "batch",
+        "workflow": "demo-batch",
+        "index": 0,
+        "mode": "guided"
+      },
+      {
+        "route": "proof",
+        "workflow": "demo-proof",
+        "index": 0,
+        "mode": "guided"
+      },
+      {
+        "route": "checkout",
+        "workflow": "understand-checkout",
+        "index": 0,
+        "mode": "guided"
+      },
+      {
+        "route": "treasury",
+        "workflow": "understand-treasury",
+        "index": 0,
+        "mode": "guided"
+      },
+      {
+        "route": "positions",
+        "workflow": "plan-position",
+        "index": 0,
+        "mode": "guided"
+      },
+      {
+        "route": "recovery",
+        "workflow": "understand-recovery",
+        "index": 0,
+        "mode": "guided"
+      },
+      {
+        "route": "policy",
+        "workflow": "reset-policy-proposal",
+        "index": 0,
+        "mode": "guided"
+      },
+      {
+        "route": "network",
+        "workflow": "prepare-public-rpc",
+        "index": 0,
+        "mode": "guided"
+      },
+      {
+        "route": "tokens",
+        "workflow": "demo-token-payment",
+        "index": 0,
+        "mode": "guided"
+      },
+      {
+        "route": "requests",
+        "workflow": "create-payment-request",
+        "index": 0,
+        "mode": "guided"
+      },
+      {
+        "route": "activity",
+        "workflow": "inspect-wallet-activity",
+        "index": 0,
+        "mode": "guided"
+      }
+    ],
+    "assistantRouting": [
+      {
+        "route": "tokens",
+        "prompt": "show me the token payment demo",
+        "expected": "demo-token-payment",
+        "actual": "understand-recovery",
+        "correct": false
+      },
+      {
+        "route": "requests",
+        "prompt": "show me the payment request demo",
+        "expected": "create-payment-request",
+        "actual": "understand-recovery",
+        "correct": false
+      },
+      {
+        "route": "activity",
+        "prompt": "show me the wallet activity demo",
+        "expected": "inspect-wallet-activity",
+        "actual": "understand-recovery",
+        "correct": false
+      }
+    ],
+    "newRunControls": [
+      {
+        "workflow": "demo-token-payment",
+        "catalogueButtons": 1,
+        "assistantButtons": 0
+      },
+      {
+        "workflow": "create-payment-request",
+        "catalogueButtons": 1,
+        "assistantButtons": 0
+      }
+    ],
+    "mobileWidths": [
+      {
+        "route": "service",
+        "width": 390,
+        "document": 390
+      },
+      {
+        "route": "batch",
+        "width": 390,
+        "document": 390
+      },
+      {
+        "route": "proof",
+        "width": 390,
+        "document": 390
+      },
+      {
+        "route": "checkout",
+        "width": 390,
+        "document": 390
+      },
+      {
+        "route": "treasury",
+        "width": 390,
+        "document": 390
+      },
+      {
+        "route": "positions",
+        "width": 390,
+        "document": 390
+      },
+      {
+        "route": "recovery",
+        "width": 390,
+        "document": 390
+      },
+      {
+        "route": "policy",
+        "width": 390,
+        "document": 390
+      },
+      {
+        "route": "network",
+        "width": 390,
+        "document": 390
+      },
+      {
+        "route": "tokens",
+        "width": 390,
+        "document": 390
+      },
+      {
+        "route": "requests",
+        "width": 390,
+        "document": 390
+      },
+      {
+        "route": "activity",
+        "width": 390,
+        "document": 390
+      }
+    ],
+    "native": false,
+    "liveNetwork": false,
+    "operationCounts": {
+      "payments": 0,
+      "positions": 0,
+      "workflows": 0,
+      "paymentRequests": 0
+    },
+    "sends": 0,
+    "pageErrors": []
+  },
+  "paidRequestCounterexamples": [
+    {
+      "stage": "approve",
+      "storedPaidBeforeAction": true,
+      "inMemoryPaidBeforeAction": false,
+      "paidAfterReload": true,
+      "outcome": "authorised",
+      "sendsBefore": 1,
+      "sendsAfter": 1,
+      "expected": "reject already-paid request",
+      "native": false,
+      "network": "offline-signed-fixtures"
+    },
+    {
+      "stage": "submit",
+      "storedPaidBeforeAction": true,
+      "inMemoryPaidBeforeAction": false,
+      "paidAfterReload": true,
+      "outcome": "submitted",
+      "sendsBefore": 1,
+      "sendsAfter": 2,
+      "expected": "reject already-paid request",
+      "native": false,
+      "network": "offline-signed-fixtures"
+    }
+  ],
+  "nativeExecutionVerified": false,
+  "liveDevnetVerified": false,
+  "gpuInferenceVerified": false,
+  "newProductFixesApplied": false
+}

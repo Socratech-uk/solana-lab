@@ -1,0 +1,17 @@
+{
+  "source": "cApp sidecars/ftue/runtime",
+  "files": [
+    {
+      "file": "ftue-agent.js",
+      "sha256": "1620fd6144436f157b483ad00eb1f1f15d00b467090432cc535c17864fc6fe78"
+    },
+    {
+      "file": "ftue-shell.js",
+      "sha256": "ce57afe4f0a40a7b58f10d16a8b76fd7b224787d41fe0a83ae53c0e657e5eb04"
+    },
+    {
+      "file": "ftue-shell.css",
+      "sha256": "754dc59da0deeeb10f2f20cc1aa72ffac990cd7ff6ba4f6bbd133b562b0bf6ff"
+    }
+  ]
+}

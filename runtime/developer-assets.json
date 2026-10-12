@@ -1,0 +1,45 @@
+{
+  "protocol": "capp.solana-lab.developer-assets.v1",
+  "files": [
+    {
+      "source": "src/js/18-solana-architecture.generated.js",
+      "file": "src/architecture.js",
+      "sha256": "87aa9577464a381a41dae6478b63f15ef4861afe10fd487442cd52c3b7932c6a"
+    },
+    {
+      "source": "sidecars/solana-edge/docs/experience/map.css",
+      "file": "src/architecture.css",
+      "sha256": "6ff6a8b92129db1ae8803a08de832157bcc3000627cfb5713f28ed8b42012bdf"
+    },
+    {
+      "source": "sidecars/runtime/solana-client.mjs",
+      "file": "src/solana-client.mjs",
+      "sha256": "e49dc21c64435235ac71677989bcb02d2c58e62085d672783b849b1c9e74140c"
+    },
+    {
+      "source": "sidecars/runtime/solana-client.d.mts",
+      "file": "src/solana-client.d.mts",
+      "sha256": "1f93781740cd4637ac7227564734b7c25270f36217d8faf632d7bfbff31c5ca4"
+    },
+    {
+      "source": "sidecars/runtime/solana-payments.mjs",
+      "file": "src/solana-payments.mjs",
+      "sha256": "15bc1a6384534688b518510f6cc7ab4abe8b5909727821f6e7417f7ab26ae35f"
+    },
+    {
+      "source": "sidecars/runtime/solana-payments.d.mts",
+      "file": "src/solana-payments.d.mts",
+      "sha256": "7812462481ed474646b96142085171f691a0d9eda2653dfe2b9614a15803b3c6"
+    },
+    {
+      "source": "docs/features/SOLANA_ASSET_PAYMENTS.md",
+      "file": "assets/SOLANA_ASSET_PAYMENTS.md",
+      "sha256": "c81ba7f4bc8302bee84a6ecddb0a6f15122ed04bbb9da8144fd49158b0dd2d02"
+    },
+    {
+      "source": "docs/features/SOLANA_DEVELOPER_GUIDE.md",
+      "file": "assets/SOLANA_DEVELOPER_GUIDE.md",
+      "sha256": "2c774a7372372edef94a03e271a21c7f8d7abe9fd81553616ca21ce6a7f09d2a"
+    }
+  ]
+}

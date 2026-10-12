@@ -1,0 +1,97 @@
+{
+  "protocol": "capp.wallet-recovery-preview.overlay.v1",
+  "sourceArchive": "solana-lab(3).zip",
+  "sourceSha256": "564460791a3e71b3d057c84321b5b2c4c7df7f6e4d6571a20e9f4f563338a3c6",
+  "rootRelative": true,
+  "files": [
+    {
+      "file": "assets/SOLANA_DEVELOPER_GUIDE.md",
+      "sha256": "d5cc1aa5f23ef72f42ab215212a845b4a2fdf36f12c65d18df05263c72465d0c",
+      "bytes": 17454
+    },
+    {
+      "file": "docs/TESTING.md",
+      "sha256": "085c72ab8b0f7713c1bab5d692f5ecbfdeac04fdc2e91425d46b6eda37246837",
+      "bytes": 5561
+    },
+    {
+      "file": "docs/WALLETS.md",
+      "sha256": "8368fd52741ead3c3f94bba52632701e86baefd9e51bf04e269cfb288fa0011a",
+      "bytes": 8494
+    },
+    {
+      "file": "docs/validation/WALLET_RECOVERY_PREVIEW.md",
+      "sha256": "7e1db8e0c7eff6feb8bdcec2fb659dbe6e7aa8029b2b69c558906ae1e8d085e9",
+      "bytes": 2704
+    },
+    {
+      "file": "docs/validation/wallet-recovery/mainnet-damaged.png",
+      "sha256": "b938bdbfd8b23b28c6b437a0a0a0bf01e064410b4619ee52f3ccb7e6c14637dc",
+      "bytes": 166478
+    },
+    {
+      "file": "runtime/developer-assets.json",
+      "sha256": "7a4a8ea67a8f4eb45233ec1b76b3abfe53a62cf4bb1e6f0776db238f63049b6a",
+      "bytes": 1053
+    },
+    {
+      "file": "runtime/edge.js",
+      "sha256": "acd33ea2e3db0a2258072735245ed01b6291a28e84b3ee2b5a5dc1749fd4e1de",
+      "bytes": 136111
+    },
+    {
+      "file": "runtime/latch.js",
+      "sha256": "da410c7f6438897fad6dfaec1b57ed8d3483caf5505000a8be905a1de94e9428",
+      "bytes": 131900
+    },
+    {
+      "file": "runtime/sources.json",
+      "sha256": "1a3152412827a08be8d2bc9530e156dc4e537d2359624be48f76d555f156dded",
+      "bytes": 2976
+    },
+    {
+      "file": "src/architecture.js",
+      "sha256": "0a3fd540c44f526f8c17bc5181fc63e5f2b2801e901d6b23f28f269c33422dc0",
+      "bytes": 25355
+    },
+    {
+      "file": "src/solana-client.d.mts",
+      "sha256": "7e7ff0fe4e21d282c6ac7940d51db5ed56dbb8ade1f9ae2ed1ea85bc9b7b14ac",
+      "bytes": 1976
+    },
+    {
+      "file": "src/solana-client.mjs",
+      "sha256": "939b359caaae00a5e86e3b133edb50c1457b5635e843b596574f19d1ffb5f011",
+      "bytes": 3685
+    },
+    {
+      "file": "src/wallets.mjs",
+      "sha256": "b7ed1bfa4993472ab88efc00583bb65e0e009d2f45daac12982260ac89252062",
+      "bytes": 23619
+    },
+    {
+      "file": "tests/wallet-contracts.test.mjs",
+      "sha256": "e4fe5e21cc2c115a21c8cb3cb8ddce15a9fc9e60f627acb77ebda77c18e09c49",
+      "bytes": 3380
+    },
+    {
+      "file": "tests/wallet-recovery-browser.test.mjs",
+      "sha256": "57badb717daba2129a3b60299248276eeefedc7df4dcba15070bf5f6bd86a8c1",
+      "bytes": 9335
+    }
+  ],
+  "inventoryExcludedFromOwnDigests": "docs/validation/WALLET_RECOVERY_PREVIEW_FILES.json",
+  "validation": {
+    "canonicalCappEntrypointsPassed": 15,
+    "cappStandardChecksPassed": 542,
+    "labBehaviorSuitesPassed": 6,
+    "browserRecoveryScenariosPassed": 5,
+    "browser": "Chromium 138.0.7204.0",
+    "browserSurface": "isolated actual WalletManager/Sidecar harness",
+    "fullLabBuild": "blocked: uploaded root index.html and package/build inputs missing",
+    "nativeAcceptance": false,
+    "liveDeployment": false,
+    "freshOverlayReproduced": true,
+    "cappBuildAndReconstructionsPassed": true
+  }
+}

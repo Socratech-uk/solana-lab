@@ -1,0 +1,237 @@
+{
+  "base": "solana-lab(7).zip",
+  "baseSha256": "034029d6a2554d8aa217fe028864eaaf35952a926ce1a10384ca83ae6a153ade",
+  "mode": "root-relative-overlay",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "9d0256057b13ea93793f90a6af591839dde1327732174008ce318a325bb0c6d3",
+      "action": "update"
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "1b6b0075334acb80f57cb71d0124629c1e7de8829a52f347edf7e410f78b955a",
+      "action": "update"
+    },
+    {
+      "path": "dist/sidecars/market-pulse/assets.json",
+      "sha256": "ebe9384ce108cb3b3ce217b0275cdc7c0bb00eec50d22ddb473ec8ba4cc58d16",
+      "action": "add"
+    },
+    {
+      "path": "dist/sidecars/market-pulse/chart.mjs",
+      "sha256": "2163163144503d57141b46150d05f2e46d51040091915d09141ceb27fbc042eb",
+      "action": "add"
+    },
+    {
+      "path": "dist/sidecars/market-pulse/core.mjs",
+      "sha256": "4e48ef314cd29033a2a75bd4074e9f72001e260f5b4bee84005ce67fa2c28079",
+      "action": "add"
+    },
+    {
+      "path": "dist/sidecars/market-pulse/panel.mjs",
+      "sha256": "81ebea10c5ad9b2fbf937aa5265eab9395a593d6303a939ac64310edb1996a45",
+      "action": "add"
+    },
+    {
+      "path": "dist/sidecars/market-pulse/runtime.js",
+      "sha256": "048d3fe6c7fcf9dddafb5e8711bb6f77d54904bd0cc3bb8ed7a7e46aa5877987",
+      "action": "add"
+    },
+    {
+      "path": "dist/sidecars/market-pulse/sidecar.json",
+      "sha256": "c18e0f7ae8c30cfe082434f4958c7ec35b8f2424c200d67f806b70f3d5dd59ad",
+      "action": "add"
+    },
+    {
+      "path": "dist/src/app.mjs",
+      "sha256": "c857dde740db0cc22d01226bcae4718e8f7934b3ab96ad7ccf8b5f5417d84bad",
+      "action": "update"
+    },
+    {
+      "path": "dist/src/catalog.mjs",
+      "sha256": "8eb22aa36ff72e7f87e0682d50968f80a22c038a7211663ef48595e898406b4d",
+      "action": "update"
+    },
+    {
+      "path": "dist/src/lab.mjs",
+      "sha256": "f3b6c3a7dd21822203f268349a85f6c0502ab8af2dbf0daf64287a87a4fa2940",
+      "action": "update"
+    },
+    {
+      "path": "dist/src/market-config.mjs",
+      "sha256": "6d5d208840c99aa9ac60297092cc2049b3c0335276e37d997c3970cda985d7f9",
+      "action": "add"
+    },
+    {
+      "path": "dist/src/market.mjs",
+      "sha256": "395ca0269d6b72775aa6a2b35e89e454e958d084fd000bbae46b0413c0407a6f",
+      "action": "add"
+    },
+    {
+      "path": "dist/style.css",
+      "sha256": "7c868455a50d251a6b40ac5074d9619b24eb39d09659ae483bd561ac00eae62d",
+      "action": "update"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "2d77d217cc9b20a2a79445d91c22050dc8215f2dc91d359b31eb2e57b6ab86a4",
+      "action": "update"
+    },
+    {
+      "path": "docs/MARKET_PULSE.md",
+      "sha256": "427f6a5369d8b7085f8c81449fd066373f712f1c162f46764937bd16cb990af9",
+      "action": "add"
+    },
+    {
+      "path": "docs/TESTING.md",
+      "sha256": "34e1f24d6520d7f695ad1fec40781b0281efe2e2f9f8cb3c05ae9031b37359fd",
+      "action": "update"
+    },
+    {
+      "path": "docs/validation/MARKET_PULSE.json",
+      "sha256": "8f15e5ad8379a6f4331170ea55a8df904fd5691a409cbcc084a333f8ab6f9560",
+      "action": "add"
+    },
+    {
+      "path": "index.html",
+      "sha256": "1b6b0075334acb80f57cb71d0124629c1e7de8829a52f347edf7e410f78b955a",
+      "action": "update"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "5ad18e1e4e8f0ab0eccdf93b6614e6e7fc3d958312f7bf32fd13179d56b68cde",
+      "action": "update"
+    },
+    {
+      "path": "package.json",
+      "sha256": "bbe650c055d3a94bf8d5e0da67f40cc5550497fc432a17d943ea83a2f6247cea",
+      "action": "update"
+    },
+    {
+      "path": "sidecars/market-pulse/README.md",
+      "sha256": "0b5ac4c0f8f6562a99e786c90efe1224d4e52f4e1bf6ff065936c78b1d128c2c",
+      "action": "add"
+    },
+    {
+      "path": "sidecars/market-pulse/assets.json",
+      "sha256": "ebe9384ce108cb3b3ce217b0275cdc7c0bb00eec50d22ddb473ec8ba4cc58d16",
+      "action": "add"
+    },
+    {
+      "path": "sidecars/market-pulse/build.mjs",
+      "sha256": "56d45c59cf08fa08ab8081aa93f7284f3fcc65c0021fc188339af517b420a547",
+      "action": "add"
+    },
+    {
+      "path": "sidecars/market-pulse/chart.mjs",
+      "sha256": "2163163144503d57141b46150d05f2e46d51040091915d09141ceb27fbc042eb",
+      "action": "add"
+    },
+    {
+      "path": "sidecars/market-pulse/core.mjs",
+      "sha256": "4e48ef314cd29033a2a75bd4074e9f72001e260f5b4bee84005ce67fa2c28079",
+      "action": "add"
+    },
+    {
+      "path": "sidecars/market-pulse/panel.mjs",
+      "sha256": "81ebea10c5ad9b2fbf937aa5265eab9395a593d6303a939ac64310edb1996a45",
+      "action": "add"
+    },
+    {
+      "path": "sidecars/market-pulse/runtime.js",
+      "sha256": "048d3fe6c7fcf9dddafb5e8711bb6f77d54904bd0cc3bb8ed7a7e46aa5877987",
+      "action": "add"
+    },
+    {
+      "path": "sidecars/market-pulse/schemas/config.schema.json",
+      "sha256": "31964249f3457cd451a6c67f6f2093bbfe2fad6bd184dd15d240fe64b17a648c",
+      "action": "add"
+    },
+    {
+      "path": "sidecars/market-pulse/schemas/feed.schema.json",
+      "sha256": "87cd6554e864559fcdcfc8ad2e375974f4031811c2ad2936d0066376d67d989e",
+      "action": "add"
+    },
+    {
+      "path": "sidecars/market-pulse/sidecar.json",
+      "sha256": "c18e0f7ae8c30cfe082434f4958c7ec35b8f2424c200d67f806b70f3d5dd59ad",
+      "action": "add"
+    },
+    {
+      "path": "src/app.mjs",
+      "sha256": "c857dde740db0cc22d01226bcae4718e8f7934b3ab96ad7ccf8b5f5417d84bad",
+      "action": "update"
+    },
+    {
+      "path": "src/catalog.mjs",
+      "sha256": "8eb22aa36ff72e7f87e0682d50968f80a22c038a7211663ef48595e898406b4d",
+      "action": "update"
+    },
+    {
+      "path": "src/lab.mjs",
+      "sha256": "f3b6c3a7dd21822203f268349a85f6c0502ab8af2dbf0daf64287a87a4fa2940",
+      "action": "update"
+    },
+    {
+      "path": "src/market-config.mjs",
+      "sha256": "6d5d208840c99aa9ac60297092cc2049b3c0335276e37d997c3970cda985d7f9",
+      "action": "add"
+    },
+    {
+      "path": "src/market.mjs",
+      "sha256": "395ca0269d6b72775aa6a2b35e89e454e958d084fd000bbae46b0413c0407a6f",
+      "action": "add"
+    },
+    {
+      "path": "style.css",
+      "sha256": "7c868455a50d251a6b40ac5074d9619b24eb39d09659ae483bd561ac00eae62d",
+      "action": "update"
+    },
+    {
+      "path": "tests/distribution.test.mjs",
+      "sha256": "5e6500d9d0d4603dadc430ce8d297d263684dbc817de43c0e0e69d60191b279d",
+      "action": "update"
+    },
+    {
+      "path": "tests/installed.test.mjs",
+      "sha256": "6dc0d2611c943f53fab1d377ece2e87203229a66b9ef34b2e2fe46f726221d55",
+      "action": "update"
+    },
+    {
+      "path": "tests/market-fixture.mjs",
+      "sha256": "2c2709a8762e8ee64c4ddcec71b129bad4d244e970d8fdb55b251b0474594316",
+      "action": "add"
+    },
+    {
+      "path": "tests/market-panel.test.mjs",
+      "sha256": "5864696157e08eb8c60b3f61a6b02a47c23f538ce1822c12f95891bef266009b",
+      "action": "add"
+    },
+    {
+      "path": "tests/market-position.test.mjs",
+      "sha256": "4af71039ea34388d67806121b43ccdf43fefb3f0de9736c84bd5125e9ef4dc54",
+      "action": "add"
+    },
+    {
+      "path": "tests/market.test.mjs",
+      "sha256": "4d1ecbb17ad139ff89fb43890b6c2ee1d9ea75eaaa545bd04e110000334b9ccd",
+      "action": "add"
+    },
+    {
+      "path": "tests/ui.test.mjs",
+      "sha256": "19922d60c6e20314e14bc8acd3030af162c03df498e4e8d1973689836ac03d85",
+      "action": "update"
+    },
+    {
+      "path": "tools/build.mjs",
+      "sha256": "ce5b5a9cd4f9e8f170e4ca7545f64e23da8b9f505248fa21a7375df67c07f646",
+      "action": "update"
+    },
+    {
+      "path": "tools/serve.mjs",
+      "sha256": "55e8cb957f8a2b85f01b5d24772eb5cce955959b3d3ad8683e3e1db358323a8e",
+      "action": "update"
+    }
+  ]
+}

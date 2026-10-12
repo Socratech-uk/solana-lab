@@ -1,0 +1,85 @@
+{
+  "protocol": "solana-lab.workflow-ux.validation.v1",
+  "sourceArchive": "solana-lab(20260922-172934).zip",
+  "version": "0.4.1",
+  "automatedChecks": 110,
+  "baselineChecks": 104,
+  "uiChecks": 22,
+  "installedBridgeChecks": 11,
+  "previewRoutes": 20,
+  "nativeExecutionVerified": false,
+  "realNetworkTransactionsSent": false,
+  "visualAcceptanceVerified": false,
+  "visualLimitation": "Cloud browser refused the local preview with net::ERR_BLOCKED_BY_CLIENT. No visual acceptance is claimed.",
+  "knownRuntimeIssue": "Existing Edge/Circuit terminal transition requires evidenceDigest; receipt and local tracking warning are presented separately. No runtime repair is claimed.",
+  "runtimeAssetsChanged": false,
+  "testGroups": [
+    {
+      "passed": 15,
+      "network": "mocked"
+    },
+    {
+      "passed": 5,
+      "network": "none",
+      "realArena": true
+    },
+    {
+      "passed": 6,
+      "canvas": "mocked",
+      "nativeExecutionVerified": false,
+      "layoutVerified": false
+    },
+    {
+      "passed": 18,
+      "networkCalls": 0,
+      "paymentRecords": 3,
+      "receipts": 6
+    },
+    {
+      "passed": 5,
+      "standalone": true,
+      "externalNetworkUsed": false
+    },
+    {
+      "passed": 7,
+      "networkUsed": false
+    },
+    {
+      "passed": 9,
+      "network": "fixture-only",
+      "sends": 5
+    },
+    {
+      "passed": 22,
+      "layoutVerified": false
+    },
+    {
+      "passed": 5,
+      "realNetworkUsed": false
+    },
+    {
+      "passed": 11,
+      "exportedWindowsAssets": false,
+      "mockRpcCalls": 21,
+      "realNetworkUsed": false,
+      "modelFixtureCalls": 1,
+      "layoutVerified": false,
+      "nativeExecutionVerified": false
+    },
+    {
+      "passed": 5,
+      "networkEffects": 0,
+      "persistentStorageEffects": 0,
+      "previewOnly": true
+    }
+  ],
+  "checks": [
+    "Purpose/result narrative and next steps across all demos",
+    "History selection and contributor edits do not execute operations",
+    "Receipt completion requires matching transaction evidence",
+    "Valid receipt remains available with local ledger warning; no resend control",
+    "Guide page explanations work without a model",
+    "Preview guards reject forced runtime actions",
+    "Installed shell ownership and missing-provider boundaries remain intact"
+  ]
+}

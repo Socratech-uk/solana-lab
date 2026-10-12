@@ -1,0 +1,2972 @@
+{
+  "protocol": "capp.ftue-manifest.v1",
+  "experienceId": "main",
+  "revision": 19,
+  "title": "Solana Lab Guide",
+  "personality": {
+    "name": "Solana Lab Guide",
+    "tone": "clear, practical and grounded in actual results",
+    "greeting": "Choose a demo to try, or ask what its result means."
+  },
+  "settings": {
+    "ftueEnabled": true,
+    "autoStart": false,
+    "showHelpButton": true,
+    "allowRestart": true,
+    "guidedActions": true,
+    "controllerMode": "guided",
+    "intentMode": "hybrid"
+  },
+  "targets": [
+    {
+      "id": "demo-wallet-roles",
+      "targetId": "demo-wallet-roles",
+      "selectors": [
+        "#demo-wallet-roles"
+      ],
+      "route": "#/wallets",
+      "name": "demo wallet roles"
+    },
+    {
+      "id": "position-evidence",
+      "targetId": "position-evidence",
+      "selectors": [
+        "#position-evidence"
+      ],
+      "route": "#/positions",
+      "name": "position evidence"
+    },
+    {
+      "id": "service-request",
+      "targetId": "service-request",
+      "selectors": [
+        "#service-request"
+      ],
+      "route": "#/service",
+      "name": "service request"
+    },
+    {
+      "id": "batch-request",
+      "targetId": "batch-request",
+      "selectors": [
+        "#batch-request"
+      ],
+      "route": "#/batch",
+      "name": "batch request"
+    },
+    {
+      "id": "proof-request",
+      "targetId": "proof-request",
+      "selectors": [
+        "#proof-request"
+      ],
+      "route": "#/proof",
+      "name": "proof request"
+    },
+    {
+      "id": "checkout-request",
+      "targetId": "checkout-request",
+      "selectors": [
+        "#checkout-request"
+      ],
+      "route": "#/checkout",
+      "name": "checkout request"
+    },
+    {
+      "id": "treasury-request",
+      "targetId": "treasury-request",
+      "selectors": [
+        "#treasury-request"
+      ],
+      "route": "#/treasury",
+      "name": "treasury request"
+    },
+    {
+      "id": "token-setup",
+      "targetId": "token-setup",
+      "selectors": [
+        "#token-funding",
+        "#tokens-setup"
+      ],
+      "route": "#/tokens",
+      "name": "token setup"
+    },
+    {
+      "id": "token-mint",
+      "targetId": "token-mint",
+      "selectors": [
+        "#token-mint"
+      ],
+      "route": "#/tokens",
+      "name": "token mint"
+    },
+    {
+      "id": "token-transfer",
+      "targetId": "token-transfer",
+      "selectors": [
+        "#token-transfer"
+      ],
+      "route": "#/tokens",
+      "name": "token transfer"
+    },
+    {
+      "id": "payment-request",
+      "targetId": "payment-request",
+      "selectors": [
+        "#payment-request"
+      ],
+      "route": "#/requests",
+      "name": "payment request"
+    },
+    {
+      "id": "request-payment-flow",
+      "targetId": "request-payment-flow",
+      "selectors": [
+        "#request-payer-setup",
+        "#request-payment",
+        "#payment-request"
+      ],
+      "route": "#/requests",
+      "name": "request payment flow"
+    },
+    {
+      "id": "wallet-activity-query",
+      "targetId": "wallet-activity-query",
+      "selectors": [
+        "#wallet-activity-query"
+      ],
+      "route": "#/activity",
+      "name": "wallet activity query"
+    },
+    {
+      "id": "lab-workspace",
+      "targetId": "lab-workspace",
+      "selectors": [
+        "#content"
+      ],
+      "route": "*",
+      "name": "lab workspace"
+    },
+    {
+      "id": "policy-results",
+      "targetId": "policy-results",
+      "selectors": [
+        "#content .check-list"
+      ],
+      "route": "#/policy",
+      "name": "policy results"
+    },
+    {
+      "id": "export-all",
+      "targetId": "export-all",
+      "selectors": [
+        "#export-all"
+      ],
+      "route": "*",
+      "name": "export all"
+    },
+    {
+      "id": "assistant-question",
+      "targetId": "assistant-question",
+      "selectors": [
+        "#assistant-message"
+      ],
+      "route": "*",
+      "name": "assistant question"
+    }
+  ],
+  "steps": [
+    {
+      "id": "welcome",
+      "targetId": "lab-workspace",
+      "route": "#/",
+      "title": "Welcome to Solana Lab",
+      "body": "Try devnet payments, token transfers, document proofs and local simulations. Each demo shows the reusable capabilities involved and the evidence produced.",
+      "action": {
+        "type": "focus",
+        "confirm": true
+      }
+    },
+    {
+      "id": "demos",
+      "targetId": "lab-workspace",
+      "route": "#/guided",
+      "title": "Choose a first demo",
+      "body": "Start with Policy or The missing reply to explore decision checks and recovery without funding a wallet. Then try a devnet payment when your wallets are ready.",
+      "action": {
+        "type": "focus",
+        "confirm": true
+      }
+    },
+    {
+      "id": "wallets",
+      "targetId": "lab-workspace",
+      "route": "#/wallets",
+      "title": "Prepare your test wallets",
+      "body": "Choose a devnet payer and a separate receiver, then check their test funds. Back up new device wallets. Mainnet device wallets are experimental; sending is disabled.",
+      "action": {
+        "type": "focus",
+        "confirm": true
+      }
+    },
+    {
+      "id": "components",
+      "targetId": "lab-workspace",
+      "route": "#/components",
+      "title": "Explore the reusable components",
+      "body": "See the capabilities behind each demo, how they connect and whether their providers are ready.",
+      "action": {
+        "type": "focus",
+        "confirm": true
+      }
+    },
+    {
+      "id": "docs",
+      "targetId": "lab-workspace",
+      "route": "#/docs",
+      "title": "Build with the same capabilities",
+      "body": "Open the client examples and developer guide to see how to use these components in your own application.",
+      "action": {
+        "type": "focus",
+        "confirm": true
+      }
+    }
+  ],
+  "docs": [
+    {
+      "id": "solana-lab-android-startup",
+      "title": "Android components are still connecting",
+      "body": "The installed Lab uses the Sidecars packaged with the app. Android starts independent components without waiting for Local AI model downloads. If startup takes longer, the Lab waits for the installed APIs and reconnects automatically when they arrive; Retry checks again without resetting wallets or records. If components remain unavailable, export the Debug report, check the selected packages in cApp, compile the current Lab source and build a new Android bundle. Once the components are connected, an RPC error is a separate connection issue: open Network window and verify devnet.",
+      "routes": [
+        "#/docs/dependencies"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-mobile-navigation",
+      "title": "Find pages and browser tabs on mobile",
+      "body": "Use Explore demos at the top of the Lab to open every demo and documentation page. The mobile browser tab strip is hidden while only the app is open. Opening another tab reveals it; closing the last extra tab gives the space back to the app without resetting your work. Desktop keeps its tab strip. Guide funding handoffs can keep a copyable wallet address beside a faucet when the host supports browser tabs. Without that capability the tab handoff is skipped and the page offers the ordinary funding link.",
+      "routes": [
+        "#/guided"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-mobile-local-ai",
+      "title": "Local AI setup and mobile notices",
+      "body": "Local AI service readiness and model readiness are separate. You can use the Lab and its authored Guide workflows while the optional model downloads. Chat inference needs a loaded model. Downloading and initialising use one compact 32-pixel status line on mobile and desktop. Space is reserved below the app so progress never covers the page. Details opens AI settings. Dismissing the indicator gives that space back without cancelling the download. Guide, AI and Debug shortcuts share a bottom row on Android and move out of the way when another full panel is open.",
+      "routes": [
+        "#/guided"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-guide-transactions",
+      "title": "Finish every payment inside Guide",
+      "body": "Start a new demo with Guide me, or open an earlier payment with Continue with Guide. Review the sender, recipient and amount, approve signing, then confirm when to send. Guide checks the receipt and waits if the payment is pending. Cancelling stops the walkthrough; a payment already sent can still complete and remains in your history.",
+      "routes": [
+        "#/guided"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-guide-payout-progress",
+      "title": "How Guide completes a payout batch",
+      "body": "Pay each contributor separately and follow their progress from review to receipt. Completed payments stay complete when you return. If a reply is missing, check that contributor’s existing payment before continuing. The batch is finished only when every contributor has a verified receipt.",
+      "routes": [
+        "#/batch"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-guide-service-proof",
+      "title": "From paid report to verified document",
+      "body": "Pay for a local report, generate it, then create a linked document proof. The proof is a separate devnet payment with its own approval and network fee. Compare a copy of the report with the saved original to see whether its contents changed. Both payments and the report remain in your history.",
+      "routes": [
+        "#/service"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-expired-review",
+      "title": "Recover an expired transaction review",
+      "body": "A transaction review can expire before you send it. Use Refresh expired review to prepare it again with the same recipient, amount and sender. Review and approve the refreshed transaction; treasury payments also need fresh team reviews. Guide refreshes only the affected payout, leaving completed payouts alone. If a payment has already been sent or its result is uncertain, check its existing receipt instead. A payment request has its own expiry: refreshing the transaction cannot extend it.",
+      "routes": [
+        "#/guided"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-payment-setup",
+      "title": "Check funds before preparing a payment",
+      "body": "Use Check setup in Token desk or Payment requests to check the payer, network, token balance and transfer limits. The payer needs the requested token plus devnet SOL for fees. A new receiver token account may also need SOL rent. Follow any funding or permission instructions, then check again. These checks do not create or approve a payment. The supplied profile allows up to one test USDC per transfer; other tokens need permission in both Sentinel and Latch. Guide cannot grant those permissions. Refresh the checks after changing wallets or settings. Preparation checks the exact transfer again.",
+      "routes": [
+        "#/tokens"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-token-desk",
+      "title": "Know which token you are sending",
+      "body": "Refresh assets to see the selected devnet wallet’s SOL and token accounts. Inspect a mint to check which token it identifies, its decimal precision and who can issue or freeze it. Guide can fill an empty mint from your observed holdings or use Circle devnet USDC. It also prepares a separate receiver while keeping your payer selected. Addresses you have entered remain as entered. Back up newly created wallets in Wallets, then check token funds and SOL for fees. The mint address, token program and network identify the asset; a displayed name does not prove its value or issuer.",
+      "routes": [
+        "#/tokens"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-test-usdc-funding",
+      "title": "Get test USDC from Circle",
+      "body": "Copy the payer address from the funding panel and open https://faucet.circle.com/. Choose USDC and Solana Devnet, paste the address and complete Circle’s verification. If the faucet reports a limit, wait before retrying. Return to Token desk and use Check setup so the Lab can confirm the tokens arrived. The payer also needs devnet SOL for fees and account rent. The demo allows up to one test USDC per transfer. Fund the payer shown for the payment, which may differ from your currently selected wallet. The mint address identifies USDC; it is not the wallet to fund. Test tokens have no monetary value.",
+      "routes": [
+        "#/wallets"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-token-permissions",
+      "title": "Why a token transfer is blocked",
+      "body": "Check the explanation in Payment setup. The payer may need the requested token, more devnet SOL for fees or account rent, or permission for that token. SOL funds do not include USDC. For the supplied demo, use Get test USDC from Circle and fund the payer shown for this payment. Then Check setup again. Custom tokens require explicit transfer limits in both Sentinel and Latch, the supported token programs and sufficient rent permission. Configure those in cApp and compile again; Guide does not change them. This demo supports the original Token Program, with no Token-2022, wrapped SOL, swaps or token issuance.",
+      "routes": [
+        "#/tokens"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-payment-requests",
+      "title": "Create and share a payment request",
+      "body": "Set the receiving wallet, asset, amount and expiry, then save the request. Guide can prepare a separate demo receiver and fill empty fields; review the values before saving. Share the QR and exported JSON with the payer. Set the payer’s wallet to devnet: the QR does not include the network or expiry, while the JSON records the full terms. Check imported recipients and assets before paying; a saved digest identifies the terms but does not verify the merchant. Choose a different wallet to pay the request, approve the payment and verify that the receiver received the requested amount.",
+      "routes": [
+        "#/requests"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-request-payer",
+      "title": "Choose and fund a request payer in Guide",
+      "body": "Choose a devnet wallet different from the receiver. Guide lists available payers and can check their funds or create a new test wallet. A new wallet needs funding: copy its address to the SOL faucet and, for USDC, Circle’s Solana Devnet faucet. Back it up in Wallets. Use Return to Guide after funding, then Check payer funds again. Selecting or checking a payer does not approve or send a payment. An existing payment must use its original payer. If your only funded wallet receives an unpaid request you created locally, Guide can offer a separate demo with that wallet as payer; the original stays saved. Imported requests are kept as received.",
+      "routes": [
+        "#/requests"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-request-verification",
+      "title": "What counts as a paid request?",
+      "body": "Find candidates looks for transactions linked to the request. Choose one or enter a transaction signature, then use Verify finalized payment. The verifier independently checks devnet, the request reference and memo, recipient, asset, amount, payment window and actual credit received. A matching finalized result establishes payment. Pending, failed or mismatched transactions remain unverified with an explanation. A payment made within the request’s time window can still be verified after expiry. A candidate transaction or an outgoing receipt alone is not enough to mark the request paid.",
+      "routes": [
+        "#/requests"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-merchant-boundary",
+      "title": "Use payment verification in a business",
+      "body": "The Lab demonstrates checking a payment and retaining its evidence on this device. A business needs a shared service that keeps trusted order terms, verifies the chain independently, prevents the same payment being counted twice and reliably delivers the order. Accepting a receipt uploaded by the payer is not sufficient verification. The reusable solana-payments module provides request validation and payment verification; wallet signing and order delivery remain separate responsibilities. See the payment integration guide for the server-side requirements.",
+      "routes": [
+        "#/requests"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-address-activity",
+      "title": "Explore a wallet’s public activity",
+      "body": "Choose an address and network, then Load activity to read recent transactions. An empty devnet address can use your selected wallet; mainnet requires you to enter a public address. Each page contains up to 20 entries, with at most 200 kept in the Lab. This is a recent view, not a complete history or background monitor. Token payments can appear under a token account instead of the wallet address; open that account from Token desk to inspect it. Use Payment requests to verify an invoice. Reading mainnet activity does not enable mainnet sending.",
+      "routes": [
+        "#/activity"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-capability-build",
+      "title": "Use the demos in the installed app",
+      "body": "Use the installed Solana Lab for interactive payment demos. The hosted preview explains the journeys without running wallet or network actions. If a required capability is unavailable, follow the update message and the installed setup guide: update cApp and its Sidecars, freshly compile Lab and package that release. Guide takes you through payment review, wallet approval, sending and receipt checks. Payment requests also verify the receiver’s credit independently. Local AI can explain the result but cannot approve or send payments.",
+      "routes": [
+        "#/docs"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-sidecar-edge",
+      "title": "Edge",
+      "body": "Runs a payment through compatible selected Sidecars, from intent to receipt. Devnet SOL transfers require the six live peers; Arena is never an automatic fallback.",
+      "routes": [
+        "#/components"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-sidecar-compass",
+      "title": "Compass",
+      "body": "Turns an application request into a consistent intent with a stable identity. An intent is a proposal. It does not select a wallet or grant authority.",
+      "routes": [
+        "#/components"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-sidecar-circuit",
+      "title": "Circuit",
+      "body": "Retains operations and attempts, and prevents overlapping work on the same leg. Browser records are local to this app and origin, not a distributed transaction store.",
+      "routes": [
+        "#/components"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-sidecar-sentinel",
+      "title": "Sentinel",
+      "body": "Checks declared amounts, fees, programs, freshness and risk against configured limits. Exact SOL and original SPL token transfers have dedicated verifiers. Token mints need explicit limits; generic policy checks still use supplied metadata.",
+      "routes": [
+        "#/components"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-sidecar-accord",
+      "title": "Accord",
+      "body": "Records member approvals against an exact message and policy. Local member names are simulated identities. A quorum is not a cryptographic signature.",
+      "routes": [
+        "#/components"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-sidecar-latch",
+      "title": "Latch",
+      "body": "Separates a request for wallet authority from policy and execution. Device wallets persist locally. Mainnet keys are password encrypted, with a loss warning; mainnet signing is disabled. External providers retain their own keys.",
+      "routes": [
+        "#/components"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-sidecar-switchyard",
+      "title": "Switchyard",
+      "body": "Assigns a position to an execution bucket and records the path back to reuse. Allocation is off-chain. Moving a record does not move funds.",
+      "routes": [
+        "#/components"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-sidecar-arena",
+      "title": "Arena",
+      "body": "Executes deterministic payment and position scenarios without a network. Every Arena outcome is simulated, including its finality and settlement evidence.",
+      "routes": [
+        "#/components"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-sidecar-dispatch",
+      "title": "Dispatch",
+      "body": "Records an attempt before execution and keeps uncertain outcomes recoverable. Reconciliation observes the existing attempt; it never creates another payment.",
+      "routes": [
+        "#/components"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-sidecar-witness",
+      "title": "Witness",
+      "body": "Observes outcomes and stores receipts with stable content digests. A digest identifies evidence. It does not make simulated or supplied evidence authoritative.",
+      "routes": [
+        "#/components"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-sidecar-conduit",
+      "title": "Conduit",
+      "body": "Sends bounded HTTP RPC requests through a configured public endpoint or adapter. The inspector only exposes read requests. Public endpoints are visible to app users.",
+      "routes": [
+        "#/components"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-demo-checkout",
+      "title": "Pocket checkout",
+      "body": "A tiny digital storefront. Review a payment, approve the exact request and inspect its receipt. Components: edge, compass, circuit, sentinel, latch, dispatch, conduit, witness.",
+      "routes": [
+        "#/checkout"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-demo-treasury",
+      "title": "Collective treasury",
+      "body": "Review a shared payment with three simulated members, then approve it with your wallet. Components: accord, edge, sentinel, latch, witness.",
+      "routes": [
+        "#/treasury"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-demo-positions",
+      "title": "Position studio",
+      "body": "Follow live SOL prices through a simulated position, from entry and P&L to close and recovery. Components: compass, switchyard, circuit, sentinel, arena, witness, edge.",
+      "routes": [
+        "#/positions"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-demo-recovery",
+      "title": "The missing reply",
+      "body": "A simulated payment succeeds, but its reply disappears. Find the result without starting another payment. Components: edge, circuit, dispatch, arena, witness.",
+      "routes": [
+        "#/recovery"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-demo-policy",
+      "title": "Policy playground",
+      "body": "Try payment limits and risk settings. See why a request passes or is rejected before approval. Components: compass, sentinel.",
+      "routes": [
+        "#/policy"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-demo-network",
+      "title": "Network window",
+      "body": "Inspect the Conduit connection used by your payment workflows. Configure endpoints inside the Sidecar. Components: conduit.",
+      "routes": [
+        "#/network"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-modes",
+      "title": "Devnet and simulation",
+      "body": "Payment demos use test assets on Solana devnet. Positions and The missing reply run as clearly labelled Arena simulations. You can link a position result to a separate, small devnet transfer and memo; its receipt proves that transfer, not a real trade.",
+      "routes": [
+        "#/"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-recovery",
+      "title": "Recover after refresh",
+      "body": "If a reply is missing, open the saved rehearsal and choose Check existing attempt. This checks whether the original operation completed without starting another payment. Your saved history is local to this app; export evidence before clearing app storage.",
+      "routes": [
+        "#/recovery"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-ai",
+      "title": "Local AI and web components",
+      "body": "Assistant can explain the Lab, find help and inspect saved results. Optional Local AI adds conversational answers. To carry out a task, choose a suggested guided demo. Payments still require your approval; the Assistant cannot sign or send them for you.",
+      "routes": [
+        "#/assistant"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-conduit-settings",
+      "title": "Set up the payment RPC",
+      "body": "Open Conduit settings from Network window or the wallet panel. Set the endpoint and optional client x-token there, then Test & use connection. Conduit verifies devnet before adopting the new primary endpoint. Advanced settings keep mainnet reads separate. Your wallet remains in the same shell.",
+      "routes": [
+        "#/network"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-old-demo-records",
+      "title": "Earlier demo operations",
+      "body": "Earlier simulations remain available in history for inspection and export. Start a devnet payment when you want to use test funds. Opening an old simulation does not turn it into a network transfer.",
+      "routes": [
+        "#/treasury"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-wallet",
+      "title": "Manage and fund a saved devnet wallet",
+      "body": "Create or import a devnet wallet in Wallets, save its backup and add test SOL. Check the balance before starting a payment. Your selected wallet pays for new demos. Device wallets survive restarts, but clearing app data can remove access; keep an independent backup.",
+      "routes": [
+        "#/wallets"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-evidence",
+      "title": "Link an Arena outcome to devnet",
+      "body": "After an Arena action, choose a nominal SOL amount and recipient. The evidence transfer is 1/10,000 of that SOL amount, floored in integer lamports, plus fees. The memo commits the stored simulation digest. It does not prove that the simulated trade happened. The nominal SOL is independent of synthetic USD notional.",
+      "routes": [
+        "#/positions"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-small-transfer",
+      "title": "Funded recipients and self-transfers",
+      "body": "A new receiver may need test SOL before it can accept a tiny SOL payment. Guide checks this and shows the receiver address to fund when needed. Token transfers have separate account-rent requirements. An explicit self-transfer returns funds to the payer; it does not pay another person.",
+      "routes": [
+        "#/positions"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-receipt-scope",
+      "title": "What a devnet receipt establishes",
+      "body": "Witness checks the recorded signature and compares the complete signed bytes with the confirmed RPC transaction. RPC is the observation source. A simulated Arena receipt is separate. A lost reply requires reconciliation of the same operation, never an automatic replacement payment.",
+      "routes": [
+        "#/receipts"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-market-pulse",
+      "title": "Market Pulse and the chart",
+      "body": "Expand Market above the page for 15-second sampled candles, OHLC bars, line or area charts. The accordion pushes the content down inside the main column. Position Studio and the chart share one price request loop.",
+      "routes": [
+        "#/positions"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-market-cadence",
+      "title": "Price polling and candle intervals",
+      "body": "Candle width and sampling cadence are separate. Conservative mode polls no faster than 15 seconds. At that cadence a 15-second candle may contain one price and have no wick. Custom mode can poll faster within the configured quota and retains 20 percent headroom. Rate limits trigger backoff. Jupiter supplies no traded volume or historical candles.",
+      "routes": [
+        "#/positions"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-market-positions",
+      "title": "Live marks and simulated P&L",
+      "body": "A new position needs a fresh SOL mark. Entry, reduce and close actions freeze their observation before execution. Resume keeps that exact price. Unrealised P&L is current mark minus entry, multiplied by remaining simulated SOL units. Realised P&L uses completed reduce and close prices. Fees, slippage and leverage are excluded. Earlier fixed-price records keep their original basis.",
+      "routes": [
+        "#/positions"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-market-provider",
+      "title": "Bring another price provider",
+      "body": "Market Pulse is independent of the Solana transaction Sidecars. Its settings support JSON import/export and multiple instruments. HTTP OHLCV providers can return the declared market feed contract, or a trusted app adapter can push observations in manual mode. No background provider is created automatically.",
+      "routes": [
+        "#/components"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-developer-start",
+      "title": "Start here",
+      "body": "Select a recipe, then the capabilities it needs. For a standalone browser Lab, the shipped runtimes load with the reviewed devnet profile. For installed Lab, select the Solana Lab preset, compile this web project and rebuild the installer. It uses the owning installed runtime; missing providers do not trigger a browser replacement. Open Wallets to create a saved devnet wallet, fund it from the faucet, then choose an existing funded recipient. Back up the wallet before clearing app data. A self-transfer records a memo but pays nobody else; fees are additional. New devnet operations require Sentinel to allow the System program and Memo program (MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr). The Lab preset includes both. Existing custom settings are preserved; update them explicitly if policy blocks a new memo. Begin with Service desk for a connected journey, or Pocket checkout for a single transfer. Review, sign, send and reconcile are separate controls. Nothing in the architecture map submits a transaction.",
+      "routes": [
+        "#/docs/start"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-developer-lifecycle",
+      "title": "Operations and recovery",
+      "body": "Make identity survive the failure. Persist an operation ID and the intended sender, recipient, amount and commitment before preparation. Reuse that identity for the same work. A different intent must not overwrite an existing operation. Edge’s devnet states include prepared, preflighted, authority-pending, authorised, submitting, submitted, unknown, confirmed, finalised, blocked, failed and expired. Not every provider supports every state. Keep the returned state and error together. After submission or a lost response, call transactionStatus with the existing operation ID. Do not call prepare with a new ID as an automatic retry. A missing observation remains unresolved. New transactions include a memo bound to operation ID and request digest. Distinct operations with identical amounts remain distinct even when they use the same blockhash. Persisted prepared transactions retain their bytes. Local ledgers depend on app/origin storage. Export records before moving devices or clearing data. Browser tab locks coordinate this Lab where Web Locks is available; Sidecar local storage is not a distributed locking service.",
+      "routes": [
+        "#/docs/lifecycle"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-developer-dependencies",
+      "title": "Choose your Sidecars",
+      "body": "Provider modes determine dependencies. You do not need all eleven for every app. Conduit alone supports RPC reads. Compass alone shapes intent; Circuit tracks a local operation; Accord rehearses member approval; Switchyard manages resource records; Arena simulates execution. Edge devnet composes Circuit, Sentinel, Latch, Dispatch, Witness and Conduit. Compass is optional. Accord and Switchyard are application-composed extensions, not implicit prerequisites of every payment. For positions, Solana Lab calls Compass, Circuit, Sentinel, Switchyard, Arena and Witness itself and consumes Market Pulse separately. An optional evidence transfer then uses Edge’s devnet path. An external adapter can replace a provider, but its authentication, availability and production guarantees are yours to implement and test. Selecting a component does not deploy a managed service.",
+      "routes": [
+        "#/docs/dependencies"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-developer-receipts",
+      "title": "What a receipt establishes",
+      "body": "A successful send response is only one fact. For live Edge operations, Witness checks genesis, signature observation and equality of the complete signed transaction bytes returned by RPC. A usable receipt must also meet the configured commitment. The helper hasBoundDevnetReceipt checks field binding on trusted Edge/Witness output. It does not authenticate arbitrary imported JSON. A remote merchant must independently verify the chain transaction, expected network, recipient, amount, commitment and single-use fulfilment. Local Accord reviews, Arena outcomes and application evidence keep their original scope. A hash does not transform a simulation or an application assertion into a chain fact. A document memo commits a namespace and SHA-256 digest of exact UTF-8 bytes. It establishes a recorded commitment; it does not establish the author, truth, ownership or confidentiality of the document.",
+      "routes": [
+        "#/docs/receipts"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-developer-recipes",
+      "title": "Connected service recipes",
+      "body": "Three reusable handoffs. Service desk: persist a JSON report order → review its devnet payment → reconcile the exact receipt → generate the report → append delivery evidence → optionally anchor the report in Proof studio. Repeat delivery returns the same artifact. Payout desk: reserve a batch and every child ID before work starts. Prepare, approve, send and reconcile each item separately. A partial batch is not rolled back, and confirmed items are not resent. It is not an atomic multi-recipient transaction. Proof studio: hash bounded text locally → prepare a small devnet transfer with the document commitment → obtain an observed receipt → compare another copy of the text. The document itself is never put in the memo. Position studio: capture a fresh price → simulate open/reduce/close in Arena → retain evidence → sweep the off-chain bucket for reuse. The optional 1/10,000 transfer is a separate payment, not a trade settlement.",
+      "routes": [
+        "#/docs/recipes"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-developer-sdk",
+      "title": "Application client",
+      "body": "A thin interface over declared APIs. Use createSolanaClient(() => window.capp.solana) with the API belonging to your app. Its method allowlist is shared with the Lab. available() reports method presence; call status for provider readiness. The client validates bounded JSON arguments and preserves the method receiver. It does not start providers, add permissions, approve signatures, retry sends or conceal missing Sidecars. Market Pulse has its own client API and shared polling lifecycle. The eleven Solana Sidecars are exposed at window.capp.solana. Code examples here assume those APIs are present in the owning app. Typed method names and JSON inputs are provided as a small source SDK. Provider-specific result shapes remain versioned runtime contracts; this is not a generated full schema binding.",
+      "routes": [
+        "#/docs/sdk"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-developer-providers",
+      "title": "Providers and distribution",
+      "body": "Keep network and authority explicit. Configure RPC endpoints and the chosen distributable client token in Conduit. Inspect the payment connection there. The advanced read-only connection cannot change the build-owned payment network or submit transactions. A distributed token is extractable. This version does not issue ephemeral provider tokens. Deploying your own authenticated adapter or credential broker is a separate integration. Local AI is optional and can explain guidance and inspect bounded read tools. It does not gain wallet authority or submit these workflows. Guide teaches the same recipes and links to developer docs. The included tests use actual runtimes with deterministic RPC fixtures. They establish behavior under those fixtures; installed Windows/Android, production wallet and live provider acceptance must be checked on those targets. Latch device-wallet mode stores devnet keypairs in app data and mainnet keypairs as AES-256-GCM ciphertext derived from a user password with PBKDF2-SHA256 (600,000 iterations). This is experimental custody, not an audited wallet or hardware-backed key store. Mainnet accounts support create/import, receive, balance, lock/unlock and backup/export; mainnet signing remains disabled. Wallet Standard discovery can connect compatible wallets exposed in the owning browser or host, including Solflare when it advertises the selected network and signTransaction feature. Missing providers remain unavailable. This does not add native Android MWA or a mobile deeplink transport. Wallet accounts and exact returned signed bytes are checked before accepting a devnet signature. Call walletCreate, walletImport, walletUnlock and walletExport directly from an explicit owner UI. Never send their input or result to activity logs, an assistant, analytics or receipt exports. Encrypted backups require their password; raw keypair exports are explicitly confirmed and unencrypted. Wallet labels and addresses are public metadata, not secrets.",
+      "routes": [
+        "#/docs/providers"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-developer-asset-payments",
+      "title": "Asset-aware payments and independent verification",
+      "body": "Build token payments and invoices from the existing Sidecars. No additional Sidecar or custom indexer is required. A token is identified by network, genesis, mint and program; amounts are exact unsigned integer strings. Conduit reads mint precision and account state. Sentinel checks the configured mint ceiling, network fee and possible recipient account rent before Latch signs the exact reviewed bytes. Compass creates a Solana Pay transfer request with a durable reference. Edge can prepare its payment, while Witness can verify a payer’s independently submitted transaction against the trusted saved terms and actual recipient credit. Remote fulfilment still needs a server-owned atomic invoice/signature claim; local client state is not that authority. See [asset payment integration](SOLANA_ASSET_PAYMENTS.md) for build settings, API examples, supported wallet transaction forms, read limits and remaining native qualification.",
+      "routes": [
+        "#/docs/asset-payments"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-developer-expired-review",
+      "title": "Recover an expired review",
+      "body": "A short-lived transaction review may expire before any submission. Refresh that review explicitly; reconcile an uncertain send. Edge checks blockhash validity before wallet approval and records expired state when the transaction was never submitted. Use edge.refresh({operationId}) only on an expired, never-submitted operation. It retains the old record, returns one durable successor and keeps the saved sender, recipient, asset, amount, commitment and logical leg. Repeat calls resume the same successor. Save its returned operationId in the application workflow, then run preflight and request new wallet and team approvals. Refresh never signs or sends. A Circuit attempt, unknown authority outcome or submitted transaction prevents refresh, even if its blockhash is now old. Keep reconciling its original signature. A payment request’s own expiry is separate and cannot be extended by refreshing its transaction. Latch walletCreate({network:\"devnet\",label:\"Receiver\",select:false}) can create a test receiver without changing the payer. Check status.walletCreateKeepsSelection first. No token balance or permission is implied, and backups remain the user’s responsibility.",
+      "routes": [
+        "#/docs/expired-review"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-service-desk",
+      "title": "Service desk: receipt-gated report",
+      "body": "Save an order and pay its reviewed devnet amount. Once the matching receipt is verified, generate the report on this device. You can then create a separate Proof studio payment to commit the report’s fingerprint. This demonstrates a local paid report; production merchant delivery needs its own independent payment verification.",
+      "routes": [
+        "#/service"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-payout-desk",
+      "title": "Payout desk: independent transfers",
+      "body": "Add two to five contributors with their names, addresses and SOL amounts. Review and pay each person separately. Completed payments remain complete while others wait. If one payment has an uncertain result, check that payment before continuing. The batch is not an all-or-nothing transfer.",
+      "routes": [
+        "#/batch"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-proof-studio",
+      "title": "Proof studio: compare a document",
+      "body": "Save a document and record its fingerprint with a devnet payment. After checking the receipt, compare another copy with the original to see whether it changed. A matching fingerprint identifies the same content; it does not establish who wrote it or whether its claims are true.",
+      "routes": [
+        "#/proof"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-journey-tokens",
+      "title": "Know the asset before moving it.",
+      "body": "A token payment needs the correct mint, exact precision and deliberate permissions. Observe balances, inspect a mint and review a devnet transfer through the same approval and receipt flow. Steps: Inspect the asset → Review a transfer → Sign, send and observe. Previous runs shows saved work; opening a record never starts another transaction. Transaction details and Developer activity contain the technical evidence.",
+      "routes": [
+        "#/tokens"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-journey-requests",
+      "title": "Share exact terms. Verify actual payment.",
+      "body": "An invoice needs evidence that its recipient received the requested asset within its payment window. Create a devnet request and QR, pay with explicit approval, then independently verify finalized recipient credit. Steps: Save and share terms → Pay the request → Verify recipient credit. Previous runs shows saved work; opening a record never starts another transaction. Transaction details and Developer activity contain the technical evidence.",
+      "routes": [
+        "#/requests"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-journey-activity",
+      "title": "Inspect what the network observed.",
+      "body": "See recent activity for the chosen address and network, then verify a payment separately when needed. Page through public address history on devnet or mainnet and inspect a transaction explicitly. Steps: Choose address and network → Load recent activity → Inspect an observation. Previous runs shows saved work; opening a record never starts another transaction. Transaction details and Developer activity contain the technical evidence.",
+      "routes": [
+        "#/activity"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-journey-wallets",
+      "title": "Keep your accounts available across restarts.",
+      "body": "Your accounts and saved payments should still be available when you reopen the app. Create or restore a devnet wallet, back it up and select it for payments. Mainnet accounts are separately managed with password encryption and a prominent loss warning; mainnet sending is disabled. Steps: Create or connect → Keep a backup → Choose a devnet account. Previous runs shows saved work; opening a record never starts another transaction. Transaction details and Developer activity contain the technical evidence.",
+      "routes": [
+        "#/wallets"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-journey-service",
+      "title": "Pay for a report. Receive the result.",
+      "body": "A service needs to know which order was paid before it releases an output. An observed test payment unlocks a local JSON report. You can then record that report’s fingerprint in Proof studio. Steps: Save an order → Confirm its payment → Generate the report. Previous runs shows saved work; opening a record never starts another transaction. Transaction details and Developer activity contain the technical evidence.",
+      "routes": [
+        "#/service"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-journey-batch",
+      "title": "Pay a team without losing track of anyone.",
+      "body": "When one payout is interrupted, completed payouts must stay complete. Each contributor has a separate reviewed transfer and receipt. You can return to an unfinished item without restarting the batch. Steps: Add contributors → Review each payout → Check the receipts. Previous runs shows saved work; opening a record never starts another transaction. Transaction details and Developer activity contain the technical evidence.",
+      "routes": [
+        "#/batch"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-journey-proof",
+      "title": "Check that a document has not changed.",
+      "body": "A shared document needs a checkable reference, even when copies move between apps. A devnet transaction records a fingerprint of the text. Compare another copy to see whether its exact bytes match. Steps: Save the original → Record its fingerprint → Compare a copy. Previous runs shows saved work; opening a record never starts another transaction. Transaction details and Developer activity contain the technical evidence.",
+      "routes": [
+        "#/proof"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-journey-checkout",
+      "title": "Take a payment and know what happened.",
+      "body": "A checkout needs a recorded outcome before it can treat an order as paid. Review a fictional icon-pack purchase, send test SOL and obtain a receipt for that exact transfer. Steps: Review the purchase → Approve and send → Check the receipt. Previous runs shows saved work; opening a record never starts another transaction. Transaction details and Developer activity contain the technical evidence.",
+      "routes": [
+        "#/checkout"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-journey-treasury",
+      "title": "Keep team review attached to the payment.",
+      "body": "Reviewers should approve the same amount and recipient that the wallet will sign. Record two of three simulated reviews, then separately sign a real devnet transfer. This demonstrates the approval workflow; it is not a multisig wallet. Steps: Propose a grant → Record team review → Sign and confirm. Previous runs shows saved work; opening a record never starts another transaction. Transaction details and Developer activity contain the technical evidence.",
+      "routes": [
+        "#/treasury"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-journey-positions",
+      "title": "Follow a simulated position from open to close.",
+      "body": "Explore how a position changes and closes without placing a real market trade. Live SOL observations drive a simulated Arena position. Reduce it, close it and free the slot for another position. No trade is sent to a market. Steps: Open in Arena → Follow or reduce → Close and release. Previous runs shows saved work; opening a record never starts another transaction. Transaction details and Developer activity contain the technical evidence.",
+      "routes": [
+        "#/positions"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-journey-recovery",
+      "title": "Find the result when a payment reply goes missing.",
+      "body": "A missing response must not become a second payment. Arena records a simulated execution and withholds its reply. Check the original attempt to recover the result, including after a refresh. Steps: Prepare the rehearsal → Lose the response → Recover the same attempt. Previous runs shows saved work; opening a record never starts another transaction. Transaction details and Developer activity contain the technical evidence.",
+      "routes": [
+        "#/recovery"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-journey-policy",
+      "title": "Catch a bad request before wallet approval.",
+      "body": "Reusable checks make limits visible before an app asks someone to sign. Compare a normal request with excessive fees or stale information. The result explains each check; this page never signs or submits. Steps: Choose a scenario → Run the checks → Read the decision. Previous runs shows saved work; opening a record never starts another transaction. Transaction details and Developer activity contain the technical evidence.",
+      "routes": [
+        "#/policy"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-journey-network",
+      "title": "Know which network your app is using.",
+      "body": "A working endpoint and the right chain are prerequisites for a meaningful payment receipt. Read the same Conduit connection used by the demos. Verify devnet and inspect a current chain fact without sending a transaction. Steps: Check the connection → Verify devnet → Read a chain fact. Previous runs shows saved work; opening a record never starts another transaction. Transaction details and Developer activity contain the technical evidence.",
+      "routes": [
+        "#/network"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-receipt-tracking-warning",
+      "title": "Receipt ready but local tracking needs attention",
+      "body": "A matching devnet receipt and a local Sidecar tracking error are separate facts. Keep the receipt, inspect Technical error details and use Refresh receipt. Do not send another payment just to clear a tracking warning. A network confirmation without matching transaction evidence is not marked complete.",
+      "routes": [
+        "#/receipts"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-mainnet-wallets",
+      "title": "Experimental mainnet wallet management",
+      "body": "Mainnet Wallets can create, import, receive, check balances, lock and export keys. Mainnet keys require a password and an explicit warning that all funds can be lost. Wallet security is not the primary focus of this alpha. Mainnet sending is not enabled. Keep an independent backup and password before funding. Compatible external wallets appear when the browser or host exposes them; native MWA is not included.",
+      "routes": [
+        "#/wallets"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-expected-policy-rejection",
+      "title": "Why a guided policy demo rejects the request",
+      "body": "Excessive fee deliberately requests 150,000 lamports against a 100,000-lamport ceiling. Stale request deliberately uses an age of 600 seconds against a 300-second limit. Rejection of exactly that check is the expected successful demo outcome. The playground checks no wallet balance and spends no funds. Guide stops if an unexpected check fails. Compare Normal request to see a pass; obtain fresh information before reviewing a real stale request.",
+      "routes": [
+        "#/policy"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-guided-wallet-and-draft",
+      "title": "A funded wallet but an address error",
+      "body": "Check the recipient address as well as the payer’s balance. Having test SOL does not fill a missing recipient. Guide can reuse or create a payer and separate receiver, and fills only empty recipient fields. Change your demo wallets in Wallets. A saved payment still belongs to its original sender, which is shown when you reopen it.",
+      "routes": [
+        "#/service"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-assistant-chat-and-guide",
+      "title": "Chat, guided demos and help in the Assistant",
+      "body": "Use Chat for questions, Guided demos to choose a task, and Guide library to browse help. Page explanations and walkthroughs work without an AI model; conversational AI needs a loaded model. A suggested demo begins when you choose Guide me or Watch demo. You can inspect or stop the current walkthrough from the Guide controls. Stopping an answer does not erase saved work.",
+      "routes": [
+        "#/"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-guide-missing-wallet",
+      "title": "Start Guide without a devnet wallet",
+      "body": "Guide can reuse your saved wallets or create a missing devnet payer and separate receiver. You can also choose Prepare demo wallets in Wallets. Save a backup of each new device wallet. When funding is needed, Guide shows the address and faucet link; return after adding test funds. SOL pays network fees, while token demos also need the chosen token. You approve signing and sending separately.",
+      "routes": [
+        "#/tokens"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "solana-lab-demo-wallet-roles",
+      "title": "Set your demo payer and receiver",
+      "body": "The payer sends the payment; the receiver gets it. Choose existing wallets, enter an external receiver address, or use Prepare demo wallets to create any missing accounts. Review both addresses before paying. Addresses you enter and payments already saved keep their original values. If a receiver becomes unavailable or matches the payer, choose a different receiver. A new receiver may need test SOL before its first tiny payment.",
+      "routes": [
+        "#/wallets"
+      ],
+      "tags": [
+        "solana",
+        "lab"
+      ]
+    },
+    {
+      "id": "guided-demos",
+      "title": "Run a guided demo",
+      "body": "Choose a demo in Guided demos. Start with policy checks or The missing reply if you have no funded wallet. Devnet demos help you set up payer and receiver wallets, check funding, approve payments and inspect receipts. Run with Guide starts a new demo; Continue with Guide returns to a saved record. Follow the current guide when checking a pending payment or returning from a faucet. Payment approval stays with you. Position demos use observed prices and clearly labelled simulations. Local AI is optional for these authored walkthroughs.",
+      "routes": [
+        "#/guided"
+      ],
+      "tags": [
+        "demo",
+        "guide",
+        "workflow",
+        "GPU"
+      ]
+    }
+  ],
+  "workflows": [
+    {
+      "id": "prepare-demo-wallets",
+      "title": "Prepare demo wallets",
+      "description": "Set up separate devnet wallets for sending and receiving, then check their test funds.",
+      "routes": [
+        "#/wallets"
+      ],
+      "intents": [
+        "Prepare demo wallets",
+        "set up demo wallets",
+        "prepare payer and receiver"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "wallet-pair-setup",
+          "targetId": "demo-wallet-roles",
+          "route": "#/wallets",
+          "title": "Choose payer and receiver",
+          "body": "The payer sends the test payment; the receiver collects it. Guide reuses your selected wallets or creates any missing ones. You can change either wallet here or enter an external receiver address.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.wallets.setup",
+            "arguments": {},
+            "label": "Prepare demo wallets",
+            "confirm": true,
+            "requiresUserConfirmation": true
+          }
+        },
+        {
+          "id": "wallet-pair-funds",
+          "targetId": "demo-wallet-roles",
+          "route": "#/wallets",
+          "title": "Check the test funds",
+          "body": "Check whether the payer can cover 0.00001 SOL plus fees and whether the receiver needs test SOL for its first small payment. Follow any funding instructions shown, then return to check again. Token balances are separate.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.wallets.checkFunds",
+            "arguments": {},
+            "label": "Check the test funds",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "wallets-result",
+          "targetId": "lab-workspace",
+          "route": "#/wallets",
+          "title": "Back up and review both addresses",
+          "body": "Save a backup for each new device wallet from its wallet card, and check that the file is on your device. Review both addresses before using them in the demos.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "inspect-assets",
+      "title": "Inspect your wallet assets",
+      "description": "View the selected devnet wallet’s SOL balance and supported token accounts.",
+      "routes": [
+        "#/tokens"
+      ],
+      "intents": [
+        "Inspect your wallet assets"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "tokens-intro",
+          "targetId": "lab-workspace",
+          "route": "#/tokens",
+          "title": "Choose the wallet to inspect",
+          "body": "Use your selected devnet wallet or choose another in Wallets. If you have none, Guide can create a test wallet; back it up there. SOL and token balances are shown separately.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        },
+        {
+          "id": "assets-read",
+          "targetId": "lab-workspace",
+          "route": "#/tokens",
+          "title": "Refresh the wallet’s assets",
+          "body": "Refresh the wallet’s SOL balance and up to 32 original SPL token accounts. An empty result means this read found no supported accounts.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.assets.refresh",
+            "arguments": {},
+            "label": "Refresh the wallet’s assets",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "tokens-result",
+          "targetId": "lab-workspace",
+          "route": "#/tokens",
+          "title": "Check each token’s identity",
+          "body": "Each token is identified by its mint address. Inspect mint shows its decimal places and minting or freezing authorities; a ticker alone does not identify it. This demo excludes Token-2022.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo-token-payment",
+      "title": "Review a token payment",
+      "description": "Send an existing devnet token to another wallet, then inspect the asset and amount recorded in its receipt.",
+      "routes": [
+        "#/tokens"
+      ],
+      "intents": [
+        "Review a token payment"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "token-draft",
+          "targetId": "token-mint",
+          "route": "#/tokens",
+          "title": "Choose the token and amount",
+          "body": "Review the mint, recipient and amount. Guide suggests a token from your payer’s holdings, or test USDC if none is found, and prepares missing demo wallets. Back up new device wallets in Wallets.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.token.review",
+            "arguments": {},
+            "label": "Choose the token and amount",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "token-mint",
+          "targetId": "token-mint",
+          "route": "#/tokens",
+          "title": "Check the token’s identity",
+          "body": "Check the full mint address, its decimal places, and any authority to mint or freeze tokens. These details help identify the devnet asset before you prepare a transfer.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.mint.inspect",
+            "arguments": {},
+            "label": "Check the token’s identity",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "token-receiver",
+          "targetId": "token-transfer",
+          "route": "#/tokens",
+          "title": "Choose where the tokens go",
+          "body": "Use the displayed receiver or enter another address. If one is missing, Guide reuses or creates a separate devnet wallet. Check the address before proceeding; back up any new device wallet in Wallets.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.token.receiver",
+            "arguments": {},
+            "label": "Set up the receiver",
+            "confirm": true,
+            "requiresUserConfirmation": true
+          }
+        },
+        {
+          "id": "token-setup",
+          "targetId": "token-setup",
+          "route": "#/tokens",
+          "title": "Check tokens, SOL and permissions",
+          "body": "The payer needs this token plus SOL for fees and account rent. Check funding and the token permissions in Sentinel and Latch. For test USDC, use Circle’s faucet link on this page, then return to check again.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.token.setup",
+            "arguments": {},
+            "label": "Check tokens, SOL and permissions",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "token-prepare",
+          "targetId": "token-transfer",
+          "route": "#/tokens",
+          "title": "Review the token transfer",
+          "body": "Check the recipient and amount, then prepare the transaction to see its fees and account rent. Resolve any setup requirements shown. Wallet approval and sending follow as separate steps.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.token.prepare",
+            "arguments": {},
+            "label": "Review the token transfer",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "token-receipt",
+          "targetId": "token-transfer",
+          "route": "#/tokens",
+          "title": "Review and complete the payment",
+          "body": "Review the amount, sender and recipient. Guide takes you through wallet approval, sending and receipt verification as separate steps. Continue only when the displayed details match the payment you intend.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.transaction.step",
+            "arguments": {
+              "kind": "tokens"
+            },
+            "label": "Review payment steps",
+            "confirm": true,
+            "requiresUserConfirmation": true
+          }
+        },
+        {
+          "id": "tokens-result",
+          "targetId": "lab-workspace",
+          "route": "#/tokens",
+          "title": "Read the token receipt",
+          "body": "Check the network, mint, amount and recipient together. They identify the devnet transfer you made; the receipt does not establish the token’s value or issuer authenticity.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "create-payment-request",
+      "title": "Create a shareable payment request",
+      "description": "Create devnet payment terms, share a Solana Pay QR, then pay and verify the request.",
+      "routes": [
+        "#/requests"
+      ],
+      "intents": [
+        "Create a shareable payment request"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "request-draft",
+          "targetId": "payment-request",
+          "route": "#/requests",
+          "title": "Choose the payment terms",
+          "body": "Set the recipient, amount and expiry. Guide can prepare a missing devnet payer and separate receiver for this demo. Review the details before saving; wallet approval comes later.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.request.review",
+            "arguments": {},
+            "label": "Choose the payment terms",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "request-receiver",
+          "targetId": "payment-request",
+          "route": "#/requests",
+          "title": "Check who will receive payment",
+          "body": "Confirm the recipient address. Guide can reuse or create a separate devnet receiver if needed, while keeping your payer selected. Back up any new device wallets in Wallets.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.request.receiver",
+            "arguments": {},
+            "label": "Set up the demo receiver",
+            "confirm": true,
+            "requiresUserConfirmation": true
+          }
+        },
+        {
+          "id": "request-save",
+          "targetId": "payment-request",
+          "route": "#/requests",
+          "title": "Save the payment request",
+          "body": "Save the recipient, amount, network and expiry with a unique payment reference. These terms are what the payment will be checked against. Saving them does not move funds.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.request.create",
+            "arguments": {},
+            "label": "Save the payment request",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "request-share",
+          "targetId": "payment-request",
+          "route": "#/requests",
+          "title": "Review the QR and full request",
+          "body": "The QR provides a Solana Pay link. Share the full JSON request alongside it because the link alone omits network and expiry. Next, pay the request and verify the result.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        },
+        {
+          "id": "request-payer",
+          "targetId": "request-payment-flow",
+          "route": "#/requests",
+          "title": "Choose a funded payer",
+          "body": "Choose the wallet that will pay this request. Guide checks its funds before continuing; follow any funding instructions shown. The receiver is fixed by the saved request.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.request.payer",
+            "arguments": {
+              "kind": "requests"
+            },
+            "label": "Choose and check the payer",
+            "confirm": true,
+            "requiresUserConfirmation": true
+          }
+        },
+        {
+          "id": "request-payment",
+          "targetId": "request-payment-flow",
+          "route": "#/requests",
+          "title": "Review and complete the payment",
+          "body": "Review the amount, sender and recipient. Guide takes you through wallet approval, sending and receipt verification as separate steps. Continue only when the displayed details match the payment you intend.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.transaction.step",
+            "arguments": {
+              "kind": "requests"
+            },
+            "label": "Review payment steps",
+            "confirm": true,
+            "requiresUserConfirmation": true
+          }
+        },
+        {
+          "id": "request-paid",
+          "targetId": "payment-request",
+          "route": "#/requests",
+          "title": "Check the receiver was paid",
+          "body": "Verify this request’s payment signature against finalized network evidence and the amount credited to its receiver. If the payment is still pending, wait and check again without making another payment.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.request.verifyBound",
+            "arguments": {
+              "kind": "requests"
+            },
+            "label": "Check the receiver was paid",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "requests-result",
+          "targetId": "lab-workspace",
+          "route": "#/requests",
+          "title": "Review the paid request",
+          "body": "Inspect the request, payment signature and verified recipient credit together. You can reopen this record to review what was requested and what arrived.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "pay-payment-request",
+      "title": "Pay a payment request",
+      "description": "Review devnet payment terms, choose a funded payer, and verify that the receiver was credited.",
+      "routes": [
+        "#/requests"
+      ],
+      "intents": [
+        "Pay a payment request"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "payer-review",
+          "targetId": "payment-request",
+          "route": "#/requests",
+          "title": "Review this request",
+          "body": "Check the request’s recipient, amount, asset and expiry before choosing a payer. These terms will be used to verify the payment. Saving a new request does not move funds.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.request.payReview",
+            "arguments": {},
+            "label": "Review this request",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "payer-wallet",
+          "targetId": "request-payment-flow",
+          "route": "#/requests",
+          "title": "Choose a funded payer",
+          "body": "Choose a wallet with the required test funds. If only the receiver is funded, Guide can offer a separate demo using it as the payer. Follow any funding instructions before continuing.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.request.payer",
+            "arguments": {
+              "kind": "request-payment"
+            },
+            "label": "Choose and check the payer",
+            "confirm": true,
+            "requiresUserConfirmation": true
+          }
+        },
+        {
+          "id": "payer-payment",
+          "targetId": "request-payment-flow",
+          "route": "#/requests",
+          "title": "Review and complete the payment",
+          "body": "Review the amount, sender and recipient. Guide takes you through wallet approval, sending and receipt verification as separate steps. Continue only when the displayed details match the payment you intend.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.transaction.step",
+            "arguments": {
+              "kind": "request-payment"
+            },
+            "label": "Review payment steps",
+            "confirm": true,
+            "requiresUserConfirmation": true
+          }
+        },
+        {
+          "id": "payer-verify",
+          "targetId": "payment-request",
+          "route": "#/requests",
+          "title": "Check the receiver was paid",
+          "body": "Check the payment against this request’s terms and finalized recipient credit. Pending or mismatched evidence needs attention before the request can be marked paid.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.request.verifyBound",
+            "arguments": {
+              "kind": "request-payment"
+            },
+            "label": "Check the receiver was paid",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "requests-result",
+          "targetId": "lab-workspace",
+          "route": "#/requests",
+          "title": "Read the verified payment",
+          "body": "See the requested terms, transaction signature and observed recipient credit together. This is the evidence behind the paid result.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "verify-payment-request",
+      "title": "Verify a request payment",
+      "description": "Find possible payments for a request and check that its receiver received the correct amount.",
+      "routes": [
+        "#/requests"
+      ],
+      "intents": [
+        "Verify a request payment"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "requests-intro",
+          "targetId": "lab-workspace",
+          "route": "#/requests",
+          "title": "Open the request to verify",
+          "body": "Open a saved request to check. For imported requests, confirm the recipient and token independently. A transaction appearing in wallet history is not enough to establish that this request was paid.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        },
+        {
+          "id": "request-find",
+          "targetId": "lab-workspace",
+          "route": "#/requests",
+          "title": "Find possible payments",
+          "body": "Look for recent transactions carrying this request’s reference. Guide reads up to 20 candidates; each still needs to be checked against the payment terms.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.request.find",
+            "arguments": {},
+            "label": "Find possible payments",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "request-check",
+          "targetId": "lab-workspace",
+          "route": "#/requests",
+          "title": "Check the selected payment",
+          "body": "Use the request’s recorded signature, choose a candidate, or paste a signature. Witness checks the terms, required signatures, payment timing, finalized status and actual recipient credit.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.request.verify",
+            "arguments": {},
+            "label": "Check the selected payment",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "requests-result",
+          "targetId": "lab-workspace",
+          "route": "#/requests",
+          "title": "Read the verification result",
+          "body": "Review whether the payment matched the request and credited the receiver. A payment made within the allowed window can still be verified after the request expires.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "inspect-wallet-activity",
+      "title": "Inspect public address activity",
+      "description": "Read recent transactions for a public address on the network you choose.",
+      "routes": [
+        "#/activity"
+      ],
+      "intents": [
+        "Inspect public address activity"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "activity-intro",
+          "targetId": "lab-workspace",
+          "route": "#/activity",
+          "title": "Choose the address and network",
+          "body": "Enter an address and choose the network. Leaving the devnet address blank uses your selected wallet; Guide can create a test wallet if needed. Back up new wallets in Wallets. Mainnet requires an explicit address.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        },
+        {
+          "id": "activity-read",
+          "targetId": "wallet-activity-query",
+          "route": "#/activity",
+          "title": "Load recent activity",
+          "body": "Read up to 20 recent entries for this address. An empty history is a valid result. Use the page controls to load more; the Lab retains up to 200 entries.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.activity.load",
+            "arguments": {},
+            "label": "Load recent activity",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "activity-result",
+          "targetId": "lab-workspace",
+          "route": "#/activity",
+          "title": "Inspect a transaction",
+          "body": "Open an entry or follow its Explorer link. This address history can omit token-account transfers; use Payment requests when you need to verify that a specific payment reached its recipient.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "explore-lab",
+      "title": "Find your way around",
+      "description": "Explore the demos, reusable components and saved evidence to choose what to try first.",
+      "routes": [
+        "#/"
+      ],
+      "intents": [
+        "Find your way around"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "overview",
+          "targetId": "lab-workspace",
+          "route": "#/",
+          "title": "Choose a demo",
+          "body": "Explore payments, tokens, document proofs and reliability examples. Each demo shows how reusable components work together to produce a result you can inspect.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        },
+        {
+          "id": "architecture",
+          "targetId": "lab-workspace",
+          "route": "#/components",
+          "title": "See how the parts fit",
+          "body": "Choose a demo in the component explorer to see which capabilities it uses and whether their providers are ready.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        },
+        {
+          "id": "evidence",
+          "targetId": "lab-workspace",
+          "route": "#/receipts",
+          "title": "See what each result proves",
+          "body": "Open saved receipts to inspect real devnet transfers or clearly labelled Arena simulations. Their evidence describes different kinds of result.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "reset-policy-proposal",
+      "title": "Run a passing policy example",
+      "description": "Check a sample request against Sentinel’s policy and inspect the decision. No wallet funds are used.",
+      "routes": [
+        "#/policy"
+      ],
+      "intents": [
+        "Run a passing policy example"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "policy-intro",
+          "targetId": "lab-workspace",
+          "route": "#/policy",
+          "title": "Check a request before payment",
+          "body": "See whether a sample request meets limits for amount, fees and freshness. This example checks policy locally; it does not access a wallet or send a payment.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        },
+        {
+          "id": "reset-policy-proposal-check",
+          "targetId": "lab-workspace",
+          "route": "#/policy",
+          "title": "Run a passing policy example",
+          "body": "Run the sample through Sentinel, then inspect which checks passed or failed and the reason for its decision.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.policy.check",
+            "arguments": {
+              "scenario": "normal"
+            },
+            "label": "Run a passing policy example",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "reset-policy-proposal-result",
+          "targetId": "policy-results",
+          "route": "#/policy",
+          "title": "The request passed its checks",
+          "body": "The sample passed all configured checks. That means it meets this policy; a real payment would still need a funded wallet and your approval.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "try-excessive-fee",
+      "title": "Test an excessive fee",
+      "description": "Check a sample request against Sentinel’s policy and inspect the decision. No wallet funds are used.",
+      "routes": [
+        "#/policy"
+      ],
+      "intents": [
+        "Test an excessive fee"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "policy-intro",
+          "targetId": "lab-workspace",
+          "route": "#/policy",
+          "title": "Check a request before payment",
+          "body": "See whether a sample request meets limits for amount, fees and freshness. This example checks policy locally; it does not access a wallet or send a payment.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        },
+        {
+          "id": "try-excessive-fee-check",
+          "targetId": "lab-workspace",
+          "route": "#/policy",
+          "title": "Test an excessive fee",
+          "body": "Run the sample through Sentinel, then inspect which checks passed or failed and the reason for its decision.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.policy.check",
+            "arguments": {
+              "scenario": "fee"
+            },
+            "label": "Test an excessive fee",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "try-excessive-fee-result",
+          "targetId": "policy-results",
+          "route": "#/policy",
+          "title": "The policy rejected the request",
+          "body": "Sentinel rejected the request because its 150,000-lamport fee exceeds the 100,000-lamport limit. That is the intended result. Compare it with Normal request.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "try-stale-intent",
+      "title": "Test a stale intent",
+      "description": "Check a sample request against Sentinel’s policy and inspect the decision. No wallet funds are used.",
+      "routes": [
+        "#/policy"
+      ],
+      "intents": [
+        "Test a stale intent"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "policy-intro",
+          "targetId": "lab-workspace",
+          "route": "#/policy",
+          "title": "Check a request before payment",
+          "body": "See whether a sample request meets limits for amount, fees and freshness. This example checks policy locally; it does not access a wallet or send a payment.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        },
+        {
+          "id": "try-stale-intent-check",
+          "targetId": "lab-workspace",
+          "route": "#/policy",
+          "title": "Test a stale intent",
+          "body": "Run the sample through Sentinel, then inspect which checks passed or failed and the reason for its decision.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.policy.check",
+            "arguments": {
+              "scenario": "stale"
+            },
+            "label": "Test a stale intent",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "try-stale-intent-result",
+          "targetId": "policy-results",
+          "route": "#/policy",
+          "title": "The policy rejected the request",
+          "body": "Sentinel rejected information that is 600 seconds old against a 300-second limit. A real payment would need fresh terms reviewed again before approval.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "understand-recovery",
+      "title": "Run lost-response recovery",
+      "description": "Watch a simulated payment lose its reply, then recover its original result without sending again.",
+      "routes": [
+        "#/recovery"
+      ],
+      "intents": [
+        "Run lost-response recovery",
+        "demo the app",
+        "show me recovery",
+        "lost response"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "recovery-intro",
+          "targetId": "lab-workspace",
+          "route": "#/recovery",
+          "title": "Recover a missing payment reply",
+          "body": "A payment can succeed even when its reply goes missing. This local simulation shows how the recovery components check the original attempt before deciding what happened. No wallet funds are used.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        },
+        {
+          "id": "recovery-prepare",
+          "targetId": "lab-workspace",
+          "route": "#/recovery",
+          "title": "Prepare a simulated payment",
+          "body": "Set up a test payment in the isolated Arena simulation. The following steps will approve it, lose the reply and recover its original result.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.recovery.prepare",
+            "arguments": {},
+            "label": "Prepare a simulated payment",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "recovery-approve",
+          "targetId": "lab-workspace",
+          "route": "#/recovery",
+          "title": "Approve the simulated payment",
+          "body": "Authorize the rehearsal payment inside the simulation. This is a simulated approval; it does not ask your wallet to sign or move funds.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.recovery.approve",
+            "arguments": {},
+            "label": "Approve the simulated payment",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "recovery-drop",
+          "targetId": "lab-workspace",
+          "route": "#/recovery",
+          "title": "Send and lose the reply",
+          "body": "The simulated venue executes the payment once, then drops its reply. The status becomes Unknown because the app has not yet confirmed what happened.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.recovery.submit",
+            "arguments": {},
+            "label": "Send and lose the reply",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "recovery-reconcile",
+          "targetId": "lab-workspace",
+          "route": "#/recovery",
+          "title": "Recover the original result",
+          "body": "Check the recorded attempt instead of sending again. The recovered receipt must match the original simulated payment before Guide can report success.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.recovery.reconcile",
+            "arguments": {},
+            "label": "Recover the original result",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "recovery-result",
+          "targetId": "lab-workspace",
+          "route": "#/recovery",
+          "title": "Read the recovered receipt",
+          "body": "The receipt confirms that the simulated payment completed under its original attempt. Inspect the operation and attempt identifiers to see that recovery did not create a second payment.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "understand-checkout",
+      "title": "Walk through checkout",
+      "description": "Pay from one devnet wallet to another and inspect the resulting receipt.",
+      "routes": [
+        "#/checkout"
+      ],
+      "intents": [
+        "Walk through checkout"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "checkout-wallet",
+          "targetId": "checkout-request",
+          "route": "#/checkout",
+          "title": "Choose who pays and receives",
+          "body": "Set the checkout amount and recipient. Guide prepares missing test wallets and can fill an empty recipient with your demo receiver. Change your payer or receiver in Wallets; back up new device wallets before funding them.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.run.review",
+            "arguments": {
+              "kind": "checkout"
+            },
+            "label": "Choose who pays and receives",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "checkout-prepare",
+          "targetId": "checkout-request",
+          "route": "#/checkout",
+          "title": "Check and prepare the payment",
+          "body": "Check the amount and recipient, then let Lab verify funding and prepare the transaction. You’ll see its checks before approving it with your wallet. Preparation does not send a payment.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.payment.prepare",
+            "arguments": {
+              "kind": "checkout"
+            },
+            "label": "Check and prepare the payment",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "checkout-receipt",
+          "targetId": "checkout-request",
+          "route": "#/checkout",
+          "title": "Review and complete the payment",
+          "body": "Review the amount, sender and recipient. Guide takes you through wallet approval, sending and receipt verification as separate steps. Continue only when the displayed details match the payment you intend.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.transaction.step",
+            "arguments": {
+              "kind": "checkout"
+            },
+            "label": "Review payment steps",
+            "confirm": true,
+            "requiresUserConfirmation": true
+          }
+        },
+        {
+          "id": "checkout-result",
+          "targetId": "lab-workspace",
+          "route": "#/checkout",
+          "title": "Read the checkout receipt",
+          "body": "Check the devnet amount, sender, recipient and transaction signature. Open the saved operation to inspect the evidence behind this test payment.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "understand-treasury",
+      "title": "Walk through group review",
+      "description": "Record simulated team reviews, authorize a devnet payment and inspect the result.",
+      "routes": [
+        "#/treasury"
+      ],
+      "intents": [
+        "Walk through group review"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "treasury-wallet",
+          "targetId": "treasury-request",
+          "route": "#/treasury",
+          "title": "Set up a team payment",
+          "body": "Choose the amount and receiver for a devnet payment. You’ll record simulated team reviews before approving it with the payer’s wallet. Guide reuses your demo wallets or creates missing ones; back up new device wallets in Wallets.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.run.review",
+            "arguments": {
+              "kind": "treasury"
+            },
+            "label": "Set up a team payment",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "treasury-prepare",
+          "targetId": "treasury-request",
+          "route": "#/treasury",
+          "title": "Check and prepare the payment",
+          "body": "Check the amount and recipient, then let Lab verify funding and prepare the transaction. You’ll see its checks before approving it with your wallet. Preparation does not send a payment.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.payment.prepare",
+            "arguments": {
+              "kind": "treasury"
+            },
+            "label": "Check and prepare the payment",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "treasury-receipt",
+          "targetId": "treasury-request",
+          "route": "#/treasury",
+          "title": "Review and complete the payment",
+          "body": "Review the amount, sender and recipient. Guide takes you through wallet approval, sending and receipt verification as separate steps. Continue only when the displayed details match the payment you intend.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.transaction.step",
+            "arguments": {
+              "kind": "treasury"
+            },
+            "label": "Review payment steps",
+            "confirm": true,
+            "requiresUserConfirmation": true
+          }
+        },
+        {
+          "id": "treasury-result",
+          "targetId": "lab-workspace",
+          "route": "#/treasury",
+          "title": "Review the approvals and payment",
+          "body": "Inspect the simulated team reviews alongside the devnet payment receipt. Team reviews in this demo are local examples, not authenticated signatures from real members.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo-service",
+      "title": "Payment to delivery",
+      "description": "Pay for a locally generated JSON report, then record and verify its document proof on devnet.",
+      "routes": [
+        "#/service"
+      ],
+      "intents": [
+        "Payment to delivery"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "service-wallet",
+          "targetId": "service-request",
+          "route": "#/service",
+          "title": "Set up a paid report",
+          "body": "Choose the report’s recipient, price and content. Guide prepares missing test wallets and can fill an empty recipient with your demo receiver. You’ll pay for the report, then record its proof separately. Back up new device wallets in Wallets.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.run.review",
+            "arguments": {
+              "kind": "service"
+            },
+            "label": "Set up a paid report",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "service-create",
+          "targetId": "service-request",
+          "route": "#/service",
+          "title": "Prepare the report order",
+          "body": "Check the JSON input and price. Lab checks funding and prepares the report payment. You’ll approve and send it next; the report becomes available after its receipt is verified.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.workflow.prepare",
+            "arguments": {
+              "kind": "service"
+            },
+            "label": "Prepare the report order",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "service-paid",
+          "targetId": "service-request",
+          "route": "#/service",
+          "title": "Review and complete the payment",
+          "body": "Review the amount, sender and recipient. Guide takes you through wallet approval, sending and receipt verification as separate steps. Continue only when the displayed details match the payment you intend.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.transaction.step",
+            "arguments": {
+              "kind": "service"
+            },
+            "label": "Review payment steps",
+            "confirm": true,
+            "requiresUserConfirmation": true
+          }
+        },
+        {
+          "id": "service-deliver",
+          "targetId": "lab-workspace",
+          "route": "#/service",
+          "title": "Generate the paid report",
+          "body": "Create the report from this order’s JSON input now that its payment is verified. The report includes its payment reference so you can inspect the connection.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.workflow.deliver",
+            "arguments": {},
+            "label": "Generate the paid report",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "service-anchor",
+          "targetId": "lab-workspace",
+          "route": "#/service",
+          "title": "Prepare the report’s proof",
+          "body": "Prepare a proof of the delivered report. Recording its fingerprint uses a separate 0.00001 devnet SOL transfer plus fees, with its own wallet approval.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.workflow.anchor",
+            "arguments": {},
+            "label": "Prepare the report’s proof",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "service-proof-payment",
+          "targetId": "proof-request",
+          "route": "#/proof",
+          "title": "Review and complete the payment",
+          "body": "Review the amount, sender and recipient. Guide takes you through wallet approval, sending and receipt verification as separate steps. Continue only when the displayed details match the payment you intend.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.transaction.step",
+            "arguments": {
+              "kind": "service-proof"
+            },
+            "label": "Review payment steps",
+            "confirm": true,
+            "requiresUserConfirmation": true
+          }
+        },
+        {
+          "id": "service-proof-compare",
+          "targetId": "lab-workspace",
+          "route": "#/proof",
+          "title": "Check the delivered report matches",
+          "body": "Compare the delivered report’s text with its recorded fingerprint and verify the linked devnet receipt. A match confirms that the proof refers to this report.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.workflow.compare",
+            "arguments": {
+              "source": "service"
+            },
+            "label": "Check the delivered report matches",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "service-result",
+          "targetId": "lab-workspace",
+          "route": "#/service",
+          "title": "Follow the payment, report and proof",
+          "body": "The order links the devnet payment, locally generated report and matching document proof. Open each record to see how the report follows the payment.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo-batch",
+      "title": "Review a payout batch",
+      "description": "Pay each recipient in a devnet batch and inspect the receipt for every completed transfer.",
+      "routes": [
+        "#/batch"
+      ],
+      "intents": [
+        "Review a payout batch"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "batch-wallet",
+          "targetId": "batch-request",
+          "route": "#/batch",
+          "title": "Review the payout list",
+          "body": "Choose the amounts and recipients for this devnet payout batch. Guide reuses your demo wallets or creates missing ones, and fills empty recipients with your receiver. Each payout needs its own approval and receipt. Back up new wallets in Wallets.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.run.review",
+            "arguments": {
+              "kind": "batch"
+            },
+            "label": "Review the payout list",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "batch-create",
+          "targetId": "batch-request",
+          "route": "#/batch",
+          "title": "Prepare the payout batch",
+          "body": "Review every recipient and amount. Lab checks the available test SOL, then prepares the first payment. You’ll review each payout’s fee, approve it separately and receive its own receipt.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.workflow.prepare",
+            "arguments": {
+              "kind": "batch"
+            },
+            "label": "Prepare the payout batch",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "batch-paid",
+          "targetId": "batch-request",
+          "route": "#/batch",
+          "title": "Review and complete the payment",
+          "body": "Review the amount, sender and recipient. Guide takes you through wallet approval, sending and receipt verification as separate steps. Continue only when the displayed details match the payment you intend.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.transaction.step",
+            "arguments": {
+              "kind": "batch"
+            },
+            "label": "Review payment steps",
+            "confirm": true,
+            "requiresUserConfirmation": true
+          }
+        },
+        {
+          "id": "batch-result",
+          "targetId": "lab-workspace",
+          "route": "#/batch",
+          "title": "Check every payout receipt",
+          "body": "Each payout keeps its own recipient, amount and devnet receipt. The batch is complete when every payment is confirmed; inspect individual rows to see the evidence.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo-proof",
+      "title": "Anchor and compare a document",
+      "description": "Record a document’s fingerprint with a devnet transfer, then check that its text matches.",
+      "routes": [
+        "#/proof"
+      ],
+      "intents": [
+        "Anchor and compare a document"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "proof-wallet",
+          "targetId": "proof-request",
+          "route": "#/proof",
+          "title": "Choose the document to record",
+          "body": "Review the document text, payment amount and receiver. Guide prepares separate devnet payer and receiver wallets if needed. You’ll record the document’s fingerprint, then compare the text against it. Back up new device wallets in Wallets.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.run.review",
+            "arguments": {
+              "kind": "proof"
+            },
+            "label": "Choose the document to record",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "proof-create",
+          "targetId": "proof-request",
+          "route": "#/proof",
+          "title": "Prepare the document proof",
+          "body": "Lab calculates a fingerprint of the document and attaches it to a devnet payment. Check the text and transfer amount before continuing to wallet approval.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.workflow.prepare",
+            "arguments": {
+              "kind": "proof"
+            },
+            "label": "Prepare the document proof",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "proof-paid",
+          "targetId": "proof-request",
+          "route": "#/proof",
+          "title": "Review and complete the payment",
+          "body": "Review the amount, sender and recipient. Guide takes you through wallet approval, sending and receipt verification as separate steps. Continue only when the displayed details match the payment you intend.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.transaction.step",
+            "arguments": {
+              "kind": "proof"
+            },
+            "label": "Review payment steps",
+            "confirm": true,
+            "requiresUserConfirmation": true
+          }
+        },
+        {
+          "id": "proof-compare",
+          "targetId": "lab-workspace",
+          "route": "#/proof",
+          "title": "Check the document matches",
+          "body": "Compare the saved document with the recorded fingerprint and check its payment receipt. Matching text confirms the same content; it does not establish authorship or ownership.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.workflow.compare",
+            "arguments": {},
+            "label": "Check the document matches",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "proof-result",
+          "targetId": "lab-workspace",
+          "route": "#/proof",
+          "title": "Read the matching proof",
+          "body": "The text’s fingerprint matches the saved commitment, and its devnet payment has an observed receipt. To explore the comparison, change the text in the verification form.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "plan-position",
+      "title": "Run an Arena position lifecycle",
+      "description": "Open, reduce and close a simulated SOL position using current Market Pulse prices. No wallet transfer.",
+      "routes": [
+        "#/positions"
+      ],
+      "intents": [
+        "Run an Arena position lifecycle"
+      ],
+      "slots": [
+        {
+          "id": "units",
+          "label": "Synthetic units",
+          "required": true,
+          "default": "10",
+          "maxLength": 12
+        }
+      ],
+      "steps": [
+        {
+          "id": "positions-intro",
+          "targetId": "lab-workspace",
+          "route": "#/positions",
+          "title": "Check the SOL price",
+          "body": "Use Market Pulse to view a recent observed SOL price. The simulation needs a fresh price before it can open a position.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        },
+        {
+          "id": "position-open",
+          "targetId": "lab-workspace",
+          "route": "#/positions",
+          "title": "Open a simulated position",
+          "body": "Open a simulated SOL position using the units you chose and the current observed price. This records an Arena result without transferring wallet funds.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.position.open",
+            "arguments": {
+              "units": "{{units}}"
+            },
+            "label": "Open a simulated position",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "position-reduce",
+          "targetId": "lab-workspace",
+          "route": "#/positions",
+          "title": "Reduce by half",
+          "body": "Reduce the position by half at the current observed price, then review its simulated profit or loss.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.position.change",
+            "arguments": {
+              "action": "reduce"
+            },
+            "label": "Reduce by half",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "position-close",
+          "targetId": "lab-workspace",
+          "route": "#/positions",
+          "title": "Close the remaining position",
+          "body": "Close the remaining units at the current observed price. The simulation saves its receipt and releases the position’s reserved capacity.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.position.change",
+            "arguments": {
+              "action": "close"
+            },
+            "label": "Close the remaining position",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "positions-result",
+          "targetId": "lab-workspace",
+          "route": "#/positions",
+          "title": "Review the position history",
+          "body": "Compare the opening, reduction and closing prices alongside their simulated receipts. These records explain the simulated profit or loss; no real market position was opened.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "anchor-position-evidence",
+      "title": "Record a position’s evidence transfer",
+      "description": "Link a completed Arena action to a separate, small devnet transfer that records its evidence.",
+      "routes": [
+        "#/positions"
+      ],
+      "intents": [
+        "Record a position’s evidence transfer"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "positions-intro",
+          "targetId": "lab-workspace",
+          "route": "#/positions",
+          "title": "Choose a completed position action",
+          "body": "Choose a position with a completed Arena action. You’ll record its latest action using a separate devnet transfer at 1/10,000 of the nominal amount. This records evidence; it does not settle a market trade.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        },
+        {
+          "id": "position-evidence-prepare",
+          "targetId": "lab-workspace",
+          "route": "#/positions",
+          "title": "Review the evidence payment",
+          "body": "Check the nominal amount, actual scaled transfer and receiver. Guide prepares missing demo wallets and checks test funds before preparing the payment. Back up new wallets in Wallets; you’ll approve and send separately.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.position.evidencePrepare",
+            "arguments": {},
+            "label": "Review the evidence payment",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "position-evidence-payment",
+          "targetId": "position-evidence",
+          "route": "#/positions",
+          "title": "Review and complete the payment",
+          "body": "Review the amount, sender and recipient. Guide takes you through wallet approval, sending and receipt verification as separate steps. Continue only when the displayed details match the payment you intend.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.transaction.step",
+            "arguments": {
+              "kind": "position-evidence"
+            },
+            "label": "Review payment steps",
+            "confirm": true,
+            "requiresUserConfirmation": true
+          }
+        },
+        {
+          "id": "positions-result",
+          "targetId": "lab-workspace",
+          "route": "#/positions",
+          "title": "Inspect the linked receipt",
+          "body": "Inspect the devnet receipt and its link to the simulated action. It proves the small transfer was recorded, while the position itself remains a simulation.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "prepare-public-rpc",
+      "title": "Check the devnet connection",
+      "description": "Check that the configured connection points to Solana Devnet without making a payment.",
+      "routes": [
+        "#/network"
+      ],
+      "intents": [
+        "Check the devnet connection"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "network-check",
+          "targetId": "lab-workspace",
+          "route": "#/network",
+          "title": "Check the network",
+          "body": "Ask the configured connection for its network identity. The result should confirm Solana Devnet before you use it for test payments.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.network.verify",
+            "arguments": {},
+            "label": "Check the network",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "network-result",
+          "targetId": "lab-workspace",
+          "route": "#/network",
+          "title": "Review the connection result",
+          "body": "Confirm that the returned identity matches devnet. If it does not, review the endpoint in Conduit settings before continuing with payment demos.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "inspect-components",
+      "title": "Refresh component status",
+      "description": "See which components are ready and what any missing or unavailable provider needs.",
+      "routes": [
+        "#/components"
+      ],
+      "intents": [
+        "Refresh component status"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "components-refresh",
+          "targetId": "lab-workspace",
+          "route": "#/components",
+          "title": "Refresh status",
+          "body": "Refresh the components’ current connection and readiness results so you can see which demos are available.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.components.refresh",
+            "arguments": {},
+            "label": "Refresh status",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "components-result",
+          "targetId": "lab-workspace",
+          "route": "#/components",
+          "title": "Review the component status",
+          "body": "Review any missing provider or setup requirement. Use the component details to understand its role and what you need before trying a dependent demo.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "inspect-receipts",
+      "title": "Inspect receipts and calls",
+      "description": "Review saved payments and simulation results without creating a new operation.",
+      "routes": [
+        "#/receipts"
+      ],
+      "intents": [
+        "Inspect receipts and calls"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "receipts-result",
+          "targetId": "lab-workspace",
+          "route": "#/receipts",
+          "title": "Explore the saved evidence",
+          "body": "Open a record to inspect its amount, identities and receipt, or return to the original demo. Check the network and simulation labels to understand what each result establishes.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "export-evidence",
+      "title": "Export the current evidence",
+      "description": "Save a copy of the Lab’s operation records and receipts.",
+      "routes": [
+        "#/receipts"
+      ],
+      "intents": [
+        "Export the current evidence"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "receipts-result",
+          "targetId": "lab-workspace",
+          "route": "#/receipts",
+          "title": "Review what will be exported",
+          "body": "The export includes public operation details and receipts, so review it before sharing. Wallet private keys are excluded; wallet backups are a separate task.",
+          "action": {
+            "type": "focus",
+            "confirm": true
+          }
+        },
+        {
+          "id": "export",
+          "targetId": "export-all",
+          "route": "#/receipts",
+          "title": "Save evidence JSON",
+          "body": "Download the evidence file, then check that it is saved on your device. Keep it for review or share it with someone inspecting the demo.",
+          "action": {
+            "type": "click",
+            "confirm": true,
+            "label": "Save evidence JSON"
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-local-ai",
+      "title": "Open Local AI setup",
+      "description": "Choose the model and inference settings shared by Guide, Agent and Lab Assistant.",
+      "routes": [
+        "#/"
+      ],
+      "intents": [
+        "Open Local AI setup"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "ai-open",
+          "targetId": "lab-workspace",
+          "route": "#/",
+          "title": "Open Local AI settings",
+          "body": "Review your model and hardware settings in Local AI. Guide, Agent and Lab Assistant share these choices; your saved custom settings remain available.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.ai.settings",
+            "arguments": {},
+            "label": "Open Local AI settings",
+            "confirm": true,
+            "afterMs": 150
+          }
+        }
+      ]
+    },
+    {
+      "id": "browse-lab-help",
+      "title": "Browse the Lab Assistant’s help",
+      "description": "Explore written explanations of the demos without loading an AI model.",
+      "routes": [
+        "#/"
+      ],
+      "intents": [
+        "Browse the Lab Assistant’s help"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "assistant-guide",
+          "targetId": "lab-workspace",
+          "route": "#/",
+          "title": "Open the demo help",
+          "body": "Browse explanations of each demo, the capabilities it uses and the evidence you should expect to see.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.assistant.guide",
+            "arguments": {},
+            "label": "Open the demo help",
+            "confirm": true,
+            "afterMs": 150
+          }
+        }
+      ]
+    },
+    {
+      "id": "inspect-assistant-tools",
+      "title": "Inspect the assistant’s tools",
+      "description": "See the read-only tools available to the Assistant and whether their providers are ready.",
+      "routes": [
+        "#/"
+      ],
+      "intents": [
+        "Inspect the assistant’s tools"
+      ],
+      "slots": [],
+      "steps": [
+        {
+          "id": "assistant-status",
+          "targetId": "lab-workspace",
+          "route": "#/",
+          "title": "View the Assistant’s available tools",
+          "body": "Inspect the tools and current component status the Assistant can read. This helps you understand the information available to the model; wallet approvals remain yours.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.assistant.status",
+            "arguments": {},
+            "label": "View the Assistant’s available tools",
+            "confirm": true,
+            "afterMs": 150
+          }
+        }
+      ]
+    },
+    {
+      "id": "prepare-ai-question",
+      "title": "Prepare a question for Local AI",
+      "description": "Draft a question in the Assistant, then review and send it when you’re ready.",
+      "routes": [
+        "#/"
+      ],
+      "intents": [
+        "Prepare a question for Local AI"
+      ],
+      "slots": [
+        {
+          "id": "question",
+          "label": "Question",
+          "required": true,
+          "default": "What did the recovery receipt prove?",
+          "maxLength": 1800
+        }
+      ],
+      "steps": [
+        {
+          "id": "assistant-open",
+          "targetId": "lab-workspace",
+          "route": "#/",
+          "title": "Open the Assistant",
+          "body": "Check that your chosen model is loaded in Local AI. You can then ask it to explain a demo or help interpret a result.",
+          "action": {
+            "type": "app",
+            "actionId": "solana-lab.assistant.open",
+            "arguments": {},
+            "label": "Open the Assistant",
+            "confirm": true,
+            "afterMs": 150
+          }
+        },
+        {
+          "id": "question",
+          "targetId": "assistant-question",
+          "route": "#/",
+          "title": "Review your question",
+          "body": "Read the question in the message box and edit it if needed. Send it when you’re ready for the model to answer.",
+          "action": {
+            "type": "input",
+            "value": "{{question}}",
+            "confirm": true,
+            "label": "Fill question"
+          }
+        }
+      ]
+    }
+  ]
+}

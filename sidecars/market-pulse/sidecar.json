@@ -1,0 +1,350 @@
+{
+  "protocol": "capp.sidecar-package.v1",
+  "id": "uk.capp.sidecar.market-pulse",
+  "name": "cApp Market Pulse",
+  "version": "0.1.0-alpha.2",
+  "type": "hybrid-sidecar",
+  "status": "runtime-ready",
+  "implementationStatus": "runtime-ready",
+  "category": "web3",
+  "platforms": [
+    "windows",
+    "android"
+  ],
+  "runtimeReadyPlatforms": [
+    "windows",
+    "android"
+  ],
+  "packageModel": "single-package",
+  "compile": {
+    "mode": "shell",
+    "packageRequired": true,
+    "packageStatus": "ready",
+    "nativeRuntime": false,
+    "shellEntry": "runtime.js",
+    "activationEvent": "capp:market-pulse-ready",
+    "failureEvent": "capp:market-pulse-error",
+    "activationStatus": "ready"
+  },
+  "permissions": [
+    "market.price.read",
+    "market.history.persist",
+    "market.provider.http"
+  ],
+  "capabilities": [
+    "market.status",
+    "market.quote",
+    "market.candles",
+    "market.configure",
+    "market.chart.mount"
+  ],
+  "security": {
+    "releaseBuildRequiresExplicitSelection": true,
+    "authorises": false,
+    "submits": false,
+    "credentialScope": "provider-specific",
+    "localStorageScope": "project-component-app",
+    "automaticNetworkRequests": "only while an active consumer is visible"
+  },
+  "defaults": {
+    "providerMode": "jupiter",
+    "apiKey": "",
+    "adapterUrl": "",
+    "adapterToken": "",
+    "pollMs": 15000,
+    "candleMs": 15000,
+    "chartType": "candles",
+    "rateMode": "conservative",
+    "budgetPerMinute": 30,
+    "staleAfterMs": 60000,
+    "enabled": true,
+    "remember": true
+  },
+  "dependencies": [],
+  "library": {
+    "order": 22,
+    "visible": true,
+    "selectable": true,
+    "displayName": "Market Pulse",
+    "shortName": "Market",
+    "accent": "green",
+    "icon": "\u2301",
+    "summary": "Live prices, sampled candles and reusable charts from one shared feed.",
+    "detail": "Display Jupiter price observations or connect an OHLCV provider. Configure intervals, request budgets and multiple instruments. Apps and agents share bounded read APIs.",
+    "configSchema": [
+      {
+        "key": "providerMode",
+        "label": "Price source",
+        "type": "select",
+        "options": [
+          [
+            "jupiter",
+            "Jupiter USD prices"
+          ],
+          [
+            "http-candles",
+            "HTTP OHLCV provider"
+          ],
+          [
+            "manual",
+            "Application push feed"
+          ]
+        ]
+      },
+      {
+        "key": "apiKey",
+        "label": "Jupiter client key",
+        "type": "text",
+        "sensitive": true,
+        "description": "Optional distributed client key. Used only for api.jup.ag."
+      },
+      {
+        "key": "candleMs",
+        "label": "Candle interval (ms)",
+        "type": "number",
+        "min": 1000,
+        "max": 3600000
+      },
+      {
+        "key": "chartType",
+        "label": "Chart style",
+        "type": "select",
+        "options": [
+          [
+            "candles",
+            "Candles"
+          ],
+          [
+            "ohlc",
+            "Ohlc"
+          ],
+          [
+            "line",
+            "Line"
+          ],
+          [
+            "area",
+            "Area"
+          ]
+        ]
+      },
+      {
+        "key": "enabled",
+        "label": "Enable price requests",
+        "type": "checkbox"
+      },
+      {
+        "key": "remember",
+        "label": "Remember on this device",
+        "type": "checkbox"
+      },
+      {
+        "key": "pollMs",
+        "label": "Requested polling interval (ms)",
+        "type": "number",
+        "min": 1000,
+        "max": 300000
+      },
+      {
+        "key": "rateMode",
+        "label": "Request profile",
+        "type": "select",
+        "options": [
+          [
+            "conservative",
+            "Conservative \u00b7 at least 15 seconds"
+          ],
+          [
+            "custom",
+            "Custom \u00b7 respect configured quota"
+          ]
+        ]
+      },
+      {
+        "key": "budgetPerMinute",
+        "label": "Available requests per minute",
+        "type": "number",
+        "min": 1,
+        "max": 6000,
+        "description": "Applies 20% headroom. Other devices and apps may share your provider quota."
+      },
+      {
+        "key": "staleAfterMs",
+        "label": "Stale after (ms)",
+        "type": "number",
+        "min": 15000,
+        "max": 600000
+      },
+      {
+        "key": "adapterUrl",
+        "label": "OHLCV provider URL",
+        "type": "text",
+        "description": "Absolute HTTPS URL supporting capp.market-feed.v1."
+      },
+      {
+        "key": "adapterToken",
+        "label": "OHLCV provider token",
+        "type": "text",
+        "sensitive": true
+      }
+    ],
+    "configSections": [
+      {
+        "id": "basic",
+        "label": "Market feed",
+        "keys": [
+          "providerMode",
+          "apiKey",
+          "candleMs",
+          "chartType",
+          "enabled",
+          "remember"
+        ]
+      },
+      {
+        "id": "requests",
+        "label": "Request limits",
+        "keys": [
+          "pollMs",
+          "rateMode",
+          "budgetPerMinute",
+          "staleAfterMs"
+        ]
+      },
+      {
+        "id": "adapter",
+        "label": "Alternative provider",
+        "keys": [
+          "adapterUrl",
+          "adapterToken"
+        ]
+      }
+    ],
+    "landing": {
+      "eyebrow": "Market data",
+      "headline": "One feed. Every view.",
+      "purpose": "Give charts, simulations and assistants the same timestamped market observations.",
+      "diagram": {
+        "title": "Market data flow",
+        "caption": "Read-only observations remain separate from transaction execution.",
+        "nodes": [
+          {
+            "label": "Jupiter / OHLCV provider",
+            "focus": false
+          },
+          {
+            "label": "Market Pulse",
+            "focus": true
+          },
+          {
+            "label": "Charts, app, agent",
+            "focus": false
+          }
+        ]
+      },
+      "useWhen": [
+        "Show live prices beside an application workflow.",
+        "Share a bounded feed across multiple charts and components."
+      ],
+      "howTo": [
+        "Select the Sidecar or import its ES modules.",
+        "Configure a provider and instrument list.",
+        "Mount the panel or acquire the feed and subscribe."
+      ],
+      "boundaries": [
+        "Jupiter candles aggregate observed prices; traded volume and past candles are unavailable.",
+        "Polling frequency is independent of candle duration.",
+        "No wallet, signing, transaction submission or executable trading strategy."
+      ],
+      "integratesWith": [
+        "Standalone web applications",
+        "Solana Lab / Arena simulations",
+        "Read-only agent tools",
+        "Future HTTP OHLCV broadcaster"
+      ],
+      "callouts": [
+        {
+          "title": "Independent by design",
+          "body": "Requires no other Sidecar. Solana Edge remains optional."
+        }
+      ]
+    }
+  },
+  "agentTools": [
+    {
+      "protocol": "capp.agent-tool.v1",
+      "capability": "market.status",
+      "risk": "low",
+      "approval": "mode-policy",
+      "receiptRequired": true,
+      "targets": [
+        "windows",
+        "android"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {}
+      },
+      "outputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "protocol": "capp.agent-tool.v1",
+      "capability": "market.quote",
+      "risk": "low",
+      "approval": "mode-policy",
+      "receiptRequired": true,
+      "targets": [
+        "windows",
+        "android"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        }
+      },
+      "outputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "protocol": "capp.agent-tool.v1",
+      "capability": "market.candles",
+      "risk": "low",
+      "approval": "mode-policy",
+      "receiptRequired": true,
+      "targets": [
+        "windows",
+        "android"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "intervalMs": {
+            "type": "integer",
+            "minimum": 1000,
+            "maximum": 3600000
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 600
+          }
+        }
+      },
+      "outputSchema": {
+        "type": "array"
+      }
+    }
+  ]
+}

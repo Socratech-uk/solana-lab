@@ -1,0 +1,146 @@
+{
+  "protocol": "capp.market-validation.v1",
+  "sourceArchiveSha256": "034029d6a2554d8aa217fe028864eaaf35952a926ce1a10384ca83ae6a153ade",
+  "synthArchiveSha256": "211f0b56887e44a595b22f3e5cb5fa01315f72acaebd934e4655357dbe57e702",
+  "checksPassed": 86,
+  "checks": [
+    "15-second default; explicit fast mode retains quota headroom",
+    "observed OHLC aggregates exact buckets, preserves gaps and unknown volume",
+    "provider OHLCV replaces snapshots, resamples volume and rejects malformed bars",
+    "shared consumers and reentrant subscriptions never create overlapping requests",
+    "rate-limit deadlines survive refresh clicks, setting changes and pause/resume",
+    "authentication failures stop automatic calls until settings or resume",
+    "low remaining quota delays the next request until the provider window resets",
+    "background and immediate pause cancel queued requests",
+    "a late response cannot overwrite configuration from a newer epoch",
+    "cached block IDs become stale even when HTTP responses keep arriving",
+    "missing price is unavailable; stale chain responses cannot replace a newer mark",
+    "generic provider never receives Jupiter credentials; config/status exports redact tokens",
+    "invalid multi-instrument push is atomic and duplicate IDs are rejected",
+    "history persistence is scoped and never restores a live mark without a new read",
+    "malformed JSON and network errors back off without leaking provider error content",
+    "observed prices set entry and realised/unrealised P&L through the real Arena lifecycle",
+    "no current mark and stale mark block new actions before any execution or persisted job",
+    "a lost reply resumes its recorded price and does not execute twice after reload",
+    "legacy positions keep their original fixed-price basis beside the new market feed",
+    "agent market tools return timestamped bounded reads and cannot request a write",
+    "panel starts collapsed inside the main column and acquires only while open",
+    "gear-equivalent settings, advanced controls and imports apply to the shared feed",
+    "two graphs share marks, keep chart styles consistent and clean consumers",
+    "all chart renderers and pointer/keyboard controls work with constrained canvas dimensions",
+    "selected classic shell package exposes the same API and creates no duplicate instance",
+    "manifest defaults and asset ledger match an independent credential-free package",
+    "eleven real runtimes load; Conduit is offline",
+    "decimal amounts are exact and bounded",
+    "checkout prepares and checks policy without authority",
+    "declined demo approval has no effect",
+    "approved checkout executes the composed path and returns a simulated receipt",
+    "a refresh reloads recorded IDs; reconciliation does not submit",
+    "treasury binds approvals and enforces quorum before Latch",
+    "Arena actually drops a reply; recovery preserves the attempt across reload",
+    "position open uses real allocation, policy, authority and execution",
+    "reduce then close retains evidence and releases the bucket",
+    "a dropped position response can resume the same action without doubling size",
+    "policy rejects excessive fees and expired intents",
+    "assistant tool catalog is read-only and rejects mutation requests",
+    "records fail closed when corrupt, preserving recovery bytes",
+    "an incompatible installed provider cannot cause a live call",
+    "all simulation workflows remain offline",
+    "optional model loop executes only declared reads and returns an evidence-based answer",
+    "model-requested mutation and malformed output fail without executing",
+    "Lab devnet: scoped wallet, checkout, treasury quorum, Arena lifecycle, scaled memo evidence, refresh recovery, no duplicate sends",
+    "legacy operations cannot invoke the new network; empty cross-realm errors retain a readable receipt",
+    "build works outside cApp and verifies all 11 shipped runtimes",
+    "static preview serves the complete browser closure with correct module MIME types",
+    "preview does not expose source tooling and refuses write requests",
+    "a modified runtime fails the integrity check",
+    "a modified market module fails the independent asset check",
+    "five network labels change; model, Guide, policy limits and unrelated project fields survive",
+    "live/custom providers and missing selections fail without replacing their settings",
+    "devnet setup adopts the supplied demo endpoints and preserves chosen tokens and custom providers",
+    "a second merge makes no changes",
+    "check mode writes no files",
+    "on-disk update keeps an exact original backup and preserves the Guide files",
+    "wrong workspace identity and malformed saved state are not overwritten",
+    "standalone browser bootstrap loads eleven runtimes and renders six demos",
+    "all screens render from navigation without an empty page",
+    "checkout form, explicit approval, submit and receipt operate from actual controls",
+    "new payment returns to an editable form",
+    "older treasury records stay exportable and cannot trap or mutate new devnet work",
+    "treasury control remains disabled until two distinct reviewers approve",
+    "policy playground displays the actual failed fee check",
+    "position controls create, reduce, close and show bucket reuse",
+    "Arena evidence controls retain a distinct reviewed devnet payment",
+    "Network window reads the payment Conduit and opens Sidecar-owned settings",
+    "optional assistant opens, searches real guidance, and escapes content",
+    "receipts and evidence contain the UI-executed operations",
+    "assistant detects the actual ai.local namespace and passes system instructions",
+    "foreign origins cannot initialize the rehearsal host",
+    "the recovery host loads real drop-response APIs and reconciles the same operation",
+    "an existing Sidecar API or an unrelated frame cannot be replaced",
+    "RPC inspector calls the actual Conduit and blocks all writes and unrelated methods",
+    "RPC configuration rejects credentials and secret-shaped paths",
+    "installed app discovers all eleven APIs in its owning shell without a parent packaged flag",
+    "sibling and mismatched-app frames cannot borrow the shell connection",
+    "same-window platforms still use their own API, while incomplete providers are diagnosed",
+    "installed bootstrap renders the gallery without loading a duplicate runtime",
+    "installed checkout calls shell policy, explicit authority and execution through to a receipt",
+    "the installed app opens Conduit settings in its owning shell without recreating its wallet",
+    "installed position lifecycle uses Arena and records its simulated outcome",
+    "optional Local AI is discovered in the same shell and receives scoped read-tool instructions",
+    "a missing installed component names its absent methods and never loads browser providers",
+    "runtime and AI discovery survive an app-frame document replacement"
+  ],
+  "marketAssetLedger": {
+    "protocol": "capp.market-assets.v1",
+    "files": [
+      {
+        "file": "core.mjs",
+        "sha256": "4e48ef314cd29033a2a75bd4074e9f72001e260f5b4bee84005ce67fa2c28079"
+      },
+      {
+        "file": "chart.mjs",
+        "sha256": "2163163144503d57141b46150d05f2e46d51040091915d09141ceb27fbc042eb"
+      },
+      {
+        "file": "panel.mjs",
+        "sha256": "81ebea10c5ad9b2fbf937aa5265eab9395a593d6303a939ac64310edb1996a45"
+      },
+      {
+        "file": "runtime.js",
+        "sha256": "048d3fe6c7fcf9dddafb5e8711bb6f77d54904bd0cc3bb8ed7a7e46aa5877987"
+      },
+      {
+        "file": "sidecar.json",
+        "sha256": "c18e0f7ae8c30cfe082434f4958c7ec35b8f2424c200d67f806b70f3d5dd59ad"
+      }
+    ]
+  },
+  "registryCompatibility": {
+    "generator": "sidecar_registry.py from the supplied cApp reference checkpoint",
+    "id": "uk.capp.sidecar.market-pulse",
+    "missingAssets": [],
+    "generatedRegistryModified": false
+  },
+  "acceptance": {
+    "liveJupiter": "unverified: Cloudflare HTTP 403 (1010) via environment egress; direct request timed out",
+    "browserLayout": "unverified: local preview blocked by Browser Use",
+    "installedNative": "unverified: Windows and Android devices unavailable",
+    "installedShellFixture": "passed",
+    "realTransactionsSubmitted": false
+  },
+  "sourceAdaptation": {
+    "path": "static/js/03-charts.js",
+    "features": [
+      "canvas candle and OHLC rendering",
+      "pan/zoom and crosshair",
+      "SMA and EMA"
+    ],
+    "changes": [
+      "instance-local state",
+      "container-responsive dimensions",
+      "honest missing volume and time gaps",
+      "no predictions or synthetic history"
+    ]
+  }
+}

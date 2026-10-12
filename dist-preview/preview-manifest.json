@@ -1,0 +1,244 @@
+{
+  "protocol": "capp.solana-lab.preview.v1",
+  "mode": "preview",
+  "basePath": "/solana-lab/",
+  "routes": [
+    "",
+    "wallets",
+    "guided",
+    "service",
+    "batch",
+    "proof",
+    "checkout",
+    "treasury",
+    "positions",
+    "recovery",
+    "policy",
+    "network",
+    "tokens",
+    "requests",
+    "activity",
+    "components",
+    "receipts",
+    "docs",
+    "docs/start",
+    "docs/lifecycle",
+    "docs/dependencies",
+    "docs/receipts",
+    "docs/recipes",
+    "docs/sdk",
+    "docs/providers",
+    "docs/asset-payments",
+    "docs/expired-review"
+  ],
+  "files": {
+    "assets/mark.svg": {
+      "sha256": "18282727635ee86e4ebd030408ae00c55cf3938aff70dfc5b467255b46617207",
+      "bytes": 237
+    },
+    "assets/QR_CODE_LICENSE.txt": {
+      "sha256": "88fd9788c757d3c0de3438d31eba379441a3843b4342c90da3569cfb1a7a46d7",
+      "bytes": 1132
+    },
+    "assets/qr-code.json": {
+      "sha256": "7b5cc37f7b0c4ba7f171b4646930cd7e619c71a1aaf6d6cb30d7bf7110a8f754",
+      "bytes": 364
+    },
+    "assets/SOLANA_ASSET_PAYMENTS.md": {
+      "sha256": "c81ba7f4bc8302bee84a6ecddb0a6f15122ed04bbb9da8144fd49158b0dd2d02",
+      "bytes": 15697
+    },
+    "assets/SOLANA_DEVELOPER_GUIDE.md": {
+      "sha256": "2c774a7372372edef94a03e271a21c7f8d7abe9fd81553616ca21ce6a7f09d2a",
+      "bytes": 20378
+    },
+    "index.html": {
+      "sha256": "6716467df8a21659019432fe3e110dd7687160c543b7890df087b9425c0efbb1",
+      "bytes": 2988
+    },
+    "src/app.mjs": {
+      "sha256": "3838a44cb53e790fef860a35cbbed5a3aa0be9983317082c44ac70c002f62fa7",
+      "bytes": 73212
+    },
+    "src/architecture.css": {
+      "sha256": "6ff6a8b92129db1ae8803a08de832157bcc3000627cfb5713f28ed8b42012bdf",
+      "bytes": 4517
+    },
+    "src/architecture.js": {
+      "sha256": "87aa9577464a381a41dae6478b63f15ef4861afe10fd487442cd52c3b7932c6a",
+      "bytes": 28405
+    },
+    "src/asset-format.mjs": {
+      "sha256": "6fa5cfbeddce37b1599364e449f9b683cd9e381d6d2a1b1e1cef3b7a339cc49e",
+      "bytes": 570
+    },
+    "src/assistant.mjs": {
+      "sha256": "e5cd11594a7c9d7c49a2a98a9205ffaa08e13f7c3a37554c997cb1779a52ae04",
+      "bytes": 25590
+    },
+    "src/capability-content.mjs": {
+      "sha256": "f362a057db73f2d9ebd24aaced511511dcd303f059a27c4aa044ad3d0219c753",
+      "bytes": 8309
+    },
+    "src/capability-guided.mjs": {
+      "sha256": "554fb3d2ce1b4edc6a3a6ac67e80ecd3e5146785bbe33bcba058a23146b93422",
+      "bytes": 11201
+    },
+    "src/capability-lab.mjs": {
+      "sha256": "48c9ba31483c6e8763159be8b5b04785fed45f9147c31b4bfafb03ec03ca4b94",
+      "bytes": 17482
+    },
+    "src/capability-ui.mjs": {
+      "sha256": "4322de4df3d81420440b64d24c85572add963ff81881571410078a762013b084",
+      "bytes": 24418
+    },
+    "src/catalog.mjs": {
+      "sha256": "e195928ec65952ed51a115bba5be2cb965067ce0d7ac61e30f447c5b221451dd",
+      "bytes": 46668
+    },
+    "src/demo-defaults.mjs": {
+      "sha256": "8f459153d6a119889ff07843bc01aae2deec7315fdffacf8b4b695c8dc9a50ed",
+      "bytes": 7820
+    },
+    "src/demo-token.mjs": {
+      "sha256": "3c68d1603350d4652e6e18dfb7e8f34fcbf3dbcbe07b1ace76cb80c95392ffea",
+      "bytes": 570
+    },
+    "src/demo-wallets.mjs": {
+      "sha256": "bb64ef9080f58ea720fddad43389cc8409720ae489ca00bf3ca5e8b6efc0ed16",
+      "bytes": 12211
+    },
+    "src/experience-content.mjs": {
+      "sha256": "28fb61d455ffba736f8430bd7a1711e54157823f1dee6266b1d5227067ae086e",
+      "bytes": 5465
+    },
+    "src/experience.css": {
+      "sha256": "86551bd645e7c3a18d90c4f57c15d0deaff23387a903c5cf14a53d9e31decdea",
+      "bytes": 22843
+    },
+    "src/experience.mjs": {
+      "sha256": "f91016d7fc35f319aea79e03d577de0a09d1e9bf0b44f9bef7ee0a2216a21e54",
+      "bytes": 10898
+    },
+    "src/funded-wallet.mjs": {
+      "sha256": "892797193eefcd0ef1ce4a272e57eae5b586ac1846c50760094d42490a339d22",
+      "bytes": 2963
+    },
+    "src/funding-handoff.mjs": {
+      "sha256": "be352981076f74aad1cc5407ca624d76302630945d602ab2ac8814fbb64a02d1",
+      "bytes": 1365
+    },
+    "src/guide-catalog.mjs": {
+      "sha256": "3f4503e7a122b0c63a2757e61fbe384fe153bdf9adc37fa91a8c2ad62559e9c3",
+      "bytes": 2692
+    },
+    "src/guide-docset.js": {
+      "sha256": "91c3ba44a8c9b9b31a9bcb0c81ba6941c36c557c787d815828e3b943cbc0f29f",
+      "bytes": 60089
+    },
+    "src/guided-actions.mjs": {
+      "sha256": "50055560fdc962d2d7d70536ab25f73d76d10b0332eca0d6c22c84ef9f9e3e87",
+      "bytes": 19845
+    },
+    "src/guided-content.mjs": {
+      "sha256": "9f489e150267ce434ace1b2067e10af8753a2a7521ceea46b132b0ea34623c78",
+      "bytes": 31578
+    },
+    "src/guided-transactions.mjs": {
+      "sha256": "8213df4065c011744d4065dc7ba2d38e74a0c98848f5ce14abff5498665afbc2",
+      "bytes": 9523
+    },
+    "src/guided-wallet.mjs": {
+      "sha256": "7761bc857f3d4fc2936519c52b7812cd72ff670d98e44508d0e07c9e68ece971",
+      "bytes": 5149
+    },
+    "src/guided.mjs": {
+      "sha256": "8c2bed3ab08f328fa02149a4211f36ef5f43cad1db3b4ce845134d6b8ca94bdc",
+      "bytes": 6398
+    },
+    "src/lab.mjs": {
+      "sha256": "e07ea5568927cc8406f1439b2719a16c884d8d455cdc1b4dc1ec345892e674e1",
+      "bytes": 31101
+    },
+    "src/market-metadata.mjs": {
+      "sha256": "946a6bdab847350c0ee9c4c2a67329eff9be7c599da5cc9e51aee1bb15012cfd",
+      "bytes": 332
+    },
+    "src/market.mjs": {
+      "sha256": "ab891f3ef59df5ea23c75c57c2985bcebfafd338cad06679d15ed9c2b5c54e5a",
+      "bytes": 293
+    },
+    "src/payment-proof.mjs": {
+      "sha256": "f284c0db48331e9ebf4cee2b7536ee1e60607b9290ee43b772ae3cb6e7b0f4f4",
+      "bytes": 1147
+    },
+    "src/preview.mjs": {
+      "sha256": "80014331006a0c083567deffc2a4c986560a26c5fb244864de9ff0d1b265124b",
+      "bytes": 3070
+    },
+    "src/qr-code.mjs": {
+      "sha256": "ea91d7118a5395289170da848b7c6758b996163bfbccf312591ab65a4911b7c0",
+      "bytes": 51907
+    },
+    "src/request-payer.mjs": {
+      "sha256": "feda4f8d5635ea66d0b49e7f9843b2c855977f1ec679ec14d1d6fc338d270d4f",
+      "bytes": 13856
+    },
+    "src/runtime.mjs": {
+      "sha256": "0dd5953857be704bf95a9d9211911a8f9d52719de23199c7859d849602eec4a1",
+      "bytes": 7050
+    },
+    "src/setup-readiness.mjs": {
+      "sha256": "21daa9b4567e4d172ff930fcfe7583d95924a20aedc565cdfac23a826504f9cd",
+      "bytes": 11235
+    },
+    "src/showcase-ui.mjs": {
+      "sha256": "eeacf18c41b818d33701e6106a559d17123e3c040a26a75ae487ef9e50310eb7",
+      "bytes": 19431
+    },
+    "src/solana-client.d.mts": {
+      "sha256": "1f93781740cd4637ac7227564734b7c25270f36217d8faf632d7bfbff31c5ca4",
+      "bytes": 4576
+    },
+    "src/solana-client.mjs": {
+      "sha256": "e49dc21c64435235ac71677989bcb02d2c58e62085d672783b849b1c9e74140c",
+      "bytes": 3817
+    },
+    "src/solana-payments.d.mts": {
+      "sha256": "7812462481ed474646b96142085171f691a0d9eda2653dfe2b9614a15803b3c6",
+      "bytes": 3250
+    },
+    "src/solana-payments.mjs": {
+      "sha256": "15bc1a6384534688b518510f6cc7ab4abe8b5909727821f6e7417f7ab26ae35f",
+      "bytes": 65998
+    },
+    "src/token-funding.mjs": {
+      "sha256": "941a1f208777672963af45d0a0a4b534e5d1dc9866da5b2b75d0ca9711d69482",
+      "bytes": 2552
+    },
+    "src/visuals.mjs": {
+      "sha256": "f6e65786cc15b07ed8f33b42a2c122e386442effce4100c2089c5062a3f649ae",
+      "bytes": 5406
+    },
+    "src/wallet-tools.mjs": {
+      "sha256": "775af60482661ee33985e335a8af79076d2669f8d4b8497213a32f57da0e97e6",
+      "bytes": 2830
+    },
+    "src/wallets.css": {
+      "sha256": "0b99120882b001240b7235b6c79d1f32a196e904f22d10d01ccc67a498993c13",
+      "bytes": 5023
+    },
+    "src/wallets.mjs": {
+      "sha256": "ebbe86ad18e9ae4819ebd7669ba2f5e35c91f6295c72a5d8d4891ebbbec0e842",
+      "bytes": 31284
+    },
+    "src/workflows.mjs": {
+      "sha256": "cef8b1029c93cd1cabe6013b859e18bb8085b222a08f62fe91ec4b5067a0ebb9",
+      "bytes": 8564
+    },
+    "style.css": {
+      "sha256": "9f7ddd05f18d60ef7700fd1c7e2236b35110a1f9926405ad10c1e30a363bf810",
+      "bytes": 30275
+    }
+  }
+}

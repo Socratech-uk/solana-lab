@@ -1,0 +1,25 @@
+{
+  "protocol": "capp.solana-lab.wallet-contracts.v1",
+  "source": "current shipped runtimes",
+  "results": [
+    {
+      "name": "finalized transaction closes its original local ledger entry",
+      "passed": false,
+      "message": "Chain outcome is finalised, but Circuit remains submitting: A terminal outcome after submission requires evidenceDigest\n+ actual - expected\n\n+ 'submitting'\n- 'finalised'\n"
+    },
+    {
+      "name": "failed transaction closes its original local ledger entry",
+      "passed": false,
+      "message": "Chain outcome is failed, but Circuit remains submitting: A terminal outcome after submission requires evidenceDigest\n+ actual - expected\n\n+ 'submitting'\n- 'failed'\n"
+    },
+    {
+      "name": "damaged wallet storage has a supported recovery API that preserves the original bytes",
+      "passed": false,
+      "message": "Backup import is blocked by the damaged store: Wallet storage is unavailable or damaged. Existing data was preserved; do not clear app data. Restore an independent wallet backup."
+    }
+  ],
+  "passed": 0,
+  "unmet": 3,
+  "networkUsed": false,
+  "nativeAcceptance": false
+}

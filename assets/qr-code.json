@@ -1,0 +1,15 @@
+{
+  "package": "qrcode-generator",
+  "version": "2.0.4",
+  "license": "MIT",
+  "files": [
+    {
+      "file": "src/qr-code.mjs",
+      "sha256": "ea91d7118a5395289170da848b7c6758b996163bfbccf312591ab65a4911b7c0"
+    },
+    {
+      "file": "assets/QR_CODE_LICENSE.txt",
+      "sha256": "88fd9788c757d3c0de3438d31eba379441a3843b4342c90da3569cfb1a7a46d7"
+    }
+  ]
+}

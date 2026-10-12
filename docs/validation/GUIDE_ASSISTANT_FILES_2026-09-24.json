@@ -1,0 +1,283 @@
+{
+  "protocol": "solana-lab.overlay-files.v1",
+  "sourceArchive": "solana-lab(20260924-091830).zip",
+  "sourceSha256": "6332e7dc405dd4a564035942ac674515296ac283cbe6e61b16ecad1fe1331a54",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "c4a57cdca42cd171e3b8b528069f406616c2c2dd90382dbe5883b40ec98cd512",
+      "bytes": 6756
+    },
+    {
+      "path": "assets/solana-lab-guide.json",
+      "sha256": "3dba000a70b0c0146f6b86cf8ec7909bb3062ae62701798ea3ff57f6ee938424",
+      "bytes": 73953
+    },
+    {
+      "path": "dist-preview/index.html",
+      "sha256": "ef132cc11956bc53d85237a96e21e358f98ff5b6cec01236165aff0b6386b3a2",
+      "bytes": 2823
+    },
+    {
+      "path": "dist-preview/preview-manifest.json",
+      "sha256": "66ceb4eefa2e05261f3ffc4994e87e014b2b28da34c7be0b710c4ed9a4360abc",
+      "bytes": 4948
+    },
+    {
+      "path": "dist-preview/src/app.mjs",
+      "sha256": "b32b0285af3de3bc7508343c0ef10d40840f1828227134c8452fb37d0c75e19f",
+      "bytes": 51005
+    },
+    {
+      "path": "dist-preview/src/assistant.mjs",
+      "sha256": "81912a6c7f9c04cc2f4b166e74c6be3799f3c5e3a2a023a9a04b99cd4c0fa3b4",
+      "bytes": 25430
+    },
+    {
+      "path": "dist-preview/src/catalog.mjs",
+      "sha256": "9d48f212ccf80bf4f6bf8409bf834b6cfa9b1b01e31da56088b0f8cf3e46c660",
+      "bytes": 31367
+    },
+    {
+      "path": "dist-preview/src/experience.css",
+      "sha256": "2b653d2841ae32a45d40661938d66aed2218d2e5048daa013cc417d6bc8a9f6c",
+      "bytes": 18958
+    },
+    {
+      "path": "dist-preview/src/guide-docset.js",
+      "sha256": "f2cac68bee3612b192038b868da55c62bd39694b853c075b782c96d6dc1f4609",
+      "bytes": 39444
+    },
+    {
+      "path": "dist-preview/src/guided-actions.mjs",
+      "sha256": "0ae9f77c3a18841ecf0990d6511eed8e2ca57346bc0bf2185eaba1664608b36d",
+      "bytes": 12281
+    },
+    {
+      "path": "dist-preview/src/guided-content.mjs",
+      "sha256": "d5a4fa9667813863be7bc4ba319b47d018d1a5be88b770093bbc55d8883ef867",
+      "bytes": 14094
+    },
+    {
+      "path": "dist-preview/src/guided.mjs",
+      "sha256": "c7dd41576fa8f8e33d26a2dffe0abd4e9be28109091bf7579d49d1a1d3d56c88",
+      "bytes": 4881
+    },
+    {
+      "path": "dist-preview/src/lab.mjs",
+      "sha256": "9dc8a6a9dae2d9697eb8a8c356d4884282b890f69d170e12689e69966779f6c2",
+      "bytes": 25067
+    },
+    {
+      "path": "dist-preview/src/showcase-ui.mjs",
+      "sha256": "e3c25320b9279235c85ef10673811b21b5dc7cf7db7db7a4aba66652552df7c7",
+      "bytes": 17920
+    },
+    {
+      "path": "dist-preview/src/workflows.mjs",
+      "sha256": "4d838cb708da7a07ede46fc6571665ebb403b9fdb8d111ddcd39dacffdb83a5e",
+      "bytes": 8543
+    },
+    {
+      "path": "dist/assets/solana-lab-guide.json",
+      "sha256": "3dba000a70b0c0146f6b86cf8ec7909bb3062ae62701798ea3ff57f6ee938424",
+      "bytes": 73953
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "988771acbaa1f68d82070e2fefb2052f301555cd6578ee18a08ed167e5d585a6",
+      "bytes": 2381
+    },
+    {
+      "path": "dist/src/app.mjs",
+      "sha256": "b32b0285af3de3bc7508343c0ef10d40840f1828227134c8452fb37d0c75e19f",
+      "bytes": 51005
+    },
+    {
+      "path": "dist/src/assistant.mjs",
+      "sha256": "81912a6c7f9c04cc2f4b166e74c6be3799f3c5e3a2a023a9a04b99cd4c0fa3b4",
+      "bytes": 25430
+    },
+    {
+      "path": "dist/src/catalog.mjs",
+      "sha256": "a472864d396a046836bea65d5b2d2b82eb342355a4eb8ac8b871cffaa8fde0f2",
+      "bytes": 16720
+    },
+    {
+      "path": "dist/src/experience.css",
+      "sha256": "2b653d2841ae32a45d40661938d66aed2218d2e5048daa013cc417d6bc8a9f6c",
+      "bytes": 18958
+    },
+    {
+      "path": "dist/src/guide-docset.js",
+      "sha256": "f2cac68bee3612b192038b868da55c62bd39694b853c075b782c96d6dc1f4609",
+      "bytes": 39444
+    },
+    {
+      "path": "dist/src/guided-actions.mjs",
+      "sha256": "0ae9f77c3a18841ecf0990d6511eed8e2ca57346bc0bf2185eaba1664608b36d",
+      "bytes": 12281
+    },
+    {
+      "path": "dist/src/guided-content.mjs",
+      "sha256": "d5a4fa9667813863be7bc4ba319b47d018d1a5be88b770093bbc55d8883ef867",
+      "bytes": 14094
+    },
+    {
+      "path": "dist/src/guided.mjs",
+      "sha256": "c7dd41576fa8f8e33d26a2dffe0abd4e9be28109091bf7579d49d1a1d3d56c88",
+      "bytes": 4881
+    },
+    {
+      "path": "dist/src/lab.mjs",
+      "sha256": "9dc8a6a9dae2d9697eb8a8c356d4884282b890f69d170e12689e69966779f6c2",
+      "bytes": 25067
+    },
+    {
+      "path": "dist/src/showcase-ui.mjs",
+      "sha256": "e3c25320b9279235c85ef10673811b21b5dc7cf7db7db7a4aba66652552df7c7",
+      "bytes": 17920
+    },
+    {
+      "path": "dist/src/workflows.mjs",
+      "sha256": "4d838cb708da7a07ede46fc6571665ebb403b9fdb8d111ddcd39dacffdb83a5e",
+      "bytes": 8543
+    },
+    {
+      "path": "docs/GUIDED_WORKFLOWS.md",
+      "sha256": "49518c23919427d7a2668743d1d2e4106185eca9a3808a2471b971446f08c648",
+      "bytes": 4885
+    },
+    {
+      "path": "docs/LOCAL_AI.md",
+      "sha256": "163589cfbd2a54d3872863014996a92d70f7faa11a7fff432906a2585ac6e9cd",
+      "bytes": 5347
+    },
+    {
+      "path": "docs/validation/GUIDE_ASSISTANT_2026-09-24.md",
+      "sha256": "b3cd5cf14dc1b8f527f07fd6fbe91ddbe3d72c09346e467e324fa180d3b14be3",
+      "bytes": 4733
+    },
+    {
+      "path": "docs/validation/guide-assistant-2026-09-24/assistant-demos-mobile.png",
+      "sha256": "eca11abc49151e352f7e65a3e66b3f05e88034265f4d4d71910ec8985130c20d",
+      "bytes": 54210
+    },
+    {
+      "path": "docs/validation/guide-assistant-2026-09-24/assistant-desktop.png",
+      "sha256": "c8f8a55447f810ccb8e18b731513a272f7c33720c7bfd61a673663a09604a976",
+      "bytes": 212671
+    },
+    {
+      "path": "docs/validation/guide-assistant-2026-09-24/assistant-mobile.png",
+      "sha256": "e9179434b476197b40161391b9db353d2ee56eaf6e24402c2a546f5be83f6a91",
+      "bytes": 61774
+    },
+    {
+      "path": "index.html",
+      "sha256": "988771acbaa1f68d82070e2fefb2052f301555cd6578ee18a08ed167e5d585a6",
+      "bytes": 2381
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "a58c3efe135f0145bc99f0a9d31dcca72f5e3ea1d35394c2e54b279714ce2bb2",
+      "bytes": 19327
+    },
+    {
+      "path": "package.json",
+      "sha256": "072bf75ce5ff77cd6598832c61a45fe06544f749bd322f0ad2eec5d80205c765",
+      "bytes": 2062
+    },
+    {
+      "path": "src/app.mjs",
+      "sha256": "b32b0285af3de3bc7508343c0ef10d40840f1828227134c8452fb37d0c75e19f",
+      "bytes": 51005
+    },
+    {
+      "path": "src/assistant.mjs",
+      "sha256": "81912a6c7f9c04cc2f4b166e74c6be3799f3c5e3a2a023a9a04b99cd4c0fa3b4",
+      "bytes": 25430
+    },
+    {
+      "path": "src/catalog.mjs",
+      "sha256": "a472864d396a046836bea65d5b2d2b82eb342355a4eb8ac8b871cffaa8fde0f2",
+      "bytes": 16720
+    },
+    {
+      "path": "src/experience.css",
+      "sha256": "2b653d2841ae32a45d40661938d66aed2218d2e5048daa013cc417d6bc8a9f6c",
+      "bytes": 18958
+    },
+    {
+      "path": "src/guide-docset.js",
+      "sha256": "f2cac68bee3612b192038b868da55c62bd39694b853c075b782c96d6dc1f4609",
+      "bytes": 39444
+    },
+    {
+      "path": "src/guided-actions.mjs",
+      "sha256": "0ae9f77c3a18841ecf0990d6511eed8e2ca57346bc0bf2185eaba1664608b36d",
+      "bytes": 12281
+    },
+    {
+      "path": "src/guided-content.mjs",
+      "sha256": "d5a4fa9667813863be7bc4ba319b47d018d1a5be88b770093bbc55d8883ef867",
+      "bytes": 14094
+    },
+    {
+      "path": "src/guided.mjs",
+      "sha256": "c7dd41576fa8f8e33d26a2dffe0abd4e9be28109091bf7579d49d1a1d3d56c88",
+      "bytes": 4881
+    },
+    {
+      "path": "src/lab.mjs",
+      "sha256": "9dc8a6a9dae2d9697eb8a8c356d4884282b890f69d170e12689e69966779f6c2",
+      "bytes": 25067
+    },
+    {
+      "path": "src/showcase-ui.mjs",
+      "sha256": "e3c25320b9279235c85ef10673811b21b5dc7cf7db7db7a4aba66652552df7c7",
+      "bytes": 17920
+    },
+    {
+      "path": "src/workflows.mjs",
+      "sha256": "4d838cb708da7a07ede46fc6571665ebb403b9fdb8d111ddcd39dacffdb83a5e",
+      "bytes": 8543
+    },
+    {
+      "path": "tests/assistant-browser.test.mjs",
+      "sha256": "58ad4e305342bdb23c70afd8ec8160a755343ef40d5da971d3707f90f4b51fd5",
+      "bytes": 9967
+    },
+    {
+      "path": "tests/guided-actions.test.mjs",
+      "sha256": "58740644e271e54422003986443bacf7da352f4c79a40d928b728b970c8654fd",
+      "bytes": 8291
+    },
+    {
+      "path": "tests/guided-browser.test.mjs",
+      "sha256": "2db1b9f9c547387e163cc67c5b025fbf7ff06b225a78c4d15126261b0aadae51",
+      "bytes": 6884
+    },
+    {
+      "path": "tests/guided-installed-browser.test.mjs",
+      "sha256": "928d13065ef0cd0743321dbf37a3da5da0fe28f6fc3749491b62d26f8214ecd6",
+      "bytes": 4511
+    },
+    {
+      "path": "tests/lab.test.mjs",
+      "sha256": "faa3a3e0dfbc1201542c7132447ae3b26c4368bce0c9e3f3065db6bdae21c058",
+      "bytes": 10184
+    },
+    {
+      "path": "tests/preview.test.mjs",
+      "sha256": "997a0025eefcd8e4efa3f029312d810340f13b35b4ca1c8447eeee0819f0ddb0",
+      "bytes": 9215
+    },
+    {
+      "path": "tests/ui.test.mjs",
+      "sha256": "c01c1849e1cd9e2304af5c60e3b130a7c3ff2c89baa607990542b3bd12285d29",
+      "bytes": 21499
+    }
+  ],
+  "unchangedOriginalFiles": 188
+}
