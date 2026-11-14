@@ -22,6 +22,8 @@ The installed Lab shares only the selected Market Pulse published by its verifie
 
 Standalone browser development uses the bundled implementation. The locked public preview starts no market provider. A selected installed instance owns its build and device settings; review provider access in **Market settings**. Existing credential values are retained without any claim that this update verified their validity or live access. Older device settings from another selection are retained separately and cannot silently enable or override the current selected provider.
 
+Public source includes no provider key. For a fresh standalone setup, enter your own Jupiter key in **Market settings**. Existing saved device settings and installed Sidecar selections continue to supply their own configuration. A key previously included in this repository must be rotated before reuse because it remains in older Git history.
+
 ## Use the chart
 
 The **Market** bar starts collapsed below the header, inside the main column. Opening it pushes the content down and leaves the navigation beside it. It remains open as you navigate. Position Studio can keep the feed active with the chart collapsed.
