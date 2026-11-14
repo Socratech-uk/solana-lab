@@ -32,3 +32,5 @@ Requires Git, Node.js 18 or newer, and your existing GitHub sign-in through Git 
 Configuration is in .github-sync.json; the reusable implementation is tools/github-sync.mjs. Last successful sync details are kept inside Git metadata, not committed source.
 
 Advanced: `-Staged` commits only the already reviewed Git index instead of staging later working-file edits.
+
+The reviewed Jupiter publishable key is allowed by an exact SHA256 fingerprint in `allowedPublishableKeyHashes`. This exception applies only to Jupiter-key detection; private credentials remain blocked.

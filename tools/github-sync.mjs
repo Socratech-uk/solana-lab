@@ -29,11 +29,12 @@ function nul(params){return String(git(params).stdout).split('\0').filter(Boolea
 const head=()=>String(git(['rev-parse','--verify','HEAD'],{allowFailure:true}).stdout||'').trim();
 function scanText(text,name){
   const allowed=new Set(config.allowedTestSecretHashes||[]);
+  const publishable=new Set(config.allowedPublishableKeyHashes||[]);
   const rules=[
     ['GitHub token',/\b(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{60,})\b/g],
     ['OpenAI-style secret',/\bsk-(?:(?:proj|svcacct)-)?[A-Za-z0-9_-]{24,}\b/g],
     ['AWS access key',/\b(?:AKIA|ASIA)[A-Z0-9]{16}\b/g],
-    ['Jupiter API key',/\bjup_[A-Za-z0-9]{32,}\b/g],
+    ['Jupiter API key',/\bjup_(?:pub_)?[A-Za-z0-9_-]{32,}\b/g],
     ['Synth API credential',/\bsynth_(?:pk|sk|ek|es)_[A-Za-z0-9_-]{16,}\b/g],
     ['Quorm webhook secret',/\bqwhsec_[A-Za-z0-9_-]{16,}\b/g],
     ['hardcoded provider credential',/\b_clean_env\(\s*['"][A-Z0-9_]*(?:API_KEY|API_SECRET|WEBHOOK_SECRET)['"]\s*,\s*['"][A-Za-z0-9_+\/=.-]{24,}['"]/g],
@@ -42,7 +43,7 @@ function scanText(text,name){
   for(const [kind,pattern]of rules){for(const found of text.matchAll(pattern)){
     if(kind==='AWS access key'&&found[0].endsWith('EXAMPLE'))continue;
     const hash=crypto.createHash('sha256').update(found[0]).digest('hex');
-    if(!allowed.has(hash))throw new Error(`Potential ${kind} in ${name}. Secret value was not printed. Review before syncing.`);
+    if(!allowed.has(hash)&&!(kind==='Jupiter API key'&&found[0].startsWith('jup_pub_')&&publishable.has(hash)))throw new Error(`Potential ${kind} in ${name}. Secret value was not printed. Review before syncing.`);
   }}
   if(/\.json$/i.test(name)){
     try{const value=JSON.parse(text);if(Array.isArray(value)&&value.length===64&&value.every(n=>Number.isInteger(n)&&n>=0&&n<=255))throw new Error('WALLET_KEYPAIR');}catch(e){if(e.message==='WALLET_KEYPAIR')throw new Error(`Possible wallet keypair in ${name}. Keep it outside Git.`);}

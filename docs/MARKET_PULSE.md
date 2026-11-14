@@ -22,7 +22,9 @@ The installed Lab shares only the selected Market Pulse published by its verifie
 
 Standalone browser development uses the bundled implementation. The locked public preview starts no market provider. A selected installed instance owns its build and device settings; review provider access in **Market settings**. Existing credential values are retained without any claim that this update verified their validity or live access. Older device settings from another selection are retained separately and cannot silently enable or override the current selected provider.
 
-Public source includes no provider key. For a fresh standalone setup, enter your own Jupiter key in **Market settings**. Existing saved device settings and installed Sidecar selections continue to supply their own configuration. A key previously included in this repository must be rotated before reuse because it remains in older Git history.
+Public source uses a Jupiter **publishable key** for browser attribution. It is intended for public clients and uses keyless access limits. Private server keys belong in device **Market settings**, never in the source. Existing saved device settings and installed Sidecar selections retain their own configuration; replace a saved retired key there or rebuild the native package with the updated source. The former bundled server key is retired; older Git history still contains its value.
+
+The GitHub sync guard allows this exact reviewed publishable key by its SHA256 fingerprint in `.github-sync.json`. Other Jupiter keys remain blocked.
 
 ## Use the chart
 

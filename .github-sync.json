@@ -6,5 +6,8 @@
   "visibility": "public",
   "requirePrivate": false,
   "description": "Solana Lab infrastructure and workflow workbench",
-  "allowedTestSecretHashes": []
+  "allowedTestSecretHashes": [],
+  "allowedPublishableKeyHashes": [
+    "4a7e2b0c7cf5231f4333f3f664722296ed07112bce3ba15751aacb863eceea01"
+  ]
 }
