@@ -34,6 +34,9 @@ function scanText(text,name){
     ['OpenAI-style secret',/\bsk-(?:(?:proj|svcacct)-)?[A-Za-z0-9_-]{24,}\b/g],
     ['AWS access key',/\b(?:AKIA|ASIA)[A-Z0-9]{16}\b/g],
     ['Jupiter API key',/\bjup_[A-Za-z0-9]{32,}\b/g],
+    ['Synth API credential',/\bsynth_(?:pk|sk|ek|es)_[A-Za-z0-9_-]{16,}\b/g],
+    ['Quorm webhook secret',/\bqwhsec_[A-Za-z0-9_-]{16,}\b/g],
+    ['hardcoded provider credential',/\b_clean_env\(\s*['"][A-Z0-9_]*(?:API_KEY|API_SECRET|WEBHOOK_SECRET)['"]\s*,\s*['"][A-Za-z0-9_+\/=.-]{24,}['"]/g],
     ['private key',/-----BEGIN (?:RSA |EC |DSA |OPENSSH )?PRIVATE KEY-----[\s\S]{80,}?-----END (?:RSA |EC |DSA |OPENSSH )?PRIVATE KEY-----/g],
   ];
   for(const [kind,pattern]of rules){for(const found of text.matchAll(pattern)){
