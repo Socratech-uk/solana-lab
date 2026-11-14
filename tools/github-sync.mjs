@@ -13,7 +13,7 @@ for(let i=0;i<args.length;i++){
   if(args[i]==='--check')check=true;
   else if(args[i]==='--staged')useStaged=true;
   else if(args[i]==='--message'&&args[i+1])message=args[++i];
-  else throw new Error('Usage: sync-github.ps1 [-Check] [-Message "description"]');
+  else throw new Error('Usage: sync-github.ps1 [-Check] [-Staged] [-Message "description"]');
 }
 if(!/^[A-Za-z0-9-]+$/.test(config.owner)||!(/^[A-Za-z0-9_.-]+$/).test(config.repository)||!['private','public'].includes(config.visibility))throw new Error('Invalid repository configuration.');
 const expectedUrl=`https://github.com/${config.owner}/${config.repository}.git`;
@@ -33,6 +33,7 @@ function scanText(text,name){
     ['GitHub token',/\b(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{60,})\b/g],
     ['OpenAI-style secret',/\bsk-(?:(?:proj|svcacct)-)?[A-Za-z0-9_-]{24,}\b/g],
     ['AWS access key',/\b(?:AKIA|ASIA)[A-Z0-9]{16}\b/g],
+    ['Jupiter API key',/\bjup_[A-Za-z0-9]{32,}\b/g],
     ['private key',/-----BEGIN (?:RSA |EC |DSA |OPENSSH )?PRIVATE KEY-----[\s\S]{80,}?-----END (?:RSA |EC |DSA |OPENSSH )?PRIVATE KEY-----/g],
   ];
   for(const [kind,pattern]of rules){for(const found of text.matchAll(pattern)){
