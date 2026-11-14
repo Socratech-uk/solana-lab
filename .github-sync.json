@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "owner": "Socratech-uk",
+  "repository": "solana-lab",
+  "branch": "main",
+  "visibility": "public",
+  "requirePrivate": false,
+  "description": "Solana Lab infrastructure and workflow workbench",
+  "allowedTestSecretHashes": []
+}
